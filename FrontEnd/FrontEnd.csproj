@@ -4,8 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyName>Registro Clientes</AssemblyName>
-    <RootNamespace>Registro Clientes</RootNamespace>
+    <AssemblyName>RegistroClientes</AssemblyName>
+    <RootNamespace>RegistroClientes</RootNamespace>
   </PropertyGroup>
 
 </Project>
