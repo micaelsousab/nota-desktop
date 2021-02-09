@@ -31,6 +31,7 @@ namespace RegistroClientes
 		{
             this.abasTela = new System.Windows.Forms.TabControl();
             this.novoServico = new System.Windows.Forms.TabPage();
+            this.labelDescricao = new System.Windows.Forms.Label();
             this.labelAgradecimento = new System.Windows.Forms.Label();
             this.labelNumeroNota = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -97,7 +98,6 @@ namespace RegistroClientes
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.consultarServico = new System.Windows.Forms.TabPage();
-            this.labelDescricao = new System.Windows.Forms.Label();
             this.abasTela.SuspendLayout();
             this.novoServico.SuspendLayout();
             this.SuspendLayout();
@@ -192,6 +192,16 @@ namespace RegistroClientes
             this.novoServico.UseVisualStyleBackColor = true;
             this.novoServico.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // labelDescricao
+            // 
+            this.labelDescricao.AutoSize = true;
+            this.labelDescricao.Location = new System.Drawing.Point(14, 806);
+            this.labelDescricao.Name = "labelDescricao";
+            this.labelDescricao.Size = new System.Drawing.Size(542, 15);
+            this.labelDescricao.TabIndex = 28;
+            this.labelDescricao.Text = "obs: O cliente perderá direito ao aparelho, caso não procure no prazo de 60 dias " +
+    "a partir da data acima";
+            // 
             // labelAgradecimento
             // 
             this.labelAgradecimento.AutoSize = true;
@@ -221,6 +231,7 @@ namespace RegistroClientes
             this.btnSalvar.TabIndex = 25;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // textBox2
             // 
@@ -931,16 +942,6 @@ namespace RegistroClientes
             this.consultarServico.TabIndex = 1;
             this.consultarServico.Text = "Consultar Serviços";
             this.consultarServico.UseVisualStyleBackColor = true;
-            // 
-            // labelDescricao
-            // 
-            this.labelDescricao.AutoSize = true;
-            this.labelDescricao.Location = new System.Drawing.Point(14, 806);
-            this.labelDescricao.Name = "labelDescricao";
-            this.labelDescricao.Size = new System.Drawing.Size(542, 15);
-            this.labelDescricao.TabIndex = 28;
-            this.labelDescricao.Text = "obs: O cliente perderá direito ao aparelho, caso não procure no prazo de 60 dias " +
-    "a partir da data acima";
             // 
             // TelaPadrao
             // 
