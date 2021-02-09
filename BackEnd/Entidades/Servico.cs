@@ -63,11 +63,13 @@ namespace BackEnd.Entidades
 			ValorAdiantamento = valorAdiantamento;
 			Observacoes = observacoes;
 		}
+
 		public Servico(Guid id, DateTime dataRegistro)
 		{
 			Id = id;
 			DataRegistro = dataRegistro;
 		}
+
 		public Servico()
 		{
 			Id = Guid.NewGuid();
