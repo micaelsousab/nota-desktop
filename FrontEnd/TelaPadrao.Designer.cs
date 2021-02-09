@@ -31,6 +31,7 @@ namespace RegistroClientes
 		{
             this.abasTela = new System.Windows.Forms.TabControl();
             this.novoServico = new System.Windows.Forms.TabPage();
+            this.labelEletroMaq = new System.Windows.Forms.Label();
             this.labelDescricao = new System.Windows.Forms.Label();
             this.labelAgradecimento = new System.Windows.Forms.Label();
             this.labelNumeroNota = new System.Windows.Forms.Label();
@@ -98,6 +99,8 @@ namespace RegistroClientes
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.consultarServico = new System.Windows.Forms.TabPage();
+            this.labelFones = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.abasTela.SuspendLayout();
             this.novoServico.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +120,9 @@ namespace RegistroClientes
             // 
             // novoServico
             // 
+            this.novoServico.Controls.Add(this.label2);
+            this.novoServico.Controls.Add(this.labelFones);
+            this.novoServico.Controls.Add(this.labelEletroMaq);
             this.novoServico.Controls.Add(this.labelDescricao);
             this.novoServico.Controls.Add(this.labelAgradecimento);
             this.novoServico.Controls.Add(this.labelNumeroNota);
@@ -192,21 +198,32 @@ namespace RegistroClientes
             this.novoServico.UseVisualStyleBackColor = true;
             this.novoServico.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // labelEletroMaq
+            // 
+            this.labelEletroMaq.AutoSize = true;
+            this.labelEletroMaq.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEletroMaq.Location = new System.Drawing.Point(212, 3);
+            this.labelEletroMaq.Name = "labelEletroMaq";
+            this.labelEletroMaq.Size = new System.Drawing.Size(176, 37);
+            this.labelEletroMaq.TabIndex = 29;
+            this.labelEletroMaq.Text = "ELETRO MAQ";
+            this.labelEletroMaq.Click += new System.EventHandler(this.label2_Click_1);
+            // 
             // labelDescricao
             // 
             this.labelDescricao.AutoSize = true;
-            this.labelDescricao.Location = new System.Drawing.Point(14, 806);
+            this.labelDescricao.Location = new System.Drawing.Point(13, 806);
             this.labelDescricao.Name = "labelDescricao";
-            this.labelDescricao.Size = new System.Drawing.Size(542, 15);
+            this.labelDescricao.Size = new System.Drawing.Size(545, 15);
             this.labelDescricao.TabIndex = 28;
             this.labelDescricao.Text = "obs: O cliente perderá direito ao aparelho, caso não procure no prazo de 60 dias " +
-    "a partir da data acima";
+    "a partir da data acima.";
             // 
             // labelAgradecimento
             // 
             this.labelAgradecimento.AutoSize = true;
             this.labelAgradecimento.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelAgradecimento.Location = new System.Drawing.Point(21, 770);
+            this.labelAgradecimento.Location = new System.Drawing.Point(23, 770);
             this.labelAgradecimento.Name = "labelAgradecimento";
             this.labelAgradecimento.Size = new System.Drawing.Size(523, 30);
             this.labelAgradecimento.TabIndex = 27;
@@ -724,7 +741,7 @@ namespace RegistroClientes
             // labelLinhaEnderecoCliente
             // 
             this.labelLinhaEnderecoCliente.AutoSize = true;
-            this.labelLinhaEnderecoCliente.Location = new System.Drawing.Point(10, 220);
+            this.labelLinhaEnderecoCliente.Location = new System.Drawing.Point(10, 234);
             this.labelLinhaEnderecoCliente.Name = "labelLinhaEnderecoCliente";
             this.labelLinhaEnderecoCliente.Size = new System.Drawing.Size(66, 15);
             this.labelLinhaEnderecoCliente.TabIndex = 18;
@@ -735,7 +752,7 @@ namespace RegistroClientes
             this.txtLinhaEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLinhaEnderecoCliente.Location = new System.Drawing.Point(10, 241);
+            this.txtLinhaEnderecoCliente.Location = new System.Drawing.Point(10, 255);
             this.txtLinhaEnderecoCliente.Name = "txtLinhaEnderecoCliente";
             this.txtLinhaEnderecoCliente.Size = new System.Drawing.Size(551, 23);
             this.txtLinhaEnderecoCliente.TabIndex = 17;
@@ -746,7 +763,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelNumeroEnderecoCliente.AutoSize = true;
-            this.labelNumeroEnderecoCliente.Location = new System.Drawing.Point(500, 169);
+            this.labelNumeroEnderecoCliente.Location = new System.Drawing.Point(500, 187);
             this.labelNumeroEnderecoCliente.Name = "labelNumeroEnderecoCliente";
             this.labelNumeroEnderecoCliente.Size = new System.Drawing.Size(57, 15);
             this.labelNumeroEnderecoCliente.TabIndex = 16;
@@ -757,7 +774,7 @@ namespace RegistroClientes
             this.txtNumeroEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNumeroEnderecoCliente.Location = new System.Drawing.Point(500, 190);
+            this.txtNumeroEnderecoCliente.Location = new System.Drawing.Point(500, 204);
             this.txtNumeroEnderecoCliente.Name = "txtNumeroEnderecoCliente";
             this.txtNumeroEnderecoCliente.Size = new System.Drawing.Size(61, 23);
             this.txtNumeroEnderecoCliente.TabIndex = 15;
@@ -767,7 +784,7 @@ namespace RegistroClientes
             this.txtBairroEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBairroEnderecoCliente.Location = new System.Drawing.Point(340, 190);
+            this.txtBairroEnderecoCliente.Location = new System.Drawing.Point(340, 204);
             this.txtBairroEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtBairroEnderecoCliente.Name = "txtBairroEnderecoCliente";
             this.txtBairroEnderecoCliente.Size = new System.Drawing.Size(147, 23);
@@ -779,7 +796,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelBairroEnderecoCliente.AutoSize = true;
-            this.labelBairroEnderecoCliente.Location = new System.Drawing.Point(340, 172);
+            this.labelBairroEnderecoCliente.Location = new System.Drawing.Point(340, 187);
             this.labelBairroEnderecoCliente.Name = "labelBairroEnderecoCliente";
             this.labelBairroEnderecoCliente.Size = new System.Drawing.Size(48, 15);
             this.labelBairroEnderecoCliente.TabIndex = 13;
@@ -791,7 +808,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCidadeEnderecoCliente.AutoSize = true;
-            this.labelCidadeEnderecoCliente.Location = new System.Drawing.Point(84, 169);
+            this.labelCidadeEnderecoCliente.Location = new System.Drawing.Point(84, 187);
             this.labelCidadeEnderecoCliente.Name = "labelCidadeEnderecoCliente";
             this.labelCidadeEnderecoCliente.Size = new System.Drawing.Size(48, 15);
             this.labelCidadeEnderecoCliente.TabIndex = 12;
@@ -802,7 +819,7 @@ namespace RegistroClientes
             this.txtCidadeEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCidadeEnderecoCliente.Location = new System.Drawing.Point(84, 190);
+            this.txtCidadeEnderecoCliente.Location = new System.Drawing.Point(84, 204);
             this.txtCidadeEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtCidadeEnderecoCliente.Name = "txtCidadeEnderecoCliente";
             this.txtCidadeEnderecoCliente.Size = new System.Drawing.Size(230, 23);
@@ -814,7 +831,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelUFCLiente.AutoSize = true;
-            this.labelUFCLiente.Location = new System.Drawing.Point(10, 169);
+            this.labelUFCLiente.Location = new System.Drawing.Point(10, 188);
             this.labelUFCLiente.Name = "labelUFCLiente";
             this.labelUFCLiente.Size = new System.Drawing.Size(21, 15);
             this.labelUFCLiente.TabIndex = 10;
@@ -825,7 +842,7 @@ namespace RegistroClientes
             this.txtUFEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUFEnderecoCliente.Location = new System.Drawing.Point(10, 190);
+            this.txtUFEnderecoCliente.Location = new System.Drawing.Point(10, 204);
             this.txtUFEnderecoCliente.Name = "txtUFEnderecoCliente";
             this.txtUFEnderecoCliente.Size = new System.Drawing.Size(61, 23);
             this.txtUFEnderecoCliente.TabIndex = 9;
@@ -836,7 +853,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTelefoneCelularCliente.AutoSize = true;
-            this.labelTelefoneCelularCliente.Location = new System.Drawing.Point(340, 106);
+            this.labelTelefoneCelularCliente.Location = new System.Drawing.Point(340, 140);
             this.labelTelefoneCelularCliente.Name = "labelTelefoneCelularCliente";
             this.labelTelefoneCelularCliente.Size = new System.Drawing.Size(113, 15);
             this.labelTelefoneCelularCliente.TabIndex = 8;
@@ -848,7 +865,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTelefoneFixoCliente.AutoSize = true;
-            this.labelTelefoneFixoCliente.Location = new System.Drawing.Point(340, 61);
+            this.labelTelefoneFixoCliente.Location = new System.Drawing.Point(340, 94);
             this.labelTelefoneFixoCliente.Name = "labelTelefoneFixoCliente";
             this.labelTelefoneFixoCliente.Size = new System.Drawing.Size(89, 15);
             this.labelTelefoneFixoCliente.TabIndex = 7;
@@ -859,7 +876,7 @@ namespace RegistroClientes
             this.txtTelefoneCelularCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefoneCelularCliente.Location = new System.Drawing.Point(340, 125);
+            this.txtTelefoneCelularCliente.Location = new System.Drawing.Point(340, 157);
             this.txtTelefoneCelularCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneCelularCliente.Name = "txtTelefoneCelularCliente";
             this.txtTelefoneCelularCliente.Size = new System.Drawing.Size(221, 23);
@@ -870,7 +887,7 @@ namespace RegistroClientes
             this.txtTelefoneFixoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefoneFixoCliente.Location = new System.Drawing.Point(340, 80);
+            this.txtTelefoneFixoCliente.Location = new System.Drawing.Point(340, 112);
             this.txtTelefoneFixoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneFixoCliente.Name = "txtTelefoneFixoCliente";
             this.txtTelefoneFixoCliente.Size = new System.Drawing.Size(221, 23);
@@ -882,7 +899,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEmailCliente.AutoSize = true;
-            this.labelEmailCliente.Location = new System.Drawing.Point(10, 107);
+            this.labelEmailCliente.Location = new System.Drawing.Point(10, 140);
             this.labelEmailCliente.Name = "labelEmailCliente";
             this.labelEmailCliente.Size = new System.Drawing.Size(41, 15);
             this.labelEmailCliente.TabIndex = 4;
@@ -890,7 +907,7 @@ namespace RegistroClientes
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(10, 125);
+            this.textBox1.Location = new System.Drawing.Point(10, 157);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(304, 23);
             this.textBox1.TabIndex = 3;
@@ -901,7 +918,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelNomeCliente.AutoSize = true;
-            this.labelNomeCliente.Location = new System.Drawing.Point(10, 62);
+            this.labelNomeCliente.Location = new System.Drawing.Point(10, 94);
             this.labelNomeCliente.Name = "labelNomeCliente";
             this.labelNomeCliente.Size = new System.Drawing.Size(106, 15);
             this.labelNomeCliente.TabIndex = 2;
@@ -913,7 +930,7 @@ namespace RegistroClientes
             this.txtNomeCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNomeCliente.Location = new System.Drawing.Point(10, 80);
+            this.txtNomeCliente.Location = new System.Drawing.Point(10, 112);
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(304, 23);
             this.txtNomeCliente.TabIndex = 1;
@@ -924,11 +941,11 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 10);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(10, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 42);
+            this.label1.Size = new System.Drawing.Size(152, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastrar Serviço";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -942,6 +959,26 @@ namespace RegistroClientes
             this.consultarServico.TabIndex = 1;
             this.consultarServico.Text = "Consultar Serviços";
             this.consultarServico.UseVisualStyleBackColor = true;
+            // 
+            // labelFones
+            // 
+            this.labelFones.AutoSize = true;
+            this.labelFones.Location = new System.Drawing.Point(203, 43);
+            this.labelFones.Name = "labelFones";
+            this.labelFones.Size = new System.Drawing.Size(191, 15);
+            this.labelFones.TabIndex = 30;
+            this.labelFones.Text = "Fone (81) 3377-0540 / 9 98507-4579";
+            this.labelFones.Click += new System.EventHandler(this.label2_Click_2);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(123, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(364, 15);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Av. Barreto de Menezes, 667, Prazeres, Jaboatão dos Guararapes / PE";
+            this.label2.Click += new System.EventHandler(this.label2_Click_3);
             // 
             // TelaPadrao
             // 
@@ -1029,5 +1066,8 @@ namespace RegistroClientes
         private System.Windows.Forms.Label labelNumeroNota;
         private System.Windows.Forms.Label labelAgradecimento;
         private System.Windows.Forms.Label labelDescricao;
+        private System.Windows.Forms.Label labelEletroMaq;
+        private System.Windows.Forms.Label labelFones;
+        private System.Windows.Forms.Label label2;
     }
 }
