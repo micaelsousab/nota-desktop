@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{3E8F9B5D-F627-47B4-9CDA-2D97EA9054A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2D0E340-134C-4403-BA9A-09254C0BA711} = {C2D0E340-134C-4403-BA9A-09254C0BA711}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd", "BackEnd\BackEnd.csproj", "{C2D0E340-134C-4403-BA9A-09254C0BA711}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackEnd", "BackEnd\BackEnd.csproj", "{C2D0E340-134C-4403-BA9A-09254C0BA711}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,8 +4,9 @@ using System.Text;
 
 namespace BackEnd.Entidades
 {
-	class Endereco
+	public class Endereco
 	{
+		public int EnderecoId { get; set; }
 		public string UF { get; set; }
 		public string Cidade { get; set; }
 		public string Bairro { get; set; }

@@ -4,9 +4,13 @@ using System.Text;
 
 namespace BackEnd.Entidades
 {
-	class ItemServico
+	public class ItemServico
 	{
+		public int ItemServicoId { get; set; }
 		public string Descricao { get; set; }
 		public double Valor { get; set; }
+
+		public int ServicoId { get; set; }
+		public Servico Servico { get; set; }
 	}
 }
