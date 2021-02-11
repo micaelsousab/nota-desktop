@@ -9,28 +9,29 @@ namespace BackEnd.Repositorios
 {
 	class RepositorioServico
 	{
-		private NotaContext db = new NotaContext();
+		private NotaContext _db = new NotaContext();
+
 		public Servico cadastrarServico(Servico servico)
 		{
-			db.Add(servico);
-			db.SaveChanges();
+			_db.Add(servico);
+			_db.SaveChanges();
 
-			return db.Servicos.OrderByDescending(s => s.ServicoId).First();
+			return _db.Servicos.OrderByDescending(s => s.ServicoId).First();
 		}
 
 		public List<Servico> buscarServicosNomeCliente(string nomeCliente)
 		{
-			return db.Servicos.Where(s => s.Cliente.Nome.Contains(nomeCliente)).ToList();
+			return _db.Servicos.Where(s => s.Cliente.Nome.Contains(nomeCliente)).ToList();
 		}
 
 		public List<Servico> buscarServicosTelefoneFixoCliente(string telefoneFixoCliente)
 		{
-			return db.Servicos.Where(s => s.Cliente.TelefoneFixo.StartsWith(telefoneFixoCliente)).ToList();
+			return _db.Servicos.Where(s => s.Cliente.TelefoneFixo.StartsWith(telefoneFixoCliente)).ToList();
 		}
 		
 		public List<Servico> buscarServicosTelefoneCelularCliente(string telefoneCelularCliente)
 		{
-			return db.Servicos.Where(s => s.Cliente.TelefoneCelular.StartsWith(telefoneCelularCliente)).ToList();
+			return _db.Servicos.Where(s => s.Cliente.TelefoneCelular.StartsWith(telefoneCelularCliente)).ToList();
 		}
 	}
 }
