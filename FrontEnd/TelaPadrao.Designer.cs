@@ -34,7 +34,7 @@ namespace RegistroClientes
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textObservacao = new System.Windows.Forms.TextBox();
             this.labelDescricao = new System.Windows.Forms.Label();
             this.labelObservacao = new System.Windows.Forms.Label();
             this.labelAgradecimento = new System.Windows.Forms.Label();
@@ -188,7 +188,7 @@ namespace RegistroClientes
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.textObservacao);
             this.panel3.Controls.Add(this.labelDescricao);
             this.panel3.Controls.Add(this.labelObservacao);
             this.panel3.Controls.Add(this.labelAgradecimento);
@@ -198,17 +198,17 @@ namespace RegistroClientes
             this.panel3.Size = new System.Drawing.Size(568, 182);
             this.panel3.TabIndex = 1;
             // 
-            // textBox2
+            // textObservacao
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textObservacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(7, 32);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(456, 72);
-            this.textBox2.TabIndex = 22;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textObservacao.Location = new System.Drawing.Point(7, 32);
+            this.textObservacao.Margin = new System.Windows.Forms.Padding(10);
+            this.textObservacao.Multiline = true;
+            this.textObservacao.Name = "textObservacao";
+            this.textObservacao.Size = new System.Drawing.Size(456, 72);
+            this.textObservacao.TabIndex = 22;
+            this.textObservacao.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // labelDescricao
             // 
@@ -926,6 +926,7 @@ namespace RegistroClientes
             this.txtResta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtResta.Enabled = false;
             this.txtResta.Location = new System.Drawing.Point(379, 33);
             this.txtResta.Margin = new System.Windows.Forms.Padding(10);
             this.txtResta.Name = "txtResta";
@@ -950,6 +951,7 @@ namespace RegistroClientes
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotal.Enabled = false;
             this.txtTotal.Location = new System.Drawing.Point(475, 33);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(10);
             this.txtTotal.Name = "txtTotal";
@@ -1243,6 +1245,7 @@ namespace RegistroClientes
             this.txtUFEnderecoCliente.Name = "txtUFEnderecoCliente";
             this.txtUFEnderecoCliente.Size = new System.Drawing.Size(62, 23);
             this.txtUFEnderecoCliente.TabIndex = 9;
+            this.txtUFEnderecoCliente.Text = "PE";
             // 
             // consultarServico
             // 
@@ -1346,7 +1349,7 @@ namespace RegistroClientes
         private System.Windows.Forms.TextBox txtAdiantamento;
         private System.Windows.Forms.Label labelAdiantamento;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textObservacao;
         private System.Windows.Forms.Label labelObservacao;
         private System.Windows.Forms.Label labelNumeroNota;
         private System.Windows.Forms.Label labelAgradecimento;

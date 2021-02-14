@@ -6,7 +6,7 @@ namespace BackEnd.Entidades
 {
 	public class Endereco
 	{
-		public int EnderecoId { get; set; }
+		public int Id { get; set; }
 		public string UF { get; set; }
 		public string Cidade { get; set; }
 		public string Bairro { get; set; }

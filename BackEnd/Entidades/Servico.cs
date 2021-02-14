@@ -6,7 +6,7 @@ namespace BackEnd.Entidades
 {
 	public class Servico
 	{
-		public int ServicoId { get; set; }
+		public int Id { get; set; }
 		public DateTime DataRegistro { get; set; }
 		public DateTime PrevisaoEntrega { get; set; }
 		public double ValorTotal { get; set; }
@@ -16,7 +16,7 @@ namespace BackEnd.Entidades
 		public int ClienteId { get; set; }
 		public Cliente Cliente { get; set; }
 
-		public List<ItemServico> ItensServico { get; } = new List<ItemServico>();
+		public List<ItemServico> ItensServico { get; set;  } = new List<ItemServico>();
 
 		public double ValorDevido => ValorTotal - ValorAdiantamento;
 	}
