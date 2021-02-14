@@ -40,21 +40,21 @@ namespace RegistroClientes
             this.labelAgradecimento = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico15 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico15 = new System.Windows.Forms.TextBox();
+            this.txtServico15 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico14 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico14 = new System.Windows.Forms.TextBox();
+            this.txtServico14 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico13 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico13 = new System.Windows.Forms.TextBox();
+            this.txtServico13 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico12 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico12 = new System.Windows.Forms.TextBox();
+            this.txtServico12 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico11 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico11 = new System.Windows.Forms.TextBox();
+            this.txtServico11 = new System.Windows.Forms.TextBox();
             this.labelServicos = new System.Windows.Forms.Label();
             this.labelTotalServicos = new System.Windows.Forms.Label();
             this.txtQuantidadeServico1 = new System.Windows.Forms.TextBox();
@@ -207,7 +207,7 @@ namespace RegistroClientes
             this.textObservacao.Multiline = true;
             this.textObservacao.Name = "textObservacao";
             this.textObservacao.Size = new System.Drawing.Size(456, 72);
-            this.textObservacao.TabIndex = 22;
+            this.textObservacao.TabIndex = 57;
             this.textObservacao.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // labelDescricao
@@ -247,7 +247,7 @@ namespace RegistroClientes
             this.btnSalvar.Location = new System.Drawing.Point(475, 32);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(83, 72);
-            this.btnSalvar.TabIndex = 25;
+            this.btnSalvar.TabIndex = 58;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -257,21 +257,21 @@ namespace RegistroClientes
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.textBox15);
-            this.panel5.Controls.Add(this.textBox16);
-            this.panel5.Controls.Add(this.textBox17);
-            this.panel5.Controls.Add(this.textBox12);
-            this.panel5.Controls.Add(this.textBox13);
-            this.panel5.Controls.Add(this.textBox14);
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.textBox10);
-            this.panel5.Controls.Add(this.textBox11);
-            this.panel5.Controls.Add(this.textBox6);
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.textBox8);
-            this.panel5.Controls.Add(this.textBox3);
-            this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Controls.Add(this.textBox5);
+            this.panel5.Controls.Add(this.txtTotalServico15);
+            this.panel5.Controls.Add(this.txtQuantidadeServico15);
+            this.panel5.Controls.Add(this.txtServico15);
+            this.panel5.Controls.Add(this.txtTotalServico14);
+            this.panel5.Controls.Add(this.txtQuantidadeServico14);
+            this.panel5.Controls.Add(this.txtServico14);
+            this.panel5.Controls.Add(this.txtTotalServico13);
+            this.panel5.Controls.Add(this.txtQuantidadeServico13);
+            this.panel5.Controls.Add(this.txtServico13);
+            this.panel5.Controls.Add(this.txtTotalServico12);
+            this.panel5.Controls.Add(this.txtQuantidadeServico12);
+            this.panel5.Controls.Add(this.txtServico12);
+            this.panel5.Controls.Add(this.txtTotalServico11);
+            this.panel5.Controls.Add(this.txtQuantidadeServico11);
+            this.panel5.Controls.Add(this.txtServico11);
             this.panel5.Controls.Add(this.labelServicos);
             this.panel5.Controls.Add(this.labelTotalServicos);
             this.panel5.Controls.Add(this.txtQuantidadeServico1);
@@ -310,170 +310,170 @@ namespace RegistroClientes
             this.panel5.Size = new System.Drawing.Size(568, 493);
             this.panel5.TabIndex = 2;
             // 
-            // textBox15
+            // txtTotalServico15
             // 
-            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTotalServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox15.Location = new System.Drawing.Point(475, 459);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(84, 23);
-            this.textBox15.TabIndex = 36;
+            this.txtTotalServico15.Location = new System.Drawing.Point(475, 459);
+            this.txtTotalServico15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtTotalServico15.Name = "txtTotalServico15";
+            this.txtTotalServico15.Size = new System.Drawing.Size(84, 23);
+            this.txtTotalServico15.TabIndex = 54;
             // 
-            // textBox16
+            // txtQuantidadeServico15
             // 
-            this.textBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtQuantidadeServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox16.Location = new System.Drawing.Point(7, 459);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(62, 23);
-            this.textBox16.TabIndex = 38;
+            this.txtQuantidadeServico15.Location = new System.Drawing.Point(7, 459);
+            this.txtQuantidadeServico15.Margin = new System.Windows.Forms.Padding(10);
+            this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
+            this.txtQuantidadeServico15.Size = new System.Drawing.Size(62, 23);
+            this.txtQuantidadeServico15.TabIndex = 52;
             // 
-            // textBox17
+            // txtServico15
             // 
-            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox17.Location = new System.Drawing.Point(81, 459);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(382, 23);
-            this.textBox17.TabIndex = 37;
+            this.txtServico15.Location = new System.Drawing.Point(81, 459);
+            this.txtServico15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtServico15.Name = "txtServico15";
+            this.txtServico15.Size = new System.Drawing.Size(382, 23);
+            this.txtServico15.TabIndex = 53;
             // 
-            // textBox12
+            // txtTotalServico14
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTotalServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.Location = new System.Drawing.Point(475, 427);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(84, 23);
-            this.textBox12.TabIndex = 33;
+            this.txtTotalServico14.Location = new System.Drawing.Point(475, 427);
+            this.txtTotalServico14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtTotalServico14.Name = "txtTotalServico14";
+            this.txtTotalServico14.Size = new System.Drawing.Size(84, 23);
+            this.txtTotalServico14.TabIndex = 51;
             // 
-            // textBox13
+            // txtQuantidadeServico14
             // 
-            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtQuantidadeServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Location = new System.Drawing.Point(7, 427);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(62, 23);
-            this.textBox13.TabIndex = 35;
+            this.txtQuantidadeServico14.Location = new System.Drawing.Point(7, 427);
+            this.txtQuantidadeServico14.Margin = new System.Windows.Forms.Padding(10);
+            this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
+            this.txtQuantidadeServico14.Size = new System.Drawing.Size(62, 23);
+            this.txtQuantidadeServico14.TabIndex = 49;
             // 
-            // textBox14
+            // txtServico14
             // 
-            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14.Location = new System.Drawing.Point(81, 427);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(382, 23);
-            this.textBox14.TabIndex = 34;
+            this.txtServico14.Location = new System.Drawing.Point(81, 427);
+            this.txtServico14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtServico14.Name = "txtServico14";
+            this.txtServico14.Size = new System.Drawing.Size(382, 23);
+            this.txtServico14.TabIndex = 50;
             // 
-            // textBox9
+            // txtTotalServico13
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTotalServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Location = new System.Drawing.Point(475, 396);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(84, 23);
-            this.textBox9.TabIndex = 30;
+            this.txtTotalServico13.Location = new System.Drawing.Point(475, 396);
+            this.txtTotalServico13.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtTotalServico13.Name = "txtTotalServico13";
+            this.txtTotalServico13.Size = new System.Drawing.Size(84, 23);
+            this.txtTotalServico13.TabIndex = 48;
             // 
-            // textBox10
+            // txtQuantidadeServico13
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtQuantidadeServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Location = new System.Drawing.Point(7, 396);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(62, 23);
-            this.textBox10.TabIndex = 32;
+            this.txtQuantidadeServico13.Location = new System.Drawing.Point(7, 396);
+            this.txtQuantidadeServico13.Margin = new System.Windows.Forms.Padding(10);
+            this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
+            this.txtQuantidadeServico13.Size = new System.Drawing.Size(62, 23);
+            this.txtQuantidadeServico13.TabIndex = 46;
             // 
-            // textBox11
+            // txtServico13
             // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.Location = new System.Drawing.Point(81, 396);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(382, 23);
-            this.textBox11.TabIndex = 31;
+            this.txtServico13.Location = new System.Drawing.Point(81, 396);
+            this.txtServico13.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtServico13.Name = "txtServico13";
+            this.txtServico13.Size = new System.Drawing.Size(382, 23);
+            this.txtServico13.TabIndex = 47;
             // 
-            // textBox6
+            // txtTotalServico12
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTotalServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(475, 365);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(84, 23);
-            this.textBox6.TabIndex = 27;
+            this.txtTotalServico12.Location = new System.Drawing.Point(475, 365);
+            this.txtTotalServico12.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtTotalServico12.Name = "txtTotalServico12";
+            this.txtTotalServico12.Size = new System.Drawing.Size(84, 23);
+            this.txtTotalServico12.TabIndex = 45;
             // 
-            // textBox7
+            // txtQuantidadeServico12
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtQuantidadeServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(7, 365);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(62, 23);
-            this.textBox7.TabIndex = 29;
+            this.txtQuantidadeServico12.Location = new System.Drawing.Point(7, 365);
+            this.txtQuantidadeServico12.Margin = new System.Windows.Forms.Padding(10);
+            this.txtQuantidadeServico12.Name = "txtQuantidadeServico12";
+            this.txtQuantidadeServico12.Size = new System.Drawing.Size(62, 23);
+            this.txtQuantidadeServico12.TabIndex = 43;
             // 
-            // textBox8
+            // txtServico12
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(81, 365);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(382, 23);
-            this.textBox8.TabIndex = 28;
+            this.txtServico12.Location = new System.Drawing.Point(81, 365);
+            this.txtServico12.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtServico12.Name = "txtServico12";
+            this.txtServico12.Size = new System.Drawing.Size(382, 23);
+            this.txtServico12.TabIndex = 44;
             // 
-            // textBox3
+            // txtTotalServico11
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTotalServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(475, 332);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(84, 23);
-            this.textBox3.TabIndex = 24;
+            this.txtTotalServico11.Location = new System.Drawing.Point(475, 332);
+            this.txtTotalServico11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtTotalServico11.Name = "txtTotalServico11";
+            this.txtTotalServico11.Size = new System.Drawing.Size(84, 23);
+            this.txtTotalServico11.TabIndex = 42;
             // 
-            // textBox4
+            // txtQuantidadeServico11
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtQuantidadeServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(7, 332);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(62, 23);
-            this.textBox4.TabIndex = 26;
+            this.txtQuantidadeServico11.Location = new System.Drawing.Point(7, 332);
+            this.txtQuantidadeServico11.Margin = new System.Windows.Forms.Padding(10);
+            this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
+            this.txtQuantidadeServico11.Size = new System.Drawing.Size(62, 23);
+            this.txtQuantidadeServico11.TabIndex = 40;
             // 
-            // textBox5
+            // txtServico11
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(81, 332);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(382, 23);
-            this.textBox5.TabIndex = 25;
+            this.txtServico11.Location = new System.Drawing.Point(81, 332);
+            this.txtServico11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
+            this.txtServico11.Name = "txtServico11";
+            this.txtServico11.Size = new System.Drawing.Size(382, 23);
+            this.txtServico11.TabIndex = 41;
             // 
             // labelServicos
             // 
@@ -508,7 +508,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico1.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtQuantidadeServico1.Name = "txtQuantidadeServico1";
             this.txtQuantidadeServico1.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico1.TabIndex = 19;
+            this.txtQuantidadeServico1.TabIndex = 10;
             // 
             // txtQuantidadeServico2
             // 
@@ -519,7 +519,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico2.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico2.Name = "txtQuantidadeServico2";
             this.txtQuantidadeServico2.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico2.TabIndex = 20;
+            this.txtQuantidadeServico2.TabIndex = 13;
             // 
             // txtTotalServico10
             // 
@@ -530,7 +530,7 @@ namespace RegistroClientes
             this.txtTotalServico10.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico10.Name = "txtTotalServico10";
             this.txtTotalServico10.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico10.TabIndex = 19;
+            this.txtTotalServico10.TabIndex = 39;
             this.txtTotalServico10.TextChanged += new System.EventHandler(this.txtTotalServico10_TextChanged);
             // 
             // txtQuantidadeServico3
@@ -542,7 +542,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico3.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico3.Name = "txtQuantidadeServico3";
             this.txtQuantidadeServico3.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico3.TabIndex = 21;
+            this.txtQuantidadeServico3.TabIndex = 16;
             // 
             // txtTotalServico9
             // 
@@ -553,7 +553,7 @@ namespace RegistroClientes
             this.txtTotalServico9.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico9.Name = "txtTotalServico9";
             this.txtTotalServico9.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico9.TabIndex = 19;
+            this.txtTotalServico9.TabIndex = 36;
             // 
             // txtQuantidadeServico4
             // 
@@ -564,7 +564,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico4.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico4.Name = "txtQuantidadeServico4";
             this.txtQuantidadeServico4.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico4.TabIndex = 22;
+            this.txtQuantidadeServico4.TabIndex = 19;
             // 
             // txtTotalServico8
             // 
@@ -575,7 +575,7 @@ namespace RegistroClientes
             this.txtTotalServico8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico8.Name = "txtTotalServico8";
             this.txtTotalServico8.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico8.TabIndex = 19;
+            this.txtTotalServico8.TabIndex = 33;
             // 
             // labelServicosQuantidade
             // 
@@ -598,7 +598,7 @@ namespace RegistroClientes
             this.txtTotalServico7.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico7.Name = "txtTotalServico7";
             this.txtTotalServico7.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico7.TabIndex = 19;
+            this.txtTotalServico7.TabIndex = 30;
             // 
             // txtQuantidadeServico5
             // 
@@ -621,7 +621,7 @@ namespace RegistroClientes
             this.txtTotalServico6.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico6.Name = "txtTotalServico6";
             this.txtTotalServico6.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico6.TabIndex = 19;
+            this.txtTotalServico6.TabIndex = 27;
             // 
             // txtQuantidadeServico6
             // 
@@ -632,7 +632,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico6.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico6.Name = "txtQuantidadeServico6";
             this.txtQuantidadeServico6.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico6.TabIndex = 22;
+            this.txtQuantidadeServico6.TabIndex = 25;
             this.txtQuantidadeServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico5
@@ -644,7 +644,7 @@ namespace RegistroClientes
             this.txtTotalServico5.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico5.Name = "txtTotalServico5";
             this.txtTotalServico5.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico5.TabIndex = 19;
+            this.txtTotalServico5.TabIndex = 24;
             // 
             // txtQuantidadeServico7
             // 
@@ -655,7 +655,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico7.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
             this.txtQuantidadeServico7.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico7.TabIndex = 22;
+            this.txtQuantidadeServico7.TabIndex = 28;
             this.txtQuantidadeServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico4
@@ -667,7 +667,7 @@ namespace RegistroClientes
             this.txtTotalServico4.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico4.Name = "txtTotalServico4";
             this.txtTotalServico4.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico4.TabIndex = 19;
+            this.txtTotalServico4.TabIndex = 21;
             // 
             // txtQuantidadeServico8
             // 
@@ -678,7 +678,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico8.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
             this.txtQuantidadeServico8.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico8.TabIndex = 22;
+            this.txtQuantidadeServico8.TabIndex = 31;
             this.txtQuantidadeServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico3
@@ -690,7 +690,7 @@ namespace RegistroClientes
             this.txtTotalServico3.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico3.Name = "txtTotalServico3";
             this.txtTotalServico3.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico3.TabIndex = 19;
+            this.txtTotalServico3.TabIndex = 18;
             // 
             // txtQuantidadeServico9
             // 
@@ -701,7 +701,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico9.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico9.Name = "txtQuantidadeServico9";
             this.txtQuantidadeServico9.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico9.TabIndex = 22;
+            this.txtQuantidadeServico9.TabIndex = 34;
             this.txtQuantidadeServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico2
@@ -713,7 +713,7 @@ namespace RegistroClientes
             this.txtTotalServico2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico2.Name = "txtTotalServico2";
             this.txtTotalServico2.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico2.TabIndex = 19;
+            this.txtTotalServico2.TabIndex = 15;
             // 
             // txtQuantidadeServico10
             // 
@@ -724,7 +724,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico10.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
             this.txtQuantidadeServico10.Size = new System.Drawing.Size(62, 23);
-            this.txtQuantidadeServico10.TabIndex = 22;
+            this.txtQuantidadeServico10.TabIndex = 37;
             this.txtQuantidadeServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico1
@@ -736,7 +736,7 @@ namespace RegistroClientes
             this.txtTotalServico1.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico1.Name = "txtTotalServico1";
             this.txtTotalServico1.Size = new System.Drawing.Size(84, 23);
-            this.txtTotalServico1.TabIndex = 19;
+            this.txtTotalServico1.TabIndex = 12;
             // 
             // txtServico1
             // 
@@ -747,7 +747,7 @@ namespace RegistroClientes
             this.txtServico1.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico1.Name = "txtServico1";
             this.txtServico1.Size = new System.Drawing.Size(382, 23);
-            this.txtServico1.TabIndex = 19;
+            this.txtServico1.TabIndex = 11;
             this.txtServico1.TextChanged += new System.EventHandler(this.txtServico1_TextChanged);
             // 
             // txtServico10
@@ -759,7 +759,7 @@ namespace RegistroClientes
             this.txtServico10.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico10.Name = "txtServico10";
             this.txtServico10.Size = new System.Drawing.Size(382, 23);
-            this.txtServico10.TabIndex = 19;
+            this.txtServico10.TabIndex = 38;
             // 
             // txtServico2
             // 
@@ -770,7 +770,7 @@ namespace RegistroClientes
             this.txtServico2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico2.Name = "txtServico2";
             this.txtServico2.Size = new System.Drawing.Size(382, 23);
-            this.txtServico2.TabIndex = 19;
+            this.txtServico2.TabIndex = 14;
             // 
             // txtServico9
             // 
@@ -781,7 +781,7 @@ namespace RegistroClientes
             this.txtServico9.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico9.Name = "txtServico9";
             this.txtServico9.Size = new System.Drawing.Size(382, 23);
-            this.txtServico9.TabIndex = 19;
+            this.txtServico9.TabIndex = 35;
             // 
             // txtServico3
             // 
@@ -792,7 +792,7 @@ namespace RegistroClientes
             this.txtServico3.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico3.Name = "txtServico3";
             this.txtServico3.Size = new System.Drawing.Size(382, 23);
-            this.txtServico3.TabIndex = 19;
+            this.txtServico3.TabIndex = 17;
             // 
             // txtServico8
             // 
@@ -803,7 +803,7 @@ namespace RegistroClientes
             this.txtServico8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico8.Name = "txtServico8";
             this.txtServico8.Size = new System.Drawing.Size(382, 23);
-            this.txtServico8.TabIndex = 19;
+            this.txtServico8.TabIndex = 32;
             // 
             // txtServico4
             // 
@@ -814,7 +814,7 @@ namespace RegistroClientes
             this.txtServico4.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico4.Name = "txtServico4";
             this.txtServico4.Size = new System.Drawing.Size(382, 23);
-            this.txtServico4.TabIndex = 19;
+            this.txtServico4.TabIndex = 20;
             // 
             // txtServico7
             // 
@@ -825,7 +825,7 @@ namespace RegistroClientes
             this.txtServico7.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico7.Name = "txtServico7";
             this.txtServico7.Size = new System.Drawing.Size(382, 23);
-            this.txtServico7.TabIndex = 19;
+            this.txtServico7.TabIndex = 29;
             // 
             // txtServico5
             // 
@@ -836,7 +836,7 @@ namespace RegistroClientes
             this.txtServico5.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico5.Name = "txtServico5";
             this.txtServico5.Size = new System.Drawing.Size(382, 23);
-            this.txtServico5.TabIndex = 19;
+            this.txtServico5.TabIndex = 23;
             // 
             // txtServico6
             // 
@@ -847,7 +847,7 @@ namespace RegistroClientes
             this.txtServico6.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico6.Name = "txtServico6";
             this.txtServico6.Size = new System.Drawing.Size(382, 23);
-            this.txtServico6.TabIndex = 19;
+            this.txtServico6.TabIndex = 26;
             // 
             // panel4
             // 
@@ -895,7 +895,7 @@ namespace RegistroClientes
             this.dtPrevistaEntrega.Location = new System.Drawing.Point(7, 33);
             this.dtPrevistaEntrega.Name = "dtPrevistaEntrega";
             this.dtPrevistaEntrega.Size = new System.Drawing.Size(250, 23);
-            this.dtPrevistaEntrega.TabIndex = 24;
+            this.dtPrevistaEntrega.TabIndex = 55;
             // 
             // txtAdiantamento
             // 
@@ -906,7 +906,7 @@ namespace RegistroClientes
             this.txtAdiantamento.Margin = new System.Windows.Forms.Padding(10);
             this.txtAdiantamento.Name = "txtAdiantamento";
             this.txtAdiantamento.Size = new System.Drawing.Size(97, 23);
-            this.txtAdiantamento.TabIndex = 22;
+            this.txtAdiantamento.TabIndex = 56;
             this.txtAdiantamento.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // labelTotal
@@ -930,6 +930,7 @@ namespace RegistroClientes
             this.txtResta.Location = new System.Drawing.Point(379, 33);
             this.txtResta.Margin = new System.Windows.Forms.Padding(10);
             this.txtResta.Name = "txtResta";
+            this.txtResta.ReadOnly = true;
             this.txtResta.Size = new System.Drawing.Size(87, 23);
             this.txtResta.TabIndex = 22;
             this.txtResta.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -955,6 +956,7 @@ namespace RegistroClientes
             this.txtTotal.Location = new System.Drawing.Point(475, 33);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(10);
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(84, 23);
             this.txtTotal.TabIndex = 22;
             this.txtTotal.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -1089,7 +1091,7 @@ namespace RegistroClientes
             this.txtLinhaEnderecoCliente.Location = new System.Drawing.Point(7, 167);
             this.txtLinhaEnderecoCliente.Name = "txtLinhaEnderecoCliente";
             this.txtLinhaEnderecoCliente.Size = new System.Drawing.Size(552, 23);
-            this.txtLinhaEnderecoCliente.TabIndex = 17;
+            this.txtLinhaEnderecoCliente.TabIndex = 9;
             // 
             // labelNumeroEnderecoCliente
             // 
@@ -1118,7 +1120,7 @@ namespace RegistroClientes
             this.txtNumeroEnderecoCliente.Location = new System.Drawing.Point(498, 119);
             this.txtNumeroEnderecoCliente.Name = "txtNumeroEnderecoCliente";
             this.txtNumeroEnderecoCliente.Size = new System.Drawing.Size(62, 23);
-            this.txtNumeroEnderecoCliente.TabIndex = 15;
+            this.txtNumeroEnderecoCliente.TabIndex = 8;
             // 
             // labelEmailCliente
             // 
@@ -1141,7 +1143,7 @@ namespace RegistroClientes
             this.txtBairroEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtBairroEnderecoCliente.Name = "txtBairroEnderecoCliente";
             this.txtBairroEnderecoCliente.Size = new System.Drawing.Size(148, 23);
-            this.txtBairroEnderecoCliente.TabIndex = 14;
+            this.txtBairroEnderecoCliente.TabIndex = 7;
             // 
             // txtTelefoneFixoCliente
             // 
@@ -1152,7 +1154,7 @@ namespace RegistroClientes
             this.txtTelefoneFixoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneFixoCliente.Name = "txtTelefoneFixoCliente";
             this.txtTelefoneFixoCliente.Size = new System.Drawing.Size(222, 23);
-            this.txtTelefoneFixoCliente.TabIndex = 5;
+            this.txtTelefoneFixoCliente.TabIndex = 2;
             // 
             // labelBairroEnderecoCliente
             // 
@@ -1175,7 +1177,7 @@ namespace RegistroClientes
             this.txtTelefoneCelularCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneCelularCliente.Name = "txtTelefoneCelularCliente";
             this.txtTelefoneCelularCliente.Size = new System.Drawing.Size(222, 23);
-            this.txtTelefoneCelularCliente.TabIndex = 6;
+            this.txtTelefoneCelularCliente.TabIndex = 4;
             // 
             // labelCidadeEnderecoCliente
             // 
@@ -1210,7 +1212,7 @@ namespace RegistroClientes
             this.txtCidadeEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtCidadeEnderecoCliente.Name = "txtCidadeEnderecoCliente";
             this.txtCidadeEnderecoCliente.Size = new System.Drawing.Size(231, 23);
-            this.txtCidadeEnderecoCliente.TabIndex = 11;
+            this.txtCidadeEnderecoCliente.TabIndex = 6;
             // 
             // labelTelefoneCelularCliente
             // 
@@ -1244,7 +1246,7 @@ namespace RegistroClientes
             this.txtUFEnderecoCliente.Location = new System.Drawing.Point(8, 119);
             this.txtUFEnderecoCliente.Name = "txtUFEnderecoCliente";
             this.txtUFEnderecoCliente.Size = new System.Drawing.Size(62, 23);
-            this.txtUFEnderecoCliente.TabIndex = 9;
+            this.txtUFEnderecoCliente.TabIndex = 5;
             this.txtUFEnderecoCliente.Text = "PE";
             // 
             // consultarServico
@@ -1360,21 +1362,21 @@ namespace RegistroClientes
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel5;
-		private System.Windows.Forms.TextBox textBox15;
-		private System.Windows.Forms.TextBox textBox16;
-		private System.Windows.Forms.TextBox textBox17;
-		private System.Windows.Forms.TextBox textBox12;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.TextBox textBox14;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox txtTotalServico15;
+		private System.Windows.Forms.TextBox txtQuantidadeServico15;
+		private System.Windows.Forms.TextBox txtServico15;
+		private System.Windows.Forms.TextBox txtTotalServico14;
+		private System.Windows.Forms.TextBox txtQuantidadeServico14;
+		private System.Windows.Forms.TextBox txtServico14;
+		private System.Windows.Forms.TextBox txtTotalServico13;
+		private System.Windows.Forms.TextBox txtQuantidadeServico13;
+		private System.Windows.Forms.TextBox txtServico13;
+		private System.Windows.Forms.TextBox txtTotalServico12;
+		private System.Windows.Forms.TextBox txtQuantidadeServico12;
+		private System.Windows.Forms.TextBox txtServico12;
+		private System.Windows.Forms.TextBox txtTotalServico11;
+		private System.Windows.Forms.TextBox txtQuantidadeServico11;
+		private System.Windows.Forms.TextBox txtServico11;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel6;

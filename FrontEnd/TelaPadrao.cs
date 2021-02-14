@@ -46,13 +46,13 @@ namespace RegistroClientes
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            List<ItemServico> listaItemServicos = this.ObterItensServico();
+            List<ItemServico> listaItemServicos = ObterItensServico();
 
-            Endereco endereco = this.ObterEndereco();
+            Endereco endereco = ObterEndereco();
 
-            Cliente cliente = this.ObterCliente(endereco);
+            Cliente cliente = ObterCliente(endereco);
 
-            Servico servico = this.ObterServico(cliente, listaItemServicos);
+            Servico servico = ObterServico(cliente, listaItemServicos);
 
             _repositorioServico.CadastrarServico(servico);
         }
@@ -126,6 +126,162 @@ namespace RegistroClientes
                     Quantidade = Int32.Parse(txtQuantidadeServico2.Text),
                     Descricao = txtServico2.Text,
                     Valor = Convert.ToDouble(txtTotalServico2.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico3.Text) &&
+                !string.IsNullOrEmpty(txtServico3.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico3.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico3.Text),
+                    Descricao = txtServico3.Text,
+                    Valor = Convert.ToDouble(txtTotalServico3.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico4.Text) &&
+                !string.IsNullOrEmpty(txtServico4.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico4.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico4.Text),
+                    Descricao = txtServico4.Text,
+                    Valor = Convert.ToDouble(txtTotalServico4.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico5.Text) &&
+                !string.IsNullOrEmpty(txtServico5.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico5.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico5.Text),
+                    Descricao = txtServico5.Text,
+                    Valor = Convert.ToDouble(txtTotalServico5.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico6.Text) &&
+                !string.IsNullOrEmpty(txtServico6.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico6.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico6.Text),
+                    Descricao = txtServico6.Text,
+                    Valor = Convert.ToDouble(txtTotalServico6.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico7.Text) &&
+                !string.IsNullOrEmpty(txtServico7.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico7.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico7.Text),
+                    Descricao = txtServico7.Text,
+                    Valor = Convert.ToDouble(txtTotalServico7.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico8.Text) &&
+                !string.IsNullOrEmpty(txtServico8.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico8.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico8.Text),
+                    Descricao = txtServico8.Text,
+                    Valor = Convert.ToDouble(txtTotalServico8.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico9.Text) &&
+                !string.IsNullOrEmpty(txtServico9.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico9.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico9.Text),
+                    Descricao = txtServico9.Text,
+                    Valor = Convert.ToDouble(txtTotalServico9.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico10.Text) &&
+                !string.IsNullOrEmpty(txtServico10.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico10.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico10.Text),
+                    Descricao = txtServico10.Text,
+                    Valor = Convert.ToDouble(txtTotalServico10.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico11.Text) &&
+                !string.IsNullOrEmpty(txtServico11.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico11.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico11.Text),
+                    Descricao = txtServico11.Text,
+                    Valor = Convert.ToDouble(txtTotalServico11.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico12.Text) &&
+                !string.IsNullOrEmpty(txtServico12.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico12.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico12.Text),
+                    Descricao = txtServico12.Text,
+                    Valor = Convert.ToDouble(txtTotalServico12.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico13.Text) &&
+                !string.IsNullOrEmpty(txtServico13.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico13.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico13.Text),
+                    Descricao = txtServico13.Text,
+                    Valor = Convert.ToDouble(txtTotalServico13.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico14.Text) &&
+                !string.IsNullOrEmpty(txtServico14.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico14.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico14.Text),
+                    Descricao = txtServico14.Text,
+                    Valor = Convert.ToDouble(txtTotalServico14.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                });
+            }
+
+            if (!string.IsNullOrEmpty(txtQuantidadeServico15.Text) &&
+                !string.IsNullOrEmpty(txtServico15.Text) &&
+                !string.IsNullOrEmpty(txtTotalServico15.Text))
+            {
+                listaItemServicos.Add(new ItemServico
+                {
+                    Quantidade = Int32.Parse(txtQuantidadeServico15.Text),
+                    Descricao = txtServico15.Text,
+                    Valor = Convert.ToDouble(txtTotalServico15.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
                 });
             }
 
