@@ -54,9 +54,16 @@ namespace BackEnd.Repositorios
 
 		public string ObterIdProximaNota()
         {
-			var ultimoId = _db.Servicos.OrderByDescending(x => x.Id).FirstOrDefault().Id;
+            if (_db.Servicos.Any())
+            {
+				var ultimoId = _db.Servicos.OrderByDescending(x => x.Id).FirstOrDefault().Id;
 
-			return $"{ultimoId + 1}";
+				return $"{ultimoId + 1}";
+			}
+			else
+            {
+				return "0";
+            }
         }
 	}
 }
