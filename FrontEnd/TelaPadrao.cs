@@ -17,6 +17,7 @@ namespace RegistroClientes
 		public TelaPadrao()
 		{
 			InitializeComponent();
+            labelNumeroNota.Text = _repositorioServico.ObterIdProximaNota();
 		}
 
 		private void tabPage1_Click(object sender, EventArgs e)
@@ -34,14 +35,263 @@ namespace RegistroClientes
 
 		}
 
-        private void txtQuantidadeServico5_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label2_Click_2(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void label2_Click_3(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtServico1_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico1_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico2_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico3_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico4_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico5_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico6_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico7_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico8_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico9_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico10_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico11_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico12_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico13_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico14_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtTotalServico15_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico1_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico2_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico2_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico3_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico4_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico5_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico6_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico7_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico8_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico9_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico10_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico11_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico12_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico13_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico14_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtServico15_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico3_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico4_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico5_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico6_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico7_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico8_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico9_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico10_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico11_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico12_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico13_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico14_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void txtQuantidadeServico15_TextChanged(object sender, EventArgs e)
+        {
+            AtualizarTxtValorTotal();
+        }
+
+        private void AtualizarTxtValorTotal()
+        {
+            List<ItemServico> listaItemServicos = ObterItensServico();
+
+            var valorTotal = _repositorioServico.ObterValorTotalDaNota(listaItemServicos);
+
+            txtTotal.Text = $"{valorTotal.ToString("C")}";
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -286,36 +536,6 @@ namespace RegistroClientes
             }
 
             return listaItemServicos;
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label2_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTotalServico10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtServico1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

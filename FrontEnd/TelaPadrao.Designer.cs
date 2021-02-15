@@ -509,6 +509,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico1.Name = "txtQuantidadeServico1";
             this.txtQuantidadeServico1.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico1.TabIndex = 10;
+            this.txtQuantidadeServico1.TextChanged += new System.EventHandler(this.txtQuantidadeServico1_TextChanged);
             // 
             // txtQuantidadeServico2
             // 
@@ -520,6 +521,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico2.Name = "txtQuantidadeServico2";
             this.txtQuantidadeServico2.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico2.TabIndex = 13;
+            this.txtQuantidadeServico2.TextChanged += new System.EventHandler(this.txtQuantidadeServico2_TextChanged);
             // 
             // txtTotalServico10
             // 
@@ -543,6 +545,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico3.Name = "txtQuantidadeServico3";
             this.txtQuantidadeServico3.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico3.TabIndex = 16;
+            this.txtQuantidadeServico3.TextChanged += new System.EventHandler(this.txtQuantidadeServico3_TextChanged);
             // 
             // txtTotalServico9
             // 
@@ -714,6 +717,7 @@ namespace RegistroClientes
             this.txtTotalServico2.Name = "txtTotalServico2";
             this.txtTotalServico2.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico2.TabIndex = 15;
+            this.txtTotalServico2.TextChanged += new System.EventHandler(this.txtTotalServico2_TextChanged);
             // 
             // txtQuantidadeServico10
             // 
@@ -737,6 +741,7 @@ namespace RegistroClientes
             this.txtTotalServico1.Name = "txtTotalServico1";
             this.txtTotalServico1.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico1.TabIndex = 12;
+            this.txtTotalServico1.TextChanged += new System.EventHandler(this.txtTotalServico1_TextChanged);
             // 
             // txtServico1
             // 
@@ -771,6 +776,7 @@ namespace RegistroClientes
             this.txtServico2.Name = "txtServico2";
             this.txtServico2.Size = new System.Drawing.Size(382, 23);
             this.txtServico2.TabIndex = 14;
+            this.txtServico2.TextChanged += new System.EventHandler(this.txtServico2_TextChanged);
             // 
             // txtServico9
             // 

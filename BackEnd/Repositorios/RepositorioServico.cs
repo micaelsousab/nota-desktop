@@ -51,5 +51,12 @@ namespace BackEnd.Repositorios
         {
 			return _db.Servicos.Include(x => x.Cliente.Endereco).ToList();
         }
+
+		public string ObterIdProximaNota()
+        {
+			var ultimoId = _db.Servicos.OrderByDescending(x => x.Id).FirstOrDefault().Id;
+
+			return $"{ultimoId + 1}";
+        }
 	}
 }
