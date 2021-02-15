@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -37,7 +38,7 @@ namespace RegistroClientes
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            ObterValorRestante();
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -283,6 +284,27 @@ namespace RegistroClientes
         private void txtQuantidadeServico15_TextChanged(object sender, EventArgs e)
         {
             AtualizarTxtValorTotal();
+        }
+
+        private void ObterValorRestante()
+        {
+            List<ItemServico> listaItemServicos = ObterItensServico();
+
+            if (listaItemServicos.Any())
+            {
+                var valorTotalDaNota = _repositorioServico.ObterValorTotalDaNota(listaItemServicos);
+
+                if (!string.IsNullOrEmpty(txtAdiantamento.Text))
+                {
+                    var adiantamento = Convert.ToDouble(txtAdiantamento.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
+
+                    txtResta.Text = $"{(valorTotalDaNota - adiantamento).ToString("C")}";
+                }
+                else
+                {
+                    txtResta.Text = $"{(valorTotalDaNota).ToString("C")}";
+                }
+            }
         }
 
         private void AtualizarTxtValorTotal()
@@ -536,6 +558,11 @@ namespace RegistroClientes
             }
 
             return listaItemServicos;
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
