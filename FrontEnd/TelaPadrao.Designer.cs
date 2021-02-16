@@ -1428,5 +1428,5 @@ namespace RegistroClientes
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel6;
-	}
+    }
 }
