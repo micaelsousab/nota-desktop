@@ -29,7 +29,53 @@
         private void InitializeComponent()
         {
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtObservacao = new System.Windows.Forms.TextBox();
+            this.txtDataNota = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtDataEntrega = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtAdiantamento = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtResta = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtQuantidadeServico15 = new System.Windows.Forms.TextBox();
+            this.txtServico15 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico15 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico14 = new System.Windows.Forms.TextBox();
+            this.txtServico14 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico14 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico13 = new System.Windows.Forms.TextBox();
+            this.txtServico13 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico13 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico12 = new System.Windows.Forms.TextBox();
+            this.txtServico12 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico12 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico11 = new System.Windows.Forms.TextBox();
+            this.txtServico11 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico11 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico10 = new System.Windows.Forms.TextBox();
+            this.txtServico10 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico10 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico9 = new System.Windows.Forms.TextBox();
+            this.txtServico9 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico9 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico8 = new System.Windows.Forms.TextBox();
+            this.txtServico8 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico8 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico7 = new System.Windows.Forms.TextBox();
+            this.txtServico7 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico7 = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeServico6 = new System.Windows.Forms.TextBox();
+            this.txtServico6 = new System.Windows.Forms.TextBox();
+            this.txtTotalServico6 = new System.Windows.Forms.TextBox();
             this.txtTotalServico5 = new System.Windows.Forms.TextBox();
             this.txtServico5 = new System.Windows.Forms.TextBox();
             this.txtQuantidadeServico5 = new System.Windows.Forms.TextBox();
@@ -76,37 +122,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico6 = new System.Windows.Forms.TextBox();
-            this.txtServico6 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico6 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico7 = new System.Windows.Forms.TextBox();
-            this.txtServico7 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico7 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico8 = new System.Windows.Forms.TextBox();
-            this.txtServico8 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico8 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico9 = new System.Windows.Forms.TextBox();
-            this.txtServico9 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico9 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico10 = new System.Windows.Forms.TextBox();
-            this.txtServico10 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico10 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico11 = new System.Windows.Forms.TextBox();
-            this.txtServico11 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico11 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico12 = new System.Windows.Forms.TextBox();
-            this.txtServico12 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico12 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico13 = new System.Windows.Forms.TextBox();
-            this.txtServico13 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico13 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico14 = new System.Windows.Forms.TextBox();
-            this.txtServico14 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico14 = new System.Windows.Forms.TextBox();
-            this.txtTotalServico15 = new System.Windows.Forms.TextBox();
-            this.txtServico15 = new System.Windows.Forms.TextBox();
-            this.txtQuantidadeServico15 = new System.Windows.Forms.TextBox();
+            this.labelId = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -116,6 +134,7 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.panel1);
@@ -126,6 +145,164 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Visualizar Nota";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label23);
+            this.panel4.Controls.Add(this.label22);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.label21);
+            this.panel4.Controls.Add(this.txtObservacao);
+            this.panel4.Controls.Add(this.txtDataNota);
+            this.panel4.Controls.Add(this.label20);
+            this.panel4.Controls.Add(this.txtDataEntrega);
+            this.panel4.Controls.Add(this.label19);
+            this.panel4.Controls.Add(this.txtAdiantamento);
+            this.panel4.Controls.Add(this.label18);
+            this.panel4.Controls.Add(this.txtResta);
+            this.panel4.Controls.Add(this.label17);
+            this.panel4.Controls.Add(this.txtTotal);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Location = new System.Drawing.Point(4, 781);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(564, 223);
+            this.panel4.TabIndex = 1;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(19, 162);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(523, 30);
+            this.label23.TabIndex = 27;
+            this.label23.Text = "AGRADECEMOS A PREFERÊNCIA! VOLTE SEMPRE.";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(8, 198);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(545, 15);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "obs: O cliente perderá direito ao aparelho, caso não procure no prazo de 60 dias " +
+    "a partir da data acima.";
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(462, 79);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 70);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "SALVAR";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(9, 61);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(81, 15);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "OBSERVAÇÃO";
+            // 
+            // txtObservacao
+            // 
+            this.txtObservacao.Location = new System.Drawing.Point(9, 79);
+            this.txtObservacao.Multiline = true;
+            this.txtObservacao.Name = "txtObservacao";
+            this.txtObservacao.Size = new System.Drawing.Size(447, 70);
+            this.txtObservacao.TabIndex = 2;
+            // 
+            // txtDataNota
+            // 
+            this.txtDataNota.Location = new System.Drawing.Point(163, 22);
+            this.txtDataNota.Name = "txtDataNota";
+            this.txtDataNota.ReadOnly = true;
+            this.txtDataNota.Size = new System.Drawing.Size(102, 23);
+            this.txtDataNota.TabIndex = 1;
+            this.txtDataNota.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(163, 4);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(68, 15);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "DATA NOTA";
+            // 
+            // txtDataEntrega
+            // 
+            this.txtDataEntrega.Location = new System.Drawing.Point(9, 22);
+            this.txtDataEntrega.Name = "txtDataEntrega";
+            this.txtDataEntrega.ReadOnly = true;
+            this.txtDataEntrega.Size = new System.Drawing.Size(148, 23);
+            this.txtDataEntrega.TabIndex = 1;
+            this.txtDataEntrega.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 4);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(148, 15);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "DATA PREVISTA / ENTREGA";
+            // 
+            // txtAdiantamento
+            // 
+            this.txtAdiantamento.Location = new System.Drawing.Point(271, 22);
+            this.txtAdiantamento.Name = "txtAdiantamento";
+            this.txtAdiantamento.ReadOnly = true;
+            this.txtAdiantamento.Size = new System.Drawing.Size(99, 23);
+            this.txtAdiantamento.TabIndex = 1;
+            this.txtAdiantamento.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(271, 4);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(96, 15);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "ADIANTAMENTO";
+            // 
+            // txtResta
+            // 
+            this.txtResta.Location = new System.Drawing.Point(376, 22);
+            this.txtResta.Name = "txtResta";
+            this.txtResta.Size = new System.Drawing.Size(80, 23);
+            this.txtResta.TabIndex = 1;
+            this.txtResta.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(376, 4);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 15);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "RESTA";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(462, 22);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(93, 23);
+            this.txtTotal.TabIndex = 1;
+            this.txtTotal.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(462, 4);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 15);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "TOTAL R$";
             // 
             // panel3
             // 
@@ -179,8 +356,278 @@
             this.panel3.Controls.Add(this.label13);
             this.panel3.Location = new System.Drawing.Point(3, 305);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(565, 508);
+            this.panel3.Size = new System.Drawing.Size(565, 469);
             this.panel3.TabIndex = 0;
+            // 
+            // txtQuantidadeServico15
+            // 
+            this.txtQuantidadeServico15.Location = new System.Drawing.Point(10, 437);
+            this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
+            this.txtQuantidadeServico15.ReadOnly = true;
+            this.txtQuantidadeServico15.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico15.TabIndex = 1;
+            this.txtQuantidadeServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico15
+            // 
+            this.txtServico15.Location = new System.Drawing.Point(81, 437);
+            this.txtServico15.Name = "txtServico15";
+            this.txtServico15.ReadOnly = true;
+            this.txtServico15.Size = new System.Drawing.Size(383, 23);
+            this.txtServico15.TabIndex = 1;
+            this.txtServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico15
+            // 
+            this.txtTotalServico15.Location = new System.Drawing.Point(476, 437);
+            this.txtTotalServico15.Name = "txtTotalServico15";
+            this.txtTotalServico15.ReadOnly = true;
+            this.txtTotalServico15.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico15.TabIndex = 1;
+            this.txtTotalServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico14
+            // 
+            this.txtQuantidadeServico14.Location = new System.Drawing.Point(10, 408);
+            this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
+            this.txtQuantidadeServico14.ReadOnly = true;
+            this.txtQuantidadeServico14.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico14.TabIndex = 1;
+            this.txtQuantidadeServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico14
+            // 
+            this.txtServico14.Location = new System.Drawing.Point(81, 408);
+            this.txtServico14.Name = "txtServico14";
+            this.txtServico14.ReadOnly = true;
+            this.txtServico14.Size = new System.Drawing.Size(383, 23);
+            this.txtServico14.TabIndex = 1;
+            this.txtServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico14
+            // 
+            this.txtTotalServico14.Location = new System.Drawing.Point(476, 408);
+            this.txtTotalServico14.Name = "txtTotalServico14";
+            this.txtTotalServico14.ReadOnly = true;
+            this.txtTotalServico14.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico14.TabIndex = 1;
+            this.txtTotalServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico13
+            // 
+            this.txtQuantidadeServico13.Location = new System.Drawing.Point(10, 379);
+            this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
+            this.txtQuantidadeServico13.ReadOnly = true;
+            this.txtQuantidadeServico13.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico13.TabIndex = 1;
+            this.txtQuantidadeServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico13
+            // 
+            this.txtServico13.Location = new System.Drawing.Point(81, 379);
+            this.txtServico13.Name = "txtServico13";
+            this.txtServico13.ReadOnly = true;
+            this.txtServico13.Size = new System.Drawing.Size(383, 23);
+            this.txtServico13.TabIndex = 1;
+            this.txtServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico13
+            // 
+            this.txtTotalServico13.Location = new System.Drawing.Point(476, 379);
+            this.txtTotalServico13.Name = "txtTotalServico13";
+            this.txtTotalServico13.ReadOnly = true;
+            this.txtTotalServico13.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico13.TabIndex = 1;
+            this.txtTotalServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico12
+            // 
+            this.txtQuantidadeServico12.Location = new System.Drawing.Point(10, 350);
+            this.txtQuantidadeServico12.Name = "txtQuantidadeServico12";
+            this.txtQuantidadeServico12.ReadOnly = true;
+            this.txtQuantidadeServico12.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico12.TabIndex = 1;
+            this.txtQuantidadeServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico12
+            // 
+            this.txtServico12.Location = new System.Drawing.Point(81, 350);
+            this.txtServico12.Name = "txtServico12";
+            this.txtServico12.ReadOnly = true;
+            this.txtServico12.Size = new System.Drawing.Size(383, 23);
+            this.txtServico12.TabIndex = 1;
+            this.txtServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico12
+            // 
+            this.txtTotalServico12.Location = new System.Drawing.Point(476, 350);
+            this.txtTotalServico12.Name = "txtTotalServico12";
+            this.txtTotalServico12.ReadOnly = true;
+            this.txtTotalServico12.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico12.TabIndex = 1;
+            this.txtTotalServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico11
+            // 
+            this.txtQuantidadeServico11.Location = new System.Drawing.Point(10, 321);
+            this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
+            this.txtQuantidadeServico11.ReadOnly = true;
+            this.txtQuantidadeServico11.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico11.TabIndex = 1;
+            this.txtQuantidadeServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico11
+            // 
+            this.txtServico11.Location = new System.Drawing.Point(81, 321);
+            this.txtServico11.Name = "txtServico11";
+            this.txtServico11.ReadOnly = true;
+            this.txtServico11.Size = new System.Drawing.Size(383, 23);
+            this.txtServico11.TabIndex = 1;
+            this.txtServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico11
+            // 
+            this.txtTotalServico11.Location = new System.Drawing.Point(476, 321);
+            this.txtTotalServico11.Name = "txtTotalServico11";
+            this.txtTotalServico11.ReadOnly = true;
+            this.txtTotalServico11.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico11.TabIndex = 1;
+            this.txtTotalServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico10
+            // 
+            this.txtQuantidadeServico10.Location = new System.Drawing.Point(10, 292);
+            this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
+            this.txtQuantidadeServico10.ReadOnly = true;
+            this.txtQuantidadeServico10.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico10.TabIndex = 1;
+            this.txtQuantidadeServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico10
+            // 
+            this.txtServico10.Location = new System.Drawing.Point(81, 292);
+            this.txtServico10.Name = "txtServico10";
+            this.txtServico10.ReadOnly = true;
+            this.txtServico10.Size = new System.Drawing.Size(383, 23);
+            this.txtServico10.TabIndex = 1;
+            this.txtServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico10
+            // 
+            this.txtTotalServico10.Location = new System.Drawing.Point(476, 292);
+            this.txtTotalServico10.Name = "txtTotalServico10";
+            this.txtTotalServico10.ReadOnly = true;
+            this.txtTotalServico10.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico10.TabIndex = 1;
+            this.txtTotalServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico9
+            // 
+            this.txtQuantidadeServico9.Location = new System.Drawing.Point(10, 263);
+            this.txtQuantidadeServico9.Name = "txtQuantidadeServico9";
+            this.txtQuantidadeServico9.ReadOnly = true;
+            this.txtQuantidadeServico9.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico9.TabIndex = 1;
+            this.txtQuantidadeServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico9
+            // 
+            this.txtServico9.Location = new System.Drawing.Point(81, 263);
+            this.txtServico9.Name = "txtServico9";
+            this.txtServico9.ReadOnly = true;
+            this.txtServico9.Size = new System.Drawing.Size(383, 23);
+            this.txtServico9.TabIndex = 1;
+            this.txtServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico9
+            // 
+            this.txtTotalServico9.Location = new System.Drawing.Point(476, 263);
+            this.txtTotalServico9.Name = "txtTotalServico9";
+            this.txtTotalServico9.ReadOnly = true;
+            this.txtTotalServico9.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico9.TabIndex = 1;
+            this.txtTotalServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico8
+            // 
+            this.txtQuantidadeServico8.Location = new System.Drawing.Point(10, 234);
+            this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
+            this.txtQuantidadeServico8.ReadOnly = true;
+            this.txtQuantidadeServico8.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico8.TabIndex = 1;
+            this.txtQuantidadeServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico8
+            // 
+            this.txtServico8.Location = new System.Drawing.Point(81, 234);
+            this.txtServico8.Name = "txtServico8";
+            this.txtServico8.ReadOnly = true;
+            this.txtServico8.Size = new System.Drawing.Size(383, 23);
+            this.txtServico8.TabIndex = 1;
+            this.txtServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico8
+            // 
+            this.txtTotalServico8.Location = new System.Drawing.Point(476, 234);
+            this.txtTotalServico8.Name = "txtTotalServico8";
+            this.txtTotalServico8.ReadOnly = true;
+            this.txtTotalServico8.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico8.TabIndex = 1;
+            this.txtTotalServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico7
+            // 
+            this.txtQuantidadeServico7.Location = new System.Drawing.Point(10, 205);
+            this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
+            this.txtQuantidadeServico7.ReadOnly = true;
+            this.txtQuantidadeServico7.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico7.TabIndex = 1;
+            this.txtQuantidadeServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico7
+            // 
+            this.txtServico7.Location = new System.Drawing.Point(81, 205);
+            this.txtServico7.Name = "txtServico7";
+            this.txtServico7.ReadOnly = true;
+            this.txtServico7.Size = new System.Drawing.Size(383, 23);
+            this.txtServico7.TabIndex = 1;
+            this.txtServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico7
+            // 
+            this.txtTotalServico7.Location = new System.Drawing.Point(476, 205);
+            this.txtTotalServico7.Name = "txtTotalServico7";
+            this.txtTotalServico7.ReadOnly = true;
+            this.txtTotalServico7.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico7.TabIndex = 1;
+            this.txtTotalServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtQuantidadeServico6
+            // 
+            this.txtQuantidadeServico6.Location = new System.Drawing.Point(10, 176);
+            this.txtQuantidadeServico6.Name = "txtQuantidadeServico6";
+            this.txtQuantidadeServico6.ReadOnly = true;
+            this.txtQuantidadeServico6.Size = new System.Drawing.Size(59, 23);
+            this.txtQuantidadeServico6.TabIndex = 1;
+            this.txtQuantidadeServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtServico6
+            // 
+            this.txtServico6.Location = new System.Drawing.Point(81, 176);
+            this.txtServico6.Name = "txtServico6";
+            this.txtServico6.ReadOnly = true;
+            this.txtServico6.Size = new System.Drawing.Size(383, 23);
+            this.txtServico6.TabIndex = 1;
+            this.txtServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // txtTotalServico6
+            // 
+            this.txtTotalServico6.Location = new System.Drawing.Point(476, 176);
+            this.txtTotalServico6.Name = "txtTotalServico6";
+            this.txtTotalServico6.ReadOnly = true;
+            this.txtTotalServico6.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalServico6.TabIndex = 1;
+            this.txtTotalServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico5
             // 
@@ -532,6 +979,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelId);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -613,275 +1061,17 @@
             this.textBox6.TabIndex = 1;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // txtTotalServico6
+            // labelId
             // 
-            this.txtTotalServico6.Location = new System.Drawing.Point(476, 176);
-            this.txtTotalServico6.Name = "txtTotalServico6";
-            this.txtTotalServico6.ReadOnly = true;
-            this.txtTotalServico6.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico6.TabIndex = 1;
-            this.txtTotalServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico6
-            // 
-            this.txtServico6.Location = new System.Drawing.Point(81, 176);
-            this.txtServico6.Name = "txtServico6";
-            this.txtServico6.ReadOnly = true;
-            this.txtServico6.Size = new System.Drawing.Size(383, 23);
-            this.txtServico6.TabIndex = 1;
-            this.txtServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico6
-            // 
-            this.txtQuantidadeServico6.Location = new System.Drawing.Point(10, 176);
-            this.txtQuantidadeServico6.Name = "txtQuantidadeServico6";
-            this.txtQuantidadeServico6.ReadOnly = true;
-            this.txtQuantidadeServico6.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico6.TabIndex = 1;
-            this.txtQuantidadeServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico7
-            // 
-            this.txtTotalServico7.Location = new System.Drawing.Point(476, 205);
-            this.txtTotalServico7.Name = "txtTotalServico7";
-            this.txtTotalServico7.ReadOnly = true;
-            this.txtTotalServico7.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico7.TabIndex = 1;
-            this.txtTotalServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico7
-            // 
-            this.txtServico7.Location = new System.Drawing.Point(81, 205);
-            this.txtServico7.Name = "txtServico7";
-            this.txtServico7.ReadOnly = true;
-            this.txtServico7.Size = new System.Drawing.Size(383, 23);
-            this.txtServico7.TabIndex = 1;
-            this.txtServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico7
-            // 
-            this.txtQuantidadeServico7.Location = new System.Drawing.Point(10, 205);
-            this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
-            this.txtQuantidadeServico7.ReadOnly = true;
-            this.txtQuantidadeServico7.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico7.TabIndex = 1;
-            this.txtQuantidadeServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico8
-            // 
-            this.txtTotalServico8.Location = new System.Drawing.Point(476, 234);
-            this.txtTotalServico8.Name = "txtTotalServico8";
-            this.txtTotalServico8.ReadOnly = true;
-            this.txtTotalServico8.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico8.TabIndex = 1;
-            this.txtTotalServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico8
-            // 
-            this.txtServico8.Location = new System.Drawing.Point(81, 234);
-            this.txtServico8.Name = "txtServico8";
-            this.txtServico8.ReadOnly = true;
-            this.txtServico8.Size = new System.Drawing.Size(383, 23);
-            this.txtServico8.TabIndex = 1;
-            this.txtServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico8
-            // 
-            this.txtQuantidadeServico8.Location = new System.Drawing.Point(10, 234);
-            this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
-            this.txtQuantidadeServico8.ReadOnly = true;
-            this.txtQuantidadeServico8.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico8.TabIndex = 1;
-            this.txtQuantidadeServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico9
-            // 
-            this.txtTotalServico9.Location = new System.Drawing.Point(476, 263);
-            this.txtTotalServico9.Name = "txtTotalServico9";
-            this.txtTotalServico9.ReadOnly = true;
-            this.txtTotalServico9.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico9.TabIndex = 1;
-            this.txtTotalServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico9
-            // 
-            this.txtServico9.Location = new System.Drawing.Point(81, 263);
-            this.txtServico9.Name = "txtServico9";
-            this.txtServico9.ReadOnly = true;
-            this.txtServico9.Size = new System.Drawing.Size(383, 23);
-            this.txtServico9.TabIndex = 1;
-            this.txtServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico9
-            // 
-            this.txtQuantidadeServico9.Location = new System.Drawing.Point(10, 263);
-            this.txtQuantidadeServico9.Name = "txtQuantidadeServico9";
-            this.txtQuantidadeServico9.ReadOnly = true;
-            this.txtQuantidadeServico9.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico9.TabIndex = 1;
-            this.txtQuantidadeServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico10
-            // 
-            this.txtTotalServico10.Location = new System.Drawing.Point(476, 292);
-            this.txtTotalServico10.Name = "txtTotalServico10";
-            this.txtTotalServico10.ReadOnly = true;
-            this.txtTotalServico10.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico10.TabIndex = 1;
-            this.txtTotalServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico10
-            // 
-            this.txtServico10.Location = new System.Drawing.Point(81, 292);
-            this.txtServico10.Name = "txtServico10";
-            this.txtServico10.ReadOnly = true;
-            this.txtServico10.Size = new System.Drawing.Size(383, 23);
-            this.txtServico10.TabIndex = 1;
-            this.txtServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico10
-            // 
-            this.txtQuantidadeServico10.Location = new System.Drawing.Point(10, 292);
-            this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
-            this.txtQuantidadeServico10.ReadOnly = true;
-            this.txtQuantidadeServico10.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico10.TabIndex = 1;
-            this.txtQuantidadeServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico11
-            // 
-            this.txtTotalServico11.Location = new System.Drawing.Point(476, 321);
-            this.txtTotalServico11.Name = "txtTotalServico11";
-            this.txtTotalServico11.ReadOnly = true;
-            this.txtTotalServico11.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico11.TabIndex = 1;
-            this.txtTotalServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico11
-            // 
-            this.txtServico11.Location = new System.Drawing.Point(81, 321);
-            this.txtServico11.Name = "txtServico11";
-            this.txtServico11.ReadOnly = true;
-            this.txtServico11.Size = new System.Drawing.Size(383, 23);
-            this.txtServico11.TabIndex = 1;
-            this.txtServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico11
-            // 
-            this.txtQuantidadeServico11.Location = new System.Drawing.Point(10, 321);
-            this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
-            this.txtQuantidadeServico11.ReadOnly = true;
-            this.txtQuantidadeServico11.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico11.TabIndex = 1;
-            this.txtQuantidadeServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico12
-            // 
-            this.txtTotalServico12.Location = new System.Drawing.Point(476, 350);
-            this.txtTotalServico12.Name = "txtTotalServico12";
-            this.txtTotalServico12.ReadOnly = true;
-            this.txtTotalServico12.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico12.TabIndex = 1;
-            this.txtTotalServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico12
-            // 
-            this.txtServico12.Location = new System.Drawing.Point(81, 350);
-            this.txtServico12.Name = "txtServico12";
-            this.txtServico12.ReadOnly = true;
-            this.txtServico12.Size = new System.Drawing.Size(383, 23);
-            this.txtServico12.TabIndex = 1;
-            this.txtServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico12
-            // 
-            this.txtQuantidadeServico12.Location = new System.Drawing.Point(10, 350);
-            this.txtQuantidadeServico12.Name = "txtQuantidadeServico12";
-            this.txtQuantidadeServico12.ReadOnly = true;
-            this.txtQuantidadeServico12.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico12.TabIndex = 1;
-            this.txtQuantidadeServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico13
-            // 
-            this.txtTotalServico13.Location = new System.Drawing.Point(476, 379);
-            this.txtTotalServico13.Name = "txtTotalServico13";
-            this.txtTotalServico13.ReadOnly = true;
-            this.txtTotalServico13.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico13.TabIndex = 1;
-            this.txtTotalServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico13
-            // 
-            this.txtServico13.Location = new System.Drawing.Point(81, 379);
-            this.txtServico13.Name = "txtServico13";
-            this.txtServico13.ReadOnly = true;
-            this.txtServico13.Size = new System.Drawing.Size(383, 23);
-            this.txtServico13.TabIndex = 1;
-            this.txtServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico13
-            // 
-            this.txtQuantidadeServico13.Location = new System.Drawing.Point(10, 379);
-            this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
-            this.txtQuantidadeServico13.ReadOnly = true;
-            this.txtQuantidadeServico13.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico13.TabIndex = 1;
-            this.txtQuantidadeServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico14
-            // 
-            this.txtTotalServico14.Location = new System.Drawing.Point(476, 408);
-            this.txtTotalServico14.Name = "txtTotalServico14";
-            this.txtTotalServico14.ReadOnly = true;
-            this.txtTotalServico14.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico14.TabIndex = 1;
-            this.txtTotalServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico14
-            // 
-            this.txtServico14.Location = new System.Drawing.Point(81, 408);
-            this.txtServico14.Name = "txtServico14";
-            this.txtServico14.ReadOnly = true;
-            this.txtServico14.Size = new System.Drawing.Size(383, 23);
-            this.txtServico14.TabIndex = 1;
-            this.txtServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico14
-            // 
-            this.txtQuantidadeServico14.Location = new System.Drawing.Point(10, 408);
-            this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
-            this.txtQuantidadeServico14.ReadOnly = true;
-            this.txtQuantidadeServico14.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico14.TabIndex = 1;
-            this.txtQuantidadeServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtTotalServico15
-            // 
-            this.txtTotalServico15.Location = new System.Drawing.Point(476, 437);
-            this.txtTotalServico15.Name = "txtTotalServico15";
-            this.txtTotalServico15.ReadOnly = true;
-            this.txtTotalServico15.Size = new System.Drawing.Size(80, 23);
-            this.txtTotalServico15.TabIndex = 1;
-            this.txtTotalServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtServico15
-            // 
-            this.txtServico15.Location = new System.Drawing.Point(81, 437);
-            this.txtServico15.Name = "txtServico15";
-            this.txtServico15.ReadOnly = true;
-            this.txtServico15.Size = new System.Drawing.Size(383, 23);
-            this.txtServico15.TabIndex = 1;
-            this.txtServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtQuantidadeServico15
-            // 
-            this.txtQuantidadeServico15.Location = new System.Drawing.Point(10, 437);
-            this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
-            this.txtQuantidadeServico15.ReadOnly = true;
-            this.txtQuantidadeServico15.Size = new System.Drawing.Size(59, 23);
-            this.txtQuantidadeServico15.TabIndex = 1;
-            this.txtQuantidadeServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.labelId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelId.AutoSize = true;
+            this.labelId.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelId.ForeColor = System.Drawing.Color.Crimson;
+            this.labelId.Location = new System.Drawing.Point(500, 5);
+            this.labelId.Name = "labelId";
+            this.labelId.Size = new System.Drawing.Size(56, 25);
+            this.labelId.TabIndex = 26;
+            this.labelId.Text = "2247";
             // 
             // TelaExibirNota
             // 
@@ -895,6 +1085,8 @@
             this.Name = "TelaExibirNota";
             this.Text = "TelaExibirNota";
             this.tabPage1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -986,5 +1178,23 @@
         private System.Windows.Forms.TextBox txtQuantidadeServico15;
         private System.Windows.Forms.TextBox txtServico15;
         private System.Windows.Forms.TextBox txtTotalServico15;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtAdiantamento;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtResta;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtDataEntrega;
+        private System.Windows.Forms.TextBox txtDataNota;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtObservacao;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelId;
+        private System.Windows.Forms.Label d;
     }
 }

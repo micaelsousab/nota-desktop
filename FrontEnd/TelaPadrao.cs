@@ -700,7 +700,7 @@ namespace RegistroClientes
                 ItensServico = listaItemServicos,
                 Observacoes = textObservacao.Text,
                 ValorAdiantamento = Convert.ToDouble(txtAdiantamento.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR")),
-                PrevisaoEntrega = dtPrevistaEntrega.Value,
+                PrevisaoEntrega = new DateTime(dtPrevistaEntrega.Value.Year, dtPrevistaEntrega.Value.Month, dtPrevistaEntrega.Value.Day)
             };
 
             return servico;

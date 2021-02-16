@@ -170,6 +170,35 @@ namespace RegistroClientes
                 txtServico15.Text = itemServico15.Descricao;
                 txtTotalServico15.Text = itemServico15.Valor.ToString("C");
             }
+
+            var total = 0.0;
+
+            foreach (var item in servico.ItensServico)
+            {
+                total += (item.Valor * item.Quantidade);
+            }
+
+            txtTotal.Text = total.ToString("C");
+
+            txtAdiantamento.Text = servico.ValorAdiantamento.ToString("C");
+
+            if (servico.ValorDevido > 0)
+            {
+                txtResta.Text = servico.ValorDevido.ToString().Replace('.', ',');
+            }
+            else
+            {
+                txtResta.Text = servico.ValorDevido.ToString("C");
+                txtResta.ReadOnly = true;
+            }
+
+            txtDataEntrega.Text = servico.PrevisaoEntrega.ToString("dd/MM/yyyy");
+
+            txtDataNota.Text = servico.DataRegistro.ToString("dd/MM/yyyy");
+
+            txtObservacao.Text = servico.Observacoes;
+
+            labelId.Text = servico.Id.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
