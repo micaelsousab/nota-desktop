@@ -321,6 +321,7 @@ namespace RegistroClientes
             this.txtTotalServico15.Name = "txtTotalServico15";
             this.txtTotalServico15.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico15.TabIndex = 54;
+            this.txtTotalServico15.TextChanged += new System.EventHandler(this.txtTotalServico15_TextChanged);
             // 
             // txtQuantidadeServico15
             // 
@@ -332,6 +333,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
             this.txtQuantidadeServico15.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico15.TabIndex = 52;
+            this.txtQuantidadeServico15.TextChanged += new System.EventHandler(this.txtQuantidadeServico15_TextChanged);
             // 
             // txtServico15
             // 
@@ -343,6 +345,7 @@ namespace RegistroClientes
             this.txtServico15.Name = "txtServico15";
             this.txtServico15.Size = new System.Drawing.Size(382, 23);
             this.txtServico15.TabIndex = 53;
+            this.txtServico15.TextChanged += new System.EventHandler(this.txtServico15_TextChanged);
             // 
             // txtTotalServico14
             // 
@@ -354,6 +357,7 @@ namespace RegistroClientes
             this.txtTotalServico14.Name = "txtTotalServico14";
             this.txtTotalServico14.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico14.TabIndex = 51;
+            this.txtTotalServico14.TextChanged += new System.EventHandler(this.txtTotalServico14_TextChanged);
             // 
             // txtQuantidadeServico14
             // 
@@ -365,6 +369,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
             this.txtQuantidadeServico14.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico14.TabIndex = 49;
+            this.txtQuantidadeServico14.TextChanged += new System.EventHandler(this.txtQuantidadeServico14_TextChanged);
             // 
             // txtServico14
             // 
@@ -376,6 +381,7 @@ namespace RegistroClientes
             this.txtServico14.Name = "txtServico14";
             this.txtServico14.Size = new System.Drawing.Size(382, 23);
             this.txtServico14.TabIndex = 50;
+            this.txtServico14.TextChanged += new System.EventHandler(this.txtServico14_TextChanged);
             // 
             // txtTotalServico13
             // 
@@ -387,6 +393,7 @@ namespace RegistroClientes
             this.txtTotalServico13.Name = "txtTotalServico13";
             this.txtTotalServico13.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico13.TabIndex = 48;
+            this.txtTotalServico13.TextChanged += new System.EventHandler(this.txtTotalServico13_TextChanged);
             // 
             // txtQuantidadeServico13
             // 
@@ -398,6 +405,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
             this.txtQuantidadeServico13.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico13.TabIndex = 46;
+            this.txtQuantidadeServico13.TextChanged += new System.EventHandler(this.txtQuantidadeServico13_TextChanged);
             // 
             // txtServico13
             // 
@@ -409,6 +417,7 @@ namespace RegistroClientes
             this.txtServico13.Name = "txtServico13";
             this.txtServico13.Size = new System.Drawing.Size(382, 23);
             this.txtServico13.TabIndex = 47;
+            this.txtServico13.TextChanged += new System.EventHandler(this.txtServico13_TextChanged);
             // 
             // txtTotalServico12
             // 
@@ -420,6 +429,7 @@ namespace RegistroClientes
             this.txtTotalServico12.Name = "txtTotalServico12";
             this.txtTotalServico12.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico12.TabIndex = 45;
+            this.txtTotalServico12.TextChanged += new System.EventHandler(this.txtTotalServico12_TextChanged);
             // 
             // txtQuantidadeServico12
             // 
@@ -431,6 +441,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico12.Name = "txtQuantidadeServico12";
             this.txtQuantidadeServico12.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico12.TabIndex = 43;
+            this.txtQuantidadeServico12.TextChanged += new System.EventHandler(this.txtQuantidadeServico12_TextChanged);
             // 
             // txtServico12
             // 
@@ -442,6 +453,7 @@ namespace RegistroClientes
             this.txtServico12.Name = "txtServico12";
             this.txtServico12.Size = new System.Drawing.Size(382, 23);
             this.txtServico12.TabIndex = 44;
+            this.txtServico12.TextChanged += new System.EventHandler(this.txtServico12_TextChanged);
             // 
             // txtTotalServico11
             // 
@@ -453,6 +465,7 @@ namespace RegistroClientes
             this.txtTotalServico11.Name = "txtTotalServico11";
             this.txtTotalServico11.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico11.TabIndex = 42;
+            this.txtTotalServico11.TextChanged += new System.EventHandler(this.txtTotalServico11_TextChanged);
             // 
             // txtQuantidadeServico11
             // 
@@ -464,6 +477,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
             this.txtQuantidadeServico11.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico11.TabIndex = 40;
+            this.txtQuantidadeServico11.TextChanged += new System.EventHandler(this.txtQuantidadeServico11_TextChanged);
             // 
             // txtServico11
             // 
@@ -475,6 +489,7 @@ namespace RegistroClientes
             this.txtServico11.Name = "txtServico11";
             this.txtServico11.Size = new System.Drawing.Size(382, 23);
             this.txtServico11.TabIndex = 41;
+            this.txtServico11.TextChanged += new System.EventHandler(this.txtServico11_TextChanged);
             // 
             // labelServicos
             // 
@@ -558,6 +573,7 @@ namespace RegistroClientes
             this.txtTotalServico9.Name = "txtTotalServico9";
             this.txtTotalServico9.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico9.TabIndex = 36;
+            this.txtTotalServico9.TextChanged += new System.EventHandler(this.txtTotalServico9_TextChanged);
             // 
             // txtQuantidadeServico4
             // 
@@ -569,6 +585,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico4.Name = "txtQuantidadeServico4";
             this.txtQuantidadeServico4.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico4.TabIndex = 19;
+            this.txtQuantidadeServico4.TextChanged += new System.EventHandler(this.txtQuantidadeServico4_TextChanged);
             // 
             // txtTotalServico8
             // 
@@ -580,6 +597,7 @@ namespace RegistroClientes
             this.txtTotalServico8.Name = "txtTotalServico8";
             this.txtTotalServico8.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico8.TabIndex = 33;
+            this.txtTotalServico8.TextChanged += new System.EventHandler(this.txtTotalServico8_TextChanged);
             // 
             // labelServicosQuantidade
             // 
@@ -603,6 +621,7 @@ namespace RegistroClientes
             this.txtTotalServico7.Name = "txtTotalServico7";
             this.txtTotalServico7.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico7.TabIndex = 30;
+            this.txtTotalServico7.TextChanged += new System.EventHandler(this.txtTotalServico7_TextChanged);
             // 
             // txtQuantidadeServico5
             // 
@@ -626,6 +645,7 @@ namespace RegistroClientes
             this.txtTotalServico6.Name = "txtTotalServico6";
             this.txtTotalServico6.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico6.TabIndex = 27;
+            this.txtTotalServico6.TextChanged += new System.EventHandler(this.txtTotalServico6_TextChanged);
             // 
             // txtQuantidadeServico6
             // 
@@ -637,7 +657,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico6.Name = "txtQuantidadeServico6";
             this.txtQuantidadeServico6.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico6.TabIndex = 25;
-            this.txtQuantidadeServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtQuantidadeServico6.TextChanged += new System.EventHandler(this.txtQuantidadeServico6_TextChanged);
             // 
             // txtTotalServico5
             // 
@@ -649,6 +669,7 @@ namespace RegistroClientes
             this.txtTotalServico5.Name = "txtTotalServico5";
             this.txtTotalServico5.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico5.TabIndex = 24;
+            this.txtTotalServico5.TextChanged += new System.EventHandler(this.txtTotalServico5_TextChanged);
             // 
             // txtQuantidadeServico7
             // 
@@ -660,7 +681,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
             this.txtQuantidadeServico7.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico7.TabIndex = 28;
-            this.txtQuantidadeServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtQuantidadeServico7.TextChanged += new System.EventHandler(this.txtQuantidadeServico7_TextChanged);
             // 
             // txtTotalServico4
             // 
@@ -672,6 +693,7 @@ namespace RegistroClientes
             this.txtTotalServico4.Name = "txtTotalServico4";
             this.txtTotalServico4.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico4.TabIndex = 21;
+            this.txtTotalServico4.TextChanged += new System.EventHandler(this.txtTotalServico4_TextChanged);
             // 
             // txtQuantidadeServico8
             // 
@@ -683,7 +705,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
             this.txtQuantidadeServico8.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico8.TabIndex = 31;
-            this.txtQuantidadeServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtQuantidadeServico8.TextChanged += new System.EventHandler(this.txtQuantidadeServico8_TextChanged);
             // 
             // txtTotalServico3
             // 
@@ -695,6 +717,7 @@ namespace RegistroClientes
             this.txtTotalServico3.Name = "txtTotalServico3";
             this.txtTotalServico3.Size = new System.Drawing.Size(84, 23);
             this.txtTotalServico3.TabIndex = 18;
+            this.txtTotalServico3.TextChanged += new System.EventHandler(this.txtTotalServico3_TextChanged);
             // 
             // txtQuantidadeServico9
             // 
@@ -706,7 +729,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico9.Name = "txtQuantidadeServico9";
             this.txtQuantidadeServico9.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico9.TabIndex = 34;
-            this.txtQuantidadeServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtQuantidadeServico9.TextChanged += new System.EventHandler(this.txtQuantidadeServico9_TextChanged);
             // 
             // txtTotalServico2
             // 
@@ -730,7 +753,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
             this.txtQuantidadeServico10.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidadeServico10.TabIndex = 37;
-            this.txtQuantidadeServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtQuantidadeServico10.TextChanged += new System.EventHandler(this.txtQuantidadeServico10_TextChanged);
             // 
             // txtTotalServico1
             // 
@@ -766,6 +789,7 @@ namespace RegistroClientes
             this.txtServico10.Name = "txtServico10";
             this.txtServico10.Size = new System.Drawing.Size(382, 23);
             this.txtServico10.TabIndex = 38;
+            this.txtServico10.TextChanged += new System.EventHandler(this.txtServico10_TextChanged);
             // 
             // txtServico2
             // 
@@ -789,6 +813,7 @@ namespace RegistroClientes
             this.txtServico9.Name = "txtServico9";
             this.txtServico9.Size = new System.Drawing.Size(382, 23);
             this.txtServico9.TabIndex = 35;
+            this.txtServico9.TextChanged += new System.EventHandler(this.txtServico9_TextChanged);
             // 
             // txtServico3
             // 
@@ -800,6 +825,7 @@ namespace RegistroClientes
             this.txtServico3.Name = "txtServico3";
             this.txtServico3.Size = new System.Drawing.Size(382, 23);
             this.txtServico3.TabIndex = 17;
+            this.txtServico3.TextChanged += new System.EventHandler(this.txtServico3_TextChanged);
             // 
             // txtServico8
             // 
@@ -811,6 +837,7 @@ namespace RegistroClientes
             this.txtServico8.Name = "txtServico8";
             this.txtServico8.Size = new System.Drawing.Size(382, 23);
             this.txtServico8.TabIndex = 32;
+            this.txtServico8.TextChanged += new System.EventHandler(this.txtServico8_TextChanged);
             // 
             // txtServico4
             // 
@@ -822,6 +849,7 @@ namespace RegistroClientes
             this.txtServico4.Name = "txtServico4";
             this.txtServico4.Size = new System.Drawing.Size(382, 23);
             this.txtServico4.TabIndex = 20;
+            this.txtServico4.TextChanged += new System.EventHandler(this.txtServico4_TextChanged);
             // 
             // txtServico7
             // 
@@ -833,6 +861,7 @@ namespace RegistroClientes
             this.txtServico7.Name = "txtServico7";
             this.txtServico7.Size = new System.Drawing.Size(382, 23);
             this.txtServico7.TabIndex = 29;
+            this.txtServico7.TextChanged += new System.EventHandler(this.txtServico7_TextChanged);
             // 
             // txtServico5
             // 
@@ -844,6 +873,7 @@ namespace RegistroClientes
             this.txtServico5.Name = "txtServico5";
             this.txtServico5.Size = new System.Drawing.Size(382, 23);
             this.txtServico5.TabIndex = 23;
+            this.txtServico5.TextChanged += new System.EventHandler(this.txtServico5_TextChanged);
             // 
             // txtServico6
             // 
@@ -855,6 +885,7 @@ namespace RegistroClientes
             this.txtServico6.Name = "txtServico6";
             this.txtServico6.Size = new System.Drawing.Size(382, 23);
             this.txtServico6.TabIndex = 26;
+            this.txtServico6.TextChanged += new System.EventHandler(this.txtServico6_TextChanged);
             // 
             // panel4
             // 
