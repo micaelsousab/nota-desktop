@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace RegistroClientes
@@ -41,6 +42,23 @@ namespace RegistroClientes
             ObterValorRestante();
         }
 
+        private void txtAdiantamento_TextChanged(object sender, EventArgs e)
+        {
+            double i = 0;
+            string s = txtTotalServico1.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+            {
+                ObterValorRestante();
+                VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+            }
+            else
+            {
+                txtTotalServico1.Text = string.Empty;
+            }
+        }
+
         private void label2_Click_1(object sender, EventArgs e)
         {
             
@@ -68,87 +86,206 @@ namespace RegistroClientes
 
         private void txtTotalServico1_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico1.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico1.Text = string.Empty;
         }
 
         private void txtTotalServico2_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico2.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico2.Text = string.Empty;
         }
 
         private void txtTotalServico3_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico3.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico3.Text = string.Empty;
         }
 
         private void txtTotalServico4_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico4.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico4.Text = string.Empty;
         }
 
         private void txtTotalServico5_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico5.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico5.Text = string.Empty;
         }
 
         private void txtTotalServico6_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico6.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico6.Text = string.Empty;
         }
 
         private void txtTotalServico7_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico7.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico7.Text = string.Empty;
         }
 
         private void txtTotalServico8_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico8.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico8.Text = string.Empty;
         }
 
         private void txtTotalServico9_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico9.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico9.Text = string.Empty;
         }
 
         private void txtTotalServico10_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico10.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico10.Text = string.Empty;
         }
 
         private void txtTotalServico11_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico11.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico11.Text = string.Empty;
         }
 
         private void txtTotalServico12_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico12.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico12.Text = string.Empty;
         }
 
         private void txtTotalServico13_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico13.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico13.Text = string.Empty;
         }
 
         private void txtTotalServico14_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico14.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico14.Text = string.Empty;
         }
 
         private void txtTotalServico15_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            double i = 0;
+            string s = txtTotalServico15.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtTotalServico15.Text = string.Empty;
         }
 
         private void txtQuantidadeServico1_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico1.Text;
+            bool resultado = int.TryParse(s, out i); 
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico1.Text = string.Empty;
         }
 
         private void txtQuantidadeServico2_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico2.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico2.Text = string.Empty;
         }
 
         private void txtServico2_TextChanged(object sender, EventArgs e)
@@ -223,67 +360,158 @@ namespace RegistroClientes
 
         private void txtQuantidadeServico3_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico3.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico3.Text = string.Empty;
         }
 
         private void txtQuantidadeServico4_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico4.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico4.Text = string.Empty;
         }
 
         private void txtQuantidadeServico5_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico5.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico5.Text = string.Empty;
         }
 
         private void txtQuantidadeServico6_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico6.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico6.Text = string.Empty;
         }
 
         private void txtQuantidadeServico7_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico7.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico7.Text = string.Empty;
         }
 
         private void txtQuantidadeServico8_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico8.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico8.Text = string.Empty;
         }
 
         private void txtQuantidadeServico9_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico9.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico9.Text = string.Empty;
         }
 
         private void txtQuantidadeServico10_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico10.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico10.Text = string.Empty;
         }
 
         private void txtQuantidadeServico11_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico11.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico11.Text = string.Empty;
         }
 
         private void txtQuantidadeServico12_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico12.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico12.Text = string.Empty;
         }
 
         private void txtQuantidadeServico13_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico13.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico13.Text = string.Empty;
         }
 
         private void txtQuantidadeServico14_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico14.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico14.Text = string.Empty;
         }
 
         private void txtQuantidadeServico15_TextChanged(object sender, EventArgs e)
         {
-            AtualizarTxtValorTotal();
+            int i = 0;
+            string s = txtQuantidadeServico15.Text;
+            bool resultado = int.TryParse(s, out i);
+
+            if (resultado)
+                AtualizarTxtValorTotal();
+            else
+                txtQuantidadeServico15.Text = string.Empty;
         }
 
         private void txtNomeCliente_TextChanged(object sender, EventArgs e)
@@ -361,6 +589,24 @@ namespace RegistroClientes
 
             if (!ObterItensServico().Any())
                 valido = false;
+
+            if (!string.IsNullOrEmpty(txtAdiantamento.Text) && !string.IsNullOrEmpty(txtTotal.Text))
+            {
+                List<ItemServico> listaItemServicos = ObterItensServico();
+
+                if (listaItemServicos.Any())
+                {
+                    var adiantamento = Convert.ToDouble(txtAdiantamento.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
+                    var total = _repositorioServico.ObterValorTotalDaNota(listaItemServicos);
+
+                    if (adiantamento > total)
+                        valido = false;
+                }
+            }
+            else
+            {
+                valido = false;
+            }
 
             if (valido)
                 btnSalvar.Enabled = true;

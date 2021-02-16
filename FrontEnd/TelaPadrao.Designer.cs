@@ -946,7 +946,7 @@ namespace RegistroClientes
             this.txtAdiantamento.Name = "txtAdiantamento";
             this.txtAdiantamento.Size = new System.Drawing.Size(97, 23);
             this.txtAdiantamento.TabIndex = 56;
-            this.txtAdiantamento.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtAdiantamento.TextChanged += new System.EventHandler(this.txtAdiantamento_TextChanged);
             // 
             // labelTotal
             // 
