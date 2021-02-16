@@ -22,7 +22,7 @@ namespace BackEnd.Repositorios
 
 		public Servico BuscarServicoPorId(int id)
         {
-			return _db.Servicos.Include(x => x.Cliente.Endereco).Where(x => x.Id == id).FirstOrDefault();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(x => x.Id == id).FirstOrDefault();
         }
 
 		public List<Servico> BuscarServicosNomeCliente(string nomeCliente)
