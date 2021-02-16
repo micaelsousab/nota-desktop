@@ -162,11 +162,11 @@ namespace RegistroClientes
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(10, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 20);
+            this.label1.Size = new System.Drawing.Size(135, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastrar Serviço";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -244,6 +244,7 @@ namespace RegistroClientes
             // 
             // btnSalvar
             // 
+            this.btnSalvar.Enabled = false;
             this.btnSalvar.Location = new System.Drawing.Point(475, 32);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(83, 72);
@@ -1089,6 +1090,7 @@ namespace RegistroClientes
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(305, 23);
             this.txtNomeCliente.TabIndex = 1;
+            this.txtNomeCliente.TextChanged += new System.EventHandler(this.txtNomeCliente_TextChanged);
             // 
             // txtLinhaEnderecoCliente
             // 
@@ -1099,6 +1101,7 @@ namespace RegistroClientes
             this.txtLinhaEnderecoCliente.Name = "txtLinhaEnderecoCliente";
             this.txtLinhaEnderecoCliente.Size = new System.Drawing.Size(552, 23);
             this.txtLinhaEnderecoCliente.TabIndex = 9;
+            this.txtLinhaEnderecoCliente.TextChanged += new System.EventHandler(this.txtLinhaEnderecoCliente_TextChanged);
             // 
             // labelNumeroEnderecoCliente
             // 
@@ -1118,6 +1121,7 @@ namespace RegistroClientes
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Size = new System.Drawing.Size(304, 23);
             this.txtEmailCliente.TabIndex = 3;
+            this.txtEmailCliente.TextChanged += new System.EventHandler(this.txtEmailCliente_TextChanged);
             // 
             // txtNumeroEnderecoCliente
             // 
@@ -1128,6 +1132,7 @@ namespace RegistroClientes
             this.txtNumeroEnderecoCliente.Name = "txtNumeroEnderecoCliente";
             this.txtNumeroEnderecoCliente.Size = new System.Drawing.Size(62, 23);
             this.txtNumeroEnderecoCliente.TabIndex = 8;
+            this.txtNumeroEnderecoCliente.TextChanged += new System.EventHandler(this.txtNumeroEnderecoCliente_TextChanged);
             // 
             // labelEmailCliente
             // 
@@ -1151,6 +1156,7 @@ namespace RegistroClientes
             this.txtBairroEnderecoCliente.Name = "txtBairroEnderecoCliente";
             this.txtBairroEnderecoCliente.Size = new System.Drawing.Size(148, 23);
             this.txtBairroEnderecoCliente.TabIndex = 7;
+            this.txtBairroEnderecoCliente.TextChanged += new System.EventHandler(this.txtBairroEnderecoCliente_TextChanged);
             // 
             // txtTelefoneFixoCliente
             // 
@@ -1162,6 +1168,7 @@ namespace RegistroClientes
             this.txtTelefoneFixoCliente.Name = "txtTelefoneFixoCliente";
             this.txtTelefoneFixoCliente.Size = new System.Drawing.Size(222, 23);
             this.txtTelefoneFixoCliente.TabIndex = 2;
+            this.txtTelefoneFixoCliente.TextChanged += new System.EventHandler(this.txtTelefoneFixoCliente_TextChanged);
             // 
             // labelBairroEnderecoCliente
             // 
@@ -1185,6 +1192,7 @@ namespace RegistroClientes
             this.txtTelefoneCelularCliente.Name = "txtTelefoneCelularCliente";
             this.txtTelefoneCelularCliente.Size = new System.Drawing.Size(222, 23);
             this.txtTelefoneCelularCliente.TabIndex = 4;
+            this.txtTelefoneCelularCliente.TextChanged += new System.EventHandler(this.txtTelefoneCelularCliente_TextChanged);
             // 
             // labelCidadeEnderecoCliente
             // 
@@ -1220,6 +1228,7 @@ namespace RegistroClientes
             this.txtCidadeEnderecoCliente.Name = "txtCidadeEnderecoCliente";
             this.txtCidadeEnderecoCliente.Size = new System.Drawing.Size(231, 23);
             this.txtCidadeEnderecoCliente.TabIndex = 6;
+            this.txtCidadeEnderecoCliente.TextChanged += new System.EventHandler(this.txtCidadeEnderecoCliente_TextChanged);
             // 
             // labelTelefoneCelularCliente
             // 
@@ -1255,6 +1264,7 @@ namespace RegistroClientes
             this.txtUFEnderecoCliente.Size = new System.Drawing.Size(62, 23);
             this.txtUFEnderecoCliente.TabIndex = 5;
             this.txtUFEnderecoCliente.Text = "PE";
+            this.txtUFEnderecoCliente.TextChanged += new System.EventHandler(this.txtUFEnderecoCliente_TextChanged);
             // 
             // consultarServico
             // 

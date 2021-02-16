@@ -286,6 +286,88 @@ namespace RegistroClientes
             AtualizarTxtValorTotal();
         }
 
+        private void txtNomeCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtTelefoneFixoCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtEmailCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtTelefoneCelularCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtUFEnderecoCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtCidadeEnderecoCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtBairroEnderecoCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtNumeroEnderecoCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void txtLinhaEnderecoCliente_TextChanged(object sender, EventArgs e)
+        {
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
+        }
+
+        private void VerificarCamposPreenchidosParaAtivarBotaoSalvar()
+        {
+            bool valido = true;
+
+            if (string.IsNullOrEmpty(txtNomeCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtEmailCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtUFEnderecoCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtCidadeEnderecoCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtBairroEnderecoCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtNumeroEnderecoCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtLinhaEnderecoCliente.Text))
+                valido = false;
+
+            if (string.IsNullOrEmpty(txtTelefoneCelularCliente.Text) && string.IsNullOrEmpty(txtTelefoneFixoCliente.Text))
+                valido = false;
+
+            if (!ObterItensServico().Any())
+                valido = false;
+
+            if (valido)
+                btnSalvar.Enabled = true;
+            else
+                btnSalvar.Enabled = false;
+        }
+
         private void ObterValorRestante()
         {
             List<ItemServico> listaItemServicos = ObterItensServico();
@@ -314,6 +396,8 @@ namespace RegistroClientes
             var valorTotal = _repositorioServico.ObterValorTotalDaNota(listaItemServicos);
 
             txtTotal.Text = $"{valorTotal.ToString("C")}";
+
+            VerificarCamposPreenchidosParaAtivarBotaoSalvar();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
