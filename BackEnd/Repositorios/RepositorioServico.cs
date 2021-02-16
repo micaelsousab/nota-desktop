@@ -20,6 +20,11 @@ namespace BackEnd.Repositorios
 			return _db.Servicos.OrderByDescending(s => s.Id).First();
 		}
 
+		public Servico BuscarServicoPorId(int id)
+        {
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Where(x => x.Id == id).FirstOrDefault();
+        }
+
 		public List<Servico> BuscarServicosNomeCliente(string nomeCliente)
 		{
 			return _db.Servicos.Where(s => s.Cliente.Nome.Contains(nomeCliente)).ToList();
