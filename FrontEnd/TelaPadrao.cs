@@ -657,6 +657,16 @@ namespace RegistroClientes
             Servico servico = ObterServico(cliente, listaItemServicos);
 
             _repositorioServico.CadastrarServico(servico);
+
+            MessageBox.Show("Nota Cadastrada com Sucesso!");
+
+            LimparTodosOsCampos();
+
+            labelNumeroNota.Text = _repositorioServico.ObterIdProximaNota();
+
+            
+
+            txtNomeCliente.Select();
         }
 
         private Endereco ObterEndereco()
@@ -888,6 +898,73 @@ namespace RegistroClientes
             }
 
             return listaItemServicos;
+        }
+
+        private void LimparTodosOsCampos()
+        {
+            txtNomeCliente.Text = string.Empty;
+            txtTelefoneCelularCliente.Text = string.Empty;
+            txtTelefoneFixoCliente.Text = string.Empty;
+            txtEmailCliente.Text = string.Empty;
+            txtUFEnderecoCliente.Text = string.Empty;
+            txtCidadeEnderecoCliente.Text = string.Empty;
+            txtBairroEnderecoCliente.Text = string.Empty;
+            txtNumeroEnderecoCliente.Text = string.Empty;
+            txtLinhaEnderecoCliente.Text = string.Empty;
+
+            txtQuantidadeServico1.Text = string.Empty;
+            txtQuantidadeServico2.Text = string.Empty;
+            txtQuantidadeServico3.Text = string.Empty;
+            txtQuantidadeServico4.Text = string.Empty;
+            txtQuantidadeServico5.Text = string.Empty;
+            txtQuantidadeServico6.Text = string.Empty;
+            txtQuantidadeServico7.Text = string.Empty;
+            txtQuantidadeServico8.Text = string.Empty;
+            txtQuantidadeServico9.Text = string.Empty;
+            txtQuantidadeServico10.Text = string.Empty;
+            txtQuantidadeServico11.Text = string.Empty;
+            txtQuantidadeServico12.Text = string.Empty;
+            txtQuantidadeServico13.Text = string.Empty;
+            txtQuantidadeServico14.Text = string.Empty;
+            txtQuantidadeServico15.Text = string.Empty;
+
+            txtServico1.Text = string.Empty;
+            txtServico2.Text = string.Empty;
+            txtServico3.Text = string.Empty;
+            txtServico4.Text = string.Empty;
+            txtServico5.Text = string.Empty;
+            txtServico6.Text = string.Empty;
+            txtServico7.Text = string.Empty;
+            txtServico8.Text = string.Empty;
+            txtServico9.Text = string.Empty;
+            txtServico10.Text = string.Empty;
+            txtServico11.Text = string.Empty;
+            txtServico12.Text = string.Empty;
+            txtServico13.Text = string.Empty;
+            txtServico14.Text = string.Empty;
+            txtServico15.Text = string.Empty;
+
+            txtTotalServico1.Text = string.Empty;
+            txtTotalServico2.Text = string.Empty;
+            txtTotalServico3.Text = string.Empty;
+            txtTotalServico4.Text = string.Empty;
+            txtTotalServico5.Text = string.Empty;
+            txtTotalServico6.Text = string.Empty;
+            txtTotalServico7.Text = string.Empty;
+            txtTotalServico8.Text = string.Empty;
+            txtTotalServico9.Text = string.Empty;
+            txtTotalServico10.Text = string.Empty;
+            txtTotalServico11.Text = string.Empty;
+            txtTotalServico12.Text = string.Empty;
+            txtTotalServico13.Text = string.Empty;
+            txtTotalServico14.Text = string.Empty;
+            txtTotalServico15.Text = string.Empty;
+
+            txtAdiantamento.Text = string.Empty;
+            txtTotal.Text = string.Empty;
+            txtResta.Text = string.Empty;
+
+            textObservacao.Text = string.Empty;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
