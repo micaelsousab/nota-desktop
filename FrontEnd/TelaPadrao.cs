@@ -86,6 +86,9 @@ namespace RegistroClientes
 
         private void txtTotalServico1_TextChanged(object sender, EventArgs e)
         {
+            TelaExibirNota telaExibirNota = new TelaExibirNota(Int32.Parse(txtTotalServico1.Text));
+            telaExibirNota.Show();
+
             double i = 0;
             string s = txtTotalServico1.Text.Replace(',', '.');
             bool resultado = double.TryParse(s, out i);
