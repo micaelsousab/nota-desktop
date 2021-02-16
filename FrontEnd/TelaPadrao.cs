@@ -86,6 +86,9 @@ namespace RegistroClientes
 
         private void txtTotalServico1_TextChanged(object sender, EventArgs e)
         {
+            TelaExibirNota telaExibirNota = new TelaExibirNota();
+            telaExibirNota.Show();
+
             double i = 0;
             string s = txtTotalServico1.Text.Replace(',', '.');
             bool resultado = double.TryParse(s, out i);
@@ -891,6 +894,16 @@ namespace RegistroClientes
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void abasTela_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

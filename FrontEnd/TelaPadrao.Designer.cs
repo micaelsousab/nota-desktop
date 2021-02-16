@@ -100,7 +100,6 @@ namespace RegistroClientes
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.labelEletroMaq = new System.Windows.Forms.Label();
-            this.labelNumeroNota = new System.Windows.Forms.Label();
             this.labelFones = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelNomeCliente = new System.Windows.Forms.Label();
@@ -122,6 +121,12 @@ namespace RegistroClientes
             this.labelUFCLiente = new System.Windows.Forms.Label();
             this.txtUFEnderecoCliente = new System.Windows.Forms.TextBox();
             this.consultarServico = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblPesquisar = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelNumeroNota = new System.Windows.Forms.Label();
             this.abasTela.SuspendLayout();
             this.novoServico.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -130,6 +135,7 @@ namespace RegistroClientes
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.consultarServico.SuspendLayout();
             this.SuspendLayout();
             // 
             // abasTela
@@ -144,6 +150,7 @@ namespace RegistroClientes
             this.abasTela.SelectedIndex = 0;
             this.abasTela.Size = new System.Drawing.Size(597, 837);
             this.abasTela.TabIndex = 0;
+            this.abasTela.SelectedIndexChanged += new System.EventHandler(this.abasTela_SelectedIndexChanged);
             // 
             // novoServico
             // 
@@ -155,7 +162,7 @@ namespace RegistroClientes
             this.novoServico.Padding = new System.Windows.Forms.Padding(3);
             this.novoServico.Size = new System.Drawing.Size(589, 809);
             this.novoServico.TabIndex = 0;
-            this.novoServico.Text = "Novo Serviço";
+            this.novoServico.Text = "Nova Nota";
             this.novoServico.UseVisualStyleBackColor = true;
             this.novoServico.Click += new System.EventHandler(this.tabPage1_Click);
             // 
@@ -166,9 +173,9 @@ namespace RegistroClientes
             this.label1.Location = new System.Drawing.Point(10, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 18);
+            this.label1.Size = new System.Drawing.Size(115, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cadastrar Serviço";
+            this.label1.Text = "Cadastrar Nota";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
@@ -1040,18 +1047,6 @@ namespace RegistroClientes
             this.labelEletroMaq.Text = "ELETRO MAQ";
             this.labelEletroMaq.Click += new System.EventHandler(this.label2_Click_1);
             // 
-            // labelNumeroNota
-            // 
-            this.labelNumeroNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelNumeroNota.AutoSize = true;
-            this.labelNumeroNota.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelNumeroNota.ForeColor = System.Drawing.Color.Crimson;
-            this.labelNumeroNota.Location = new System.Drawing.Point(502, 5);
-            this.labelNumeroNota.Name = "labelNumeroNota";
-            this.labelNumeroNota.Size = new System.Drawing.Size(56, 25);
-            this.labelNumeroNota.TabIndex = 26;
-            this.labelNumeroNota.Text = "2247";
-            // 
             // labelFones
             // 
             this.labelFones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1299,13 +1294,80 @@ namespace RegistroClientes
             // 
             // consultarServico
             // 
+            this.consultarServico.Controls.Add(this.listBox1);
+            this.consultarServico.Controls.Add(this.label4);
+            this.consultarServico.Controls.Add(this.label3);
+            this.consultarServico.Controls.Add(this.lblPesquisar);
+            this.consultarServico.Controls.Add(this.textBox1);
             this.consultarServico.Location = new System.Drawing.Point(4, 24);
             this.consultarServico.Name = "consultarServico";
             this.consultarServico.Padding = new System.Windows.Forms.Padding(3);
             this.consultarServico.Size = new System.Drawing.Size(589, 809);
             this.consultarServico.TabIndex = 1;
-            this.consultarServico.Text = "Consultar Serviços";
+            this.consultarServico.Text = "Consultar Notas";
             this.consultarServico.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Items.AddRange(new object[] {
+            "teste",
+            "oi"});
+            this.listBox1.Location = new System.Drawing.Point(83, 71);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(427, 19);
+            this.listBox1.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(34, 75);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "FILTRO";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(10, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Pesquisar Serviço";
+            this.label3.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblPesquisar
+            // 
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Location = new System.Drawing.Point(10, 45);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(67, 15);
+            this.lblPesquisar.TabIndex = 1;
+            this.lblPesquisar.Text = "PESQUISAR";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(83, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(427, 23);
+            this.textBox1.TabIndex = 0;
+            // 
+            // labelNumeroNota
+            // 
+            this.labelNumeroNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelNumeroNota.AutoSize = true;
+            this.labelNumeroNota.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNumeroNota.ForeColor = System.Drawing.Color.Crimson;
+            this.labelNumeroNota.Location = new System.Drawing.Point(502, 5);
+            this.labelNumeroNota.Name = "labelNumeroNota";
+            this.labelNumeroNota.Size = new System.Drawing.Size(56, 25);
+            this.labelNumeroNota.TabIndex = 26;
+            this.labelNumeroNota.Text = "2247";
             // 
             // TelaPadrao
             // 
@@ -1329,6 +1391,8 @@ namespace RegistroClientes
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.consultarServico.ResumeLayout(false);
+            this.consultarServico.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -1401,7 +1465,6 @@ namespace RegistroClientes
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox textObservacao;
         private System.Windows.Forms.Label labelObservacao;
-        private System.Windows.Forms.Label labelNumeroNota;
         private System.Windows.Forms.Label labelAgradecimento;
         private System.Windows.Forms.Label labelDescricao;
         private System.Windows.Forms.Label labelEletroMaq;
@@ -1428,5 +1491,11 @@ namespace RegistroClientes
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblPesquisar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label labelNumeroNota;
     }
 }
