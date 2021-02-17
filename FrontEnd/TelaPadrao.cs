@@ -86,9 +86,6 @@ namespace RegistroClientes
 
         private void txtTotalServico1_TextChanged(object sender, EventArgs e)
         {
-            TelaExibirNota telaExibirNota = new TelaExibirNota(Int32.Parse(txtTotalServico1.Text));
-            telaExibirNota.Show();
-
             double i = 0;
             string s = txtTotalServico1.Text.Replace(',', '.');
             bool resultado = double.TryParse(s, out i);
@@ -983,6 +980,108 @@ namespace RegistroClientes
         private void abasTela_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCampoPesquisa_TextChanged(object sender, EventArgs e)
+        {
+  
+        }
+
+        private void ListarTabelaDeServicos(List<Servico> servicos)
+        {
+            table.Rows.Clear();
+
+            foreach (var item in servicos)
+            {
+                table.Rows.Add(new object[] {
+                    item.Id,
+                    item.Cliente.Nome,
+                    item.DataRegistro.ToString("dd/MM/yyyy"),
+                    item.ValorDevido > 0 ? "NÃO" : "SIM",
+                    item.ValorTotal.ToString("C"),
+                    "VISUALIZAR"
+                });
+                table.Rows[table.RowCount - 1].Tag = item;
+            }
+        }
+
+        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 5)
+            {
+                var nota = (Servico)table.CurrentRow.Tag;
+
+                TelaExibirNota telaExibirNota = new TelaExibirNota(nota.Id);
+
+                telaExibirNota.Show();
+            }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            List<Servico> servicos = new List<Servico>();
+
+            if (string.IsNullOrEmpty(comboFiltro.Text))
+                servicos = _repositorioServico.BuscarTodosServicos();
+
+            if (comboFiltro.Text == "TODOS")
+                servicos = _repositorioServico.BuscarTodosServicos();
+
+            if (comboFiltro.Text == "NOME")
+                servicos = _repositorioServico.BuscarServicosPorNomeCliente(txtCampoPesquisa.Text);
+
+            if (comboFiltro.Text == "TELEFONE / CELULAR")
+                servicos = _repositorioServico.BuscarServicosPorTelefoneCelularCliente(txtCampoPesquisa.Text);
+
+            if (comboFiltro.Text == "EMAIL")
+                servicos = _repositorioServico.BuscarServicosPorEmailCliente(txtCampoPesquisa.Text);
+
+            if (comboFiltro.Text == "NOTA")
+            {
+                int i = 0;
+                string s = txtCampoPesquisa.Text;
+                bool resultado = int.TryParse(s, out i);
+
+                if (resultado)
+                    servicos = _repositorioServico.BuscarServicoPorNota(Int32.Parse(txtCampoPesquisa.Text));
+                else
+                    txtCampoPesquisa.Text = string.Empty;
+            }
+
+            if (comboFiltro.Text == "TODOS NÃO PAGO")
+                servicos = _repositorioServico.BuscarServicosNaoPagosCliente();
+
+            if (comboFiltro.Text == "TODOS PAGO")
+                servicos = _repositorioServico.BuscarServicosPagosCliente();
+
+            if (comboFiltro.Text == "TODOS DE HOJE")
+                servicos = _repositorioServico.BuscarServicosHoje();
+
+            if (comboFiltro.Text == "TODOS DO MÊS")
+                servicos = _repositorioServico.BuscarServicosDoMes();
+
+            if (comboFiltro.Text == "ÚLTIMO")
+                servicos = _repositorioServico.BuscarUltimoServico();
+
+            ListarTabelaDeServicos(servicos);
+        }
+
+        private void comboFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboFiltro.Text == "TODOS" ||
+                comboFiltro.Text == "TODOS NÃO PAGO" ||
+                comboFiltro.Text == "TODOS PAGO" ||
+                comboFiltro.Text == "TODOS DE HOJE" ||
+                comboFiltro.Text == "TODOS DO MÊS" ||
+                comboFiltro.Text == "ÚLTIMO")
+            {
+                txtCampoPesquisa.Text = string.Empty;
+                txtCampoPesquisa.ReadOnly = true;
+            }
+            else
+            {
+                txtCampoPesquisa.ReadOnly = false;
+            }
         }
     }
 }

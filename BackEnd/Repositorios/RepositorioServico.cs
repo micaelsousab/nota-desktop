@@ -23,21 +23,68 @@ namespace BackEnd.Repositorios
 		public Servico BuscarServicoPorId(int id)
         {
 			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(x => x.Id == id).FirstOrDefault();
-        }
-
-		public List<Servico> BuscarServicosNomeCliente(string nomeCliente)
-		{
-			return _db.Servicos.Where(s => s.Cliente.Nome.Contains(nomeCliente)).ToList();
 		}
 
-		public List<Servico> BuscarServicosTelefoneFixoCliente(string telefoneFixoCliente)
+		public List<Servico> BuscarTodosServicos()
 		{
-			return _db.Servicos.Where(s => s.Cliente.TelefoneFixo.StartsWith(telefoneFixoCliente)).ToList();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).ToList();
 		}
-		
-		public List<Servico> BuscarServicosTelefoneCelularCliente(string telefoneCelularCliente)
+
+		public List<Servico> BuscarServicosPorNomeCliente(string pesquisa)
 		{
-			return _db.Servicos.Where(s => s.Cliente.TelefoneCelular.StartsWith(telefoneCelularCliente)).ToList();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.Nome.Contains(pesquisa)).ToList();
+		}
+
+		public List<Servico> BuscarServicosPorTelefoneCelularCliente(string pesquisa)
+		{
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.TelefoneFixo.Contains(pesquisa) ||
+																									     s.Cliente.TelefoneCelular.Contains(pesquisa)).ToList();
+		}
+
+		public List<Servico> BuscarServicosPorEmailCliente(string pesquisa)
+		{
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.Email.Contains(pesquisa)).ToList();
+		}
+
+		public List<Servico> BuscarServicoPorNota(int id)
+		{
+			List<Servico> listaServicos = new List<Servico>();
+
+			listaServicos.Add(_db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(x => x.Id == id).FirstOrDefault());
+
+			return listaServicos;
+		}
+
+		public List<Servico> BuscarServicosNaoPagosCliente()
+		{
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.ValorDevido > 0).ToList();
+		}
+
+		public List<Servico> BuscarServicosPagosCliente()
+		{
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.ValorDevido == 0).ToList();
+		}
+
+		public List<Servico> BuscarServicosHoje()
+		{
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(x => x.DataRegistro.Day == DateTime.Now.Day &&
+																										 x.DataRegistro.Month == DateTime.Now.Month &&
+																									     x.DataRegistro.Year == DateTime.Now.Year).ToList();
+		}
+
+		public List<Servico> BuscarServicosDoMes()
+		{
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(x => x.DataRegistro.Month == DateTime.Now.Month &&
+																										 x.DataRegistro.Year == DateTime.Now.Year).ToList();
+		}
+
+		public List<Servico> BuscarUltimoServico()
+		{
+			List<Servico> listaServicos = new List<Servico>();
+
+			listaServicos.Add(_db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).OrderByDescending(x => x.Id).FirstOrDefault());
+
+			return listaServicos;
 		}
 
 		public double ObterValorTotalDaNota(List<ItemServico> listaItemServicos)
@@ -50,11 +97,6 @@ namespace BackEnd.Repositorios
             }
 
 			return valorTotal;
-        }
-
-		public List<Servico> BuscarTodosServicos()
-        {
-			return _db.Servicos.Include(x => x.Cliente.Endereco).ToList();
         }
 
 		public string ObterIdProximaNota()
