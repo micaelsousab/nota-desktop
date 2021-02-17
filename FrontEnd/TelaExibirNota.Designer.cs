@@ -32,7 +32,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.txtDataNota = new System.Windows.Forms.TextBox();
@@ -114,6 +114,7 @@
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelId = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -122,7 +123,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.labelId = new System.Windows.Forms.Label();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -150,7 +150,7 @@
             // 
             this.panel4.Controls.Add(this.label23);
             this.panel4.Controls.Add(this.label22);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btnSalvar);
             this.panel4.Controls.Add(this.label21);
             this.panel4.Controls.Add(this.txtObservacao);
             this.panel4.Controls.Add(this.txtDataNota);
@@ -188,15 +188,15 @@
             this.label22.Text = "obs: O cliente perderá direito ao aparelho, caso não procure no prazo de 60 dias " +
     "a partir da data acima.";
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(462, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 70);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "SALVAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.Location = new System.Drawing.Point(462, 79);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(91, 70);
+            this.btnSalvar.TabIndex = 3;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -212,6 +212,7 @@
             this.txtObservacao.Location = new System.Drawing.Point(9, 79);
             this.txtObservacao.Multiline = true;
             this.txtObservacao.Name = "txtObservacao";
+            this.txtObservacao.ReadOnly = true;
             this.txtObservacao.Size = new System.Drawing.Size(447, 70);
             this.txtObservacao.TabIndex = 2;
             // 
@@ -222,7 +223,6 @@
             this.txtDataNota.ReadOnly = true;
             this.txtDataNota.Size = new System.Drawing.Size(102, 23);
             this.txtDataNota.TabIndex = 1;
-            this.txtDataNota.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label20
             // 
@@ -240,7 +240,6 @@
             this.txtDataEntrega.ReadOnly = true;
             this.txtDataEntrega.Size = new System.Drawing.Size(148, 23);
             this.txtDataEntrega.TabIndex = 1;
-            this.txtDataEntrega.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label19
             // 
@@ -258,7 +257,6 @@
             this.txtAdiantamento.ReadOnly = true;
             this.txtAdiantamento.Size = new System.Drawing.Size(99, 23);
             this.txtAdiantamento.TabIndex = 1;
-            this.txtAdiantamento.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label18
             // 
@@ -275,7 +273,7 @@
             this.txtResta.Name = "txtResta";
             this.txtResta.Size = new System.Drawing.Size(80, 23);
             this.txtResta.TabIndex = 1;
-            this.txtResta.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtResta.TextChanged += new System.EventHandler(this.txtResta_TextChanged);
             // 
             // label17
             // 
@@ -293,7 +291,6 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(93, 23);
             this.txtTotal.TabIndex = 1;
-            this.txtTotal.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label16
             // 
@@ -366,7 +363,6 @@
             this.txtQuantidadeServico15.ReadOnly = true;
             this.txtQuantidadeServico15.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico15.TabIndex = 1;
-            this.txtQuantidadeServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico15
             // 
@@ -375,7 +371,6 @@
             this.txtServico15.ReadOnly = true;
             this.txtServico15.Size = new System.Drawing.Size(383, 23);
             this.txtServico15.TabIndex = 1;
-            this.txtServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico15
             // 
@@ -384,7 +379,6 @@
             this.txtTotalServico15.ReadOnly = true;
             this.txtTotalServico15.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico15.TabIndex = 1;
-            this.txtTotalServico15.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico14
             // 
@@ -393,7 +387,6 @@
             this.txtQuantidadeServico14.ReadOnly = true;
             this.txtQuantidadeServico14.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico14.TabIndex = 1;
-            this.txtQuantidadeServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico14
             // 
@@ -402,7 +395,6 @@
             this.txtServico14.ReadOnly = true;
             this.txtServico14.Size = new System.Drawing.Size(383, 23);
             this.txtServico14.TabIndex = 1;
-            this.txtServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico14
             // 
@@ -411,7 +403,6 @@
             this.txtTotalServico14.ReadOnly = true;
             this.txtTotalServico14.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico14.TabIndex = 1;
-            this.txtTotalServico14.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico13
             // 
@@ -420,7 +411,6 @@
             this.txtQuantidadeServico13.ReadOnly = true;
             this.txtQuantidadeServico13.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico13.TabIndex = 1;
-            this.txtQuantidadeServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico13
             // 
@@ -429,7 +419,6 @@
             this.txtServico13.ReadOnly = true;
             this.txtServico13.Size = new System.Drawing.Size(383, 23);
             this.txtServico13.TabIndex = 1;
-            this.txtServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico13
             // 
@@ -438,7 +427,6 @@
             this.txtTotalServico13.ReadOnly = true;
             this.txtTotalServico13.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico13.TabIndex = 1;
-            this.txtTotalServico13.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico12
             // 
@@ -447,7 +435,6 @@
             this.txtQuantidadeServico12.ReadOnly = true;
             this.txtQuantidadeServico12.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico12.TabIndex = 1;
-            this.txtQuantidadeServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico12
             // 
@@ -456,7 +443,6 @@
             this.txtServico12.ReadOnly = true;
             this.txtServico12.Size = new System.Drawing.Size(383, 23);
             this.txtServico12.TabIndex = 1;
-            this.txtServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico12
             // 
@@ -465,7 +451,6 @@
             this.txtTotalServico12.ReadOnly = true;
             this.txtTotalServico12.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico12.TabIndex = 1;
-            this.txtTotalServico12.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico11
             // 
@@ -474,7 +459,6 @@
             this.txtQuantidadeServico11.ReadOnly = true;
             this.txtQuantidadeServico11.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico11.TabIndex = 1;
-            this.txtQuantidadeServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico11
             // 
@@ -483,7 +467,6 @@
             this.txtServico11.ReadOnly = true;
             this.txtServico11.Size = new System.Drawing.Size(383, 23);
             this.txtServico11.TabIndex = 1;
-            this.txtServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico11
             // 
@@ -492,7 +475,6 @@
             this.txtTotalServico11.ReadOnly = true;
             this.txtTotalServico11.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico11.TabIndex = 1;
-            this.txtTotalServico11.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico10
             // 
@@ -501,7 +483,6 @@
             this.txtQuantidadeServico10.ReadOnly = true;
             this.txtQuantidadeServico10.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico10.TabIndex = 1;
-            this.txtQuantidadeServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico10
             // 
@@ -510,7 +491,6 @@
             this.txtServico10.ReadOnly = true;
             this.txtServico10.Size = new System.Drawing.Size(383, 23);
             this.txtServico10.TabIndex = 1;
-            this.txtServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico10
             // 
@@ -519,7 +499,6 @@
             this.txtTotalServico10.ReadOnly = true;
             this.txtTotalServico10.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico10.TabIndex = 1;
-            this.txtTotalServico10.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico9
             // 
@@ -528,7 +507,6 @@
             this.txtQuantidadeServico9.ReadOnly = true;
             this.txtQuantidadeServico9.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico9.TabIndex = 1;
-            this.txtQuantidadeServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico9
             // 
@@ -537,7 +515,6 @@
             this.txtServico9.ReadOnly = true;
             this.txtServico9.Size = new System.Drawing.Size(383, 23);
             this.txtServico9.TabIndex = 1;
-            this.txtServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico9
             // 
@@ -546,7 +523,6 @@
             this.txtTotalServico9.ReadOnly = true;
             this.txtTotalServico9.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico9.TabIndex = 1;
-            this.txtTotalServico9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico8
             // 
@@ -555,7 +531,6 @@
             this.txtQuantidadeServico8.ReadOnly = true;
             this.txtQuantidadeServico8.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico8.TabIndex = 1;
-            this.txtQuantidadeServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico8
             // 
@@ -564,7 +539,6 @@
             this.txtServico8.ReadOnly = true;
             this.txtServico8.Size = new System.Drawing.Size(383, 23);
             this.txtServico8.TabIndex = 1;
-            this.txtServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico8
             // 
@@ -573,7 +547,6 @@
             this.txtTotalServico8.ReadOnly = true;
             this.txtTotalServico8.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico8.TabIndex = 1;
-            this.txtTotalServico8.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico7
             // 
@@ -582,7 +555,6 @@
             this.txtQuantidadeServico7.ReadOnly = true;
             this.txtQuantidadeServico7.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico7.TabIndex = 1;
-            this.txtQuantidadeServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico7
             // 
@@ -591,7 +563,6 @@
             this.txtServico7.ReadOnly = true;
             this.txtServico7.Size = new System.Drawing.Size(383, 23);
             this.txtServico7.TabIndex = 1;
-            this.txtServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico7
             // 
@@ -600,7 +571,6 @@
             this.txtTotalServico7.ReadOnly = true;
             this.txtTotalServico7.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico7.TabIndex = 1;
-            this.txtTotalServico7.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico6
             // 
@@ -609,7 +579,6 @@
             this.txtQuantidadeServico6.ReadOnly = true;
             this.txtQuantidadeServico6.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico6.TabIndex = 1;
-            this.txtQuantidadeServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico6
             // 
@@ -618,7 +587,6 @@
             this.txtServico6.ReadOnly = true;
             this.txtServico6.Size = new System.Drawing.Size(383, 23);
             this.txtServico6.TabIndex = 1;
-            this.txtServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico6
             // 
@@ -627,7 +595,6 @@
             this.txtTotalServico6.ReadOnly = true;
             this.txtTotalServico6.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico6.TabIndex = 1;
-            this.txtTotalServico6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico5
             // 
@@ -636,7 +603,6 @@
             this.txtTotalServico5.ReadOnly = true;
             this.txtTotalServico5.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico5.TabIndex = 1;
-            this.txtTotalServico5.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico5
             // 
@@ -645,7 +611,6 @@
             this.txtServico5.ReadOnly = true;
             this.txtServico5.Size = new System.Drawing.Size(383, 23);
             this.txtServico5.TabIndex = 1;
-            this.txtServico5.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico5
             // 
@@ -654,7 +619,6 @@
             this.txtQuantidadeServico5.ReadOnly = true;
             this.txtQuantidadeServico5.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico5.TabIndex = 1;
-            this.txtQuantidadeServico5.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico4
             // 
@@ -663,7 +627,6 @@
             this.txtTotalServico4.ReadOnly = true;
             this.txtTotalServico4.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico4.TabIndex = 1;
-            this.txtTotalServico4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico4
             // 
@@ -672,7 +635,6 @@
             this.txtServico4.ReadOnly = true;
             this.txtServico4.Size = new System.Drawing.Size(383, 23);
             this.txtServico4.TabIndex = 1;
-            this.txtServico4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico4
             // 
@@ -681,7 +643,6 @@
             this.txtQuantidadeServico4.ReadOnly = true;
             this.txtQuantidadeServico4.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico4.TabIndex = 1;
-            this.txtQuantidadeServico4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico3
             // 
@@ -690,7 +651,6 @@
             this.txtTotalServico3.ReadOnly = true;
             this.txtTotalServico3.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico3.TabIndex = 1;
-            this.txtTotalServico3.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico3
             // 
@@ -699,7 +659,6 @@
             this.txtServico3.ReadOnly = true;
             this.txtServico3.Size = new System.Drawing.Size(383, 23);
             this.txtServico3.TabIndex = 1;
-            this.txtServico3.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico3
             // 
@@ -708,7 +667,6 @@
             this.txtQuantidadeServico3.ReadOnly = true;
             this.txtQuantidadeServico3.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico3.TabIndex = 1;
-            this.txtQuantidadeServico3.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico2
             // 
@@ -717,7 +675,6 @@
             this.txtQuantidadeServico2.ReadOnly = true;
             this.txtQuantidadeServico2.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico2.TabIndex = 1;
-            this.txtQuantidadeServico2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtServico2
             // 
@@ -726,7 +683,6 @@
             this.txtServico2.ReadOnly = true;
             this.txtServico2.Size = new System.Drawing.Size(383, 23);
             this.txtServico2.TabIndex = 1;
-            this.txtServico2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTotalServico2
             // 
@@ -735,7 +691,6 @@
             this.txtTotalServico2.ReadOnly = true;
             this.txtTotalServico2.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico2.TabIndex = 1;
-            this.txtTotalServico2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label15
             // 
@@ -753,7 +708,6 @@
             this.txtServico1.ReadOnly = true;
             this.txtServico1.Size = new System.Drawing.Size(383, 23);
             this.txtServico1.TabIndex = 1;
-            this.txtServico1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label14
             // 
@@ -771,7 +725,6 @@
             this.txtTotalServico1.ReadOnly = true;
             this.txtTotalServico1.Size = new System.Drawing.Size(80, 23);
             this.txtTotalServico1.TabIndex = 1;
-            this.txtTotalServico1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtQuantidadeServico1
             // 
@@ -780,7 +733,6 @@
             this.txtQuantidadeServico1.ReadOnly = true;
             this.txtQuantidadeServico1.Size = new System.Drawing.Size(59, 23);
             this.txtQuantidadeServico1.TabIndex = 1;
-            this.txtQuantidadeServico1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label13
             // 
@@ -850,7 +802,6 @@
             this.txtBairro.ReadOnly = true;
             this.txtBairro.Size = new System.Drawing.Size(142, 23);
             this.txtBairro.TabIndex = 1;
-            this.txtBairro.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtNumero
             // 
@@ -859,7 +810,6 @@
             this.txtNumero.ReadOnly = true;
             this.txtNumero.Size = new System.Drawing.Size(59, 23);
             this.txtNumero.TabIndex = 1;
-            this.txtNumero.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtCidade
             // 
@@ -868,7 +818,6 @@
             this.txtCidade.ReadOnly = true;
             this.txtCidade.Size = new System.Drawing.Size(231, 23);
             this.txtCidade.TabIndex = 1;
-            this.txtCidade.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtEndereco
             // 
@@ -877,7 +826,6 @@
             this.txtEndereco.ReadOnly = true;
             this.txtEndereco.Size = new System.Drawing.Size(546, 23);
             this.txtEndereco.TabIndex = 1;
-            this.txtEndereco.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label9
             // 
@@ -895,7 +843,6 @@
             this.txtUF.ReadOnly = true;
             this.txtUF.Size = new System.Drawing.Size(59, 23);
             this.txtUF.TabIndex = 1;
-            this.txtUF.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label8
             // 
@@ -940,7 +887,6 @@
             this.txtTelefoneCelular.ReadOnly = true;
             this.txtTelefoneCelular.Size = new System.Drawing.Size(218, 23);
             this.txtTelefoneCelular.TabIndex = 1;
-            this.txtTelefoneCelular.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtEmail
             // 
@@ -949,7 +895,6 @@
             this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(304, 23);
             this.txtEmail.TabIndex = 1;
-            this.txtEmail.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtTelefoneFixo
             // 
@@ -958,7 +903,6 @@
             this.txtTelefoneFixo.ReadOnly = true;
             this.txtTelefoneFixo.Size = new System.Drawing.Size(218, 23);
             this.txtTelefoneFixo.TabIndex = 1;
-            this.txtTelefoneFixo.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtNomeCompleto
             // 
@@ -987,6 +931,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(565, 88);
             this.panel1.TabIndex = 0;
+            // 
+            // labelId
+            // 
+            this.labelId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelId.AutoSize = true;
+            this.labelId.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelId.ForeColor = System.Drawing.Color.Crimson;
+            this.labelId.Location = new System.Drawing.Point(500, 5);
+            this.labelId.Name = "labelId";
+            this.labelId.Size = new System.Drawing.Size(56, 25);
+            this.labelId.TabIndex = 26;
+            this.labelId.Text = "2247";
             // 
             // label3
             // 
@@ -1032,7 +988,6 @@
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(231, 23);
             this.textBox9.TabIndex = 1;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox4
             // 
@@ -1041,7 +996,6 @@
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(80, 23);
             this.textBox4.TabIndex = 1;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox5
             // 
@@ -1050,7 +1004,6 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(383, 23);
             this.textBox5.TabIndex = 1;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox6
             // 
@@ -1059,19 +1012,6 @@
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(59, 23);
             this.textBox6.TabIndex = 1;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // labelId
-            // 
-            this.labelId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelId.AutoSize = true;
-            this.labelId.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelId.ForeColor = System.Drawing.Color.Crimson;
-            this.labelId.Location = new System.Drawing.Point(500, 5);
-            this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(56, 25);
-            this.labelId.TabIndex = 26;
-            this.labelId.Text = "2247";
             // 
             // TelaExibirNota
             // 
@@ -1083,7 +1023,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "TelaExibirNota";
-            this.Text = "TelaExibirNota";
+            this.Text = "ELETRO MAQ - VISUALIZAR NOTA";
             this.tabPage1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -1190,7 +1130,7 @@
         private System.Windows.Forms.TextBox txtDataNota;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtObservacao;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;

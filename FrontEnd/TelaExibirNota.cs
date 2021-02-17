@@ -14,11 +14,15 @@ namespace RegistroClientes
     {
         private RepositorioServico _repositorioServico = new RepositorioServico();
 
+        int idNota = 0;
+
         public TelaExibirNota(int id)
         {
             InitializeComponent();
 
             Servico servico = _repositorioServico.BuscarServicoPorId(id);
+
+            idNota = servico.Id;
 
             txtNomeCompleto.Text = servico.Cliente.Nome;
             txtEmail.Text = servico.Cliente.Email;
@@ -184,7 +188,7 @@ namespace RegistroClientes
 
             if (servico.ValorDevido > 0)
             {
-                txtResta.Text = servico.ValorDevido.ToString().Replace('.', ',');
+                txtResta.Text = servico.ValorDevido.ToString("F").Replace('.', ',');
             }
             else
             {
@@ -201,9 +205,38 @@ namespace RegistroClientes
             labelId.Text = servico.Id.ToString();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void txtResta_TextChanged(object sender, EventArgs e)
         {
+            double i = 0;
+            string s = txtResta.Text.Replace(',', '.');
+            bool resultado = double.TryParse(s, out i);
 
+            Servico servico = _repositorioServico.BuscarServicoPorId(this.idNota);
+
+            if (resultado)
+            {
+                double valorRestanteDigitado = Convert.ToDouble(txtResta.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
+
+                if (valorRestanteDigitado < servico.ValorDevido)
+                {
+                    btnSalvar.Enabled = true;
+
+                    double valorAdiantadoAtualizado = servico.ValorTotal - valorRestanteDigitado;
+
+                    txtAdiantamento.Text = valorAdiantadoAtualizado.ToString("C");
+                }
+                else
+                {
+                    btnSalvar.Enabled = false;
+
+                    txtAdiantamento.Text = servico.ValorAdiantamento.ToString("C");
+                }
+                    
+            }
+            else
+            {
+                txtResta.Text = string.Empty;
+            }
         }
     }
 }

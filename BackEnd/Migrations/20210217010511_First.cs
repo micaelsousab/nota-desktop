@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BackEnd.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class First : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,24 +11,24 @@ namespace BackEnd.Migrations
                 name: "Enderecos",
                 columns: table => new
                 {
-                    EnderecoId = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     UF = table.Column<string>(type: "TEXT", nullable: true),
                     Cidade = table.Column<string>(type: "TEXT", nullable: true),
                     Bairro = table.Column<string>(type: "TEXT", nullable: true),
-                    Numero = table.Column<int>(type: "INTEGER", nullable: false),
+                    Numero = table.Column<string>(type: "TEXT", nullable: true),
                     LinhaEndereco = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Enderecos", x => x.EnderecoId);
+                    table.PrimaryKey("PK_Enderecos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Clientes",
                 columns: table => new
                 {
-                    ClienteId = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Nome = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true),
@@ -38,12 +38,12 @@ namespace BackEnd.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clientes", x => x.ClienteId);
+                    table.PrimaryKey("PK_Clientes", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Clientes_Enderecos_EnderecoId",
                         column: x => x.EnderecoId,
                         principalTable: "Enderecos",
-                        principalColumn: "EnderecoId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -51,7 +51,7 @@ namespace BackEnd.Migrations
                 name: "Servicos",
                 columns: table => new
                 {
-                    ServicoId = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     DataRegistro = table.Column<DateTime>(type: "TEXT", nullable: false),
                     PrevisaoEntrega = table.Column<DateTime>(type: "TEXT", nullable: false),
@@ -62,12 +62,12 @@ namespace BackEnd.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Servicos", x => x.ServicoId);
+                    table.PrimaryKey("PK_Servicos", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Servicos_Clientes_ClienteId",
                         column: x => x.ClienteId,
                         principalTable: "Clientes",
-                        principalColumn: "ClienteId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -75,20 +75,21 @@ namespace BackEnd.Migrations
                 name: "ItensServicos",
                 columns: table => new
                 {
-                    ItemServicoId = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
+                    Quantidade = table.Column<int>(type: "INTEGER", nullable: false),
                     Descricao = table.Column<string>(type: "TEXT", nullable: true),
                     Valor = table.Column<double>(type: "REAL", nullable: false),
                     ServicoId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ItensServicos", x => x.ItemServicoId);
+                    table.PrimaryKey("PK_ItensServicos", x => x.Id);
                     table.ForeignKey(
                         name: "FK_ItensServicos_Servicos_ServicoId",
                         column: x => x.ServicoId,
                         principalTable: "Servicos",
-                        principalColumn: "ServicoId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 

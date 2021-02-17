@@ -906,7 +906,6 @@ namespace RegistroClientes
             txtTelefoneCelularCliente.Text = string.Empty;
             txtTelefoneFixoCliente.Text = string.Empty;
             txtEmailCliente.Text = string.Empty;
-            txtUFEnderecoCliente.Text = string.Empty;
             txtCidadeEnderecoCliente.Text = string.Empty;
             txtBairroEnderecoCliente.Text = string.Empty;
             txtNumeroEnderecoCliente.Text = string.Empty;

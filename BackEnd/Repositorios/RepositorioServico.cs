@@ -57,12 +57,12 @@ namespace BackEnd.Repositorios
 
 		public List<Servico> BuscarServicosNaoPagosCliente()
 		{
-			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.ValorDevido > 0).ToList();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.ValorAdiantamento < s.ValorTotal).ToList();
 		}
 
 		public List<Servico> BuscarServicosPagosCliente()
 		{
-			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.ValorDevido == 0).ToList();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.ValorAdiantamento == s.ValorTotal).ToList();
 		}
 
 		public List<Servico> BuscarServicosHoje()
@@ -109,7 +109,7 @@ namespace BackEnd.Repositorios
 			}
 			else
             {
-				return "0";
+				return "1";
             }
         }
 	}

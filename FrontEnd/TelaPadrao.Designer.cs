@@ -126,16 +126,16 @@ namespace RegistroClientes
             this.comboFiltro = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.table = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblPesquisar = new System.Windows.Forms.Label();
+            this.txtCampoPesquisa = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblPesquisar = new System.Windows.Forms.Label();
-            this.txtCampoPesquisa = new System.Windows.Forms.TextBox();
             this.abasTela.SuspendLayout();
             this.novoServico.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -145,8 +145,8 @@ namespace RegistroClientes
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.consultarServico.SuspendLayout();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // abasTela
@@ -1364,11 +1364,6 @@ namespace RegistroClientes
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.table);
-            this.panel7.Location = new System.Drawing.Point(3, 113);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(583, 693);
-            this.panel7.TabIndex = 3;
             // 
             // table
             // 
@@ -1390,6 +1385,51 @@ namespace RegistroClientes
             this.table.TabIndex = 0;
             this.table.Text = "dataGridView1";
             this.table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.table_CellContentClick);
+            this.panel7.Controls.Add(this.table);
+            this.panel7.Location = new System.Drawing.Point(3, 113);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(583, 693);
+            this.panel7.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(251, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "FILTRO";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(10, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Pesquisar Serviço";
+            this.label3.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblPesquisar
+            // 
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Location = new System.Drawing.Point(10, 45);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(67, 15);
+            this.lblPesquisar.TabIndex = 1;
+            this.lblPesquisar.Text = "PESQUISAR";
+            // 
+            // txtCampoPesquisa
+            // 
+            this.txtCampoPesquisa.Location = new System.Drawing.Point(10, 61);
+            this.txtCampoPesquisa.Name = "txtCampoPesquisa";
+            this.txtCampoPesquisa.ReadOnly = true;
+            this.txtCampoPesquisa.Size = new System.Drawing.Size(224, 23);
+            this.txtCampoPesquisa.TabIndex = 0;
+            this.txtCampoPesquisa.TextChanged += new System.EventHandler(this.txtCampoPesquisa_TextChanged);
             // 
             // Column1
             // 
@@ -1438,46 +1478,6 @@ namespace RegistroClientes
             this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column6.Text = "VISUALIZAR";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(251, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "FILTRO";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(10, 10);
-            this.label3.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Pesquisar Serviço";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblPesquisar
-            // 
-            this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Location = new System.Drawing.Point(10, 45);
-            this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(67, 15);
-            this.lblPesquisar.TabIndex = 1;
-            this.lblPesquisar.Text = "PESQUISAR";
-            // 
-            // txtCampoPesquisa
-            // 
-            this.txtCampoPesquisa.Location = new System.Drawing.Point(10, 61);
-            this.txtCampoPesquisa.Name = "txtCampoPesquisa";
-            this.txtCampoPesquisa.ReadOnly = true;
-            this.txtCampoPesquisa.Size = new System.Drawing.Size(224, 23);
-            this.txtCampoPesquisa.TabIndex = 0;
-            this.txtCampoPesquisa.TextChanged += new System.EventHandler(this.txtCampoPesquisa_TextChanged);
-            // 
             // TelaPadrao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1485,7 +1485,7 @@ namespace RegistroClientes
             this.ClientSize = new System.Drawing.Size(621, 861);
             this.Controls.Add(this.abasTela);
             this.Name = "TelaPadrao";
-            this.Text = "TelaPadrao";
+            this.Text = "ELETRO MAQ - SISTEMA DE NOTAS";
             this.abasTela.ResumeLayout(false);
             this.novoServico.ResumeLayout(false);
             this.novoServico.PerformLayout();
@@ -1502,8 +1502,8 @@ namespace RegistroClientes
             this.panel6.PerformLayout();
             this.consultarServico.ResumeLayout(false);
             this.consultarServico.PerformLayout();
-            this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -1609,13 +1609,13 @@ namespace RegistroClientes
         private System.Windows.Forms.Label labelNumeroNota;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.DataGridView table;
+        private System.Windows.Forms.ComboBox comboFiltro;
+        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.ComboBox comboFiltro;
-        private System.Windows.Forms.Button btnPesquisar;
     }
 }
