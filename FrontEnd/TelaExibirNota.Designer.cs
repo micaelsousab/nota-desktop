@@ -145,7 +145,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(589, 826);
+            this.tabPage1.Size = new System.Drawing.Size(571, 780);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Visualizar Nota";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -169,14 +169,14 @@
             this.panel4.Controls.Add(this.label16);
             this.panel4.Location = new System.Drawing.Point(4, 587);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(564, 184);
+            this.panel4.Size = new System.Drawing.Size(564, 190);
             this.panel4.TabIndex = 1;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(19, 137);
+            this.label23.Location = new System.Drawing.Point(19, 144);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(523, 30);
             this.label23.TabIndex = 27;
@@ -185,7 +185,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(8, 165);
+            this.label22.Location = new System.Drawing.Point(8, 172);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(545, 15);
             this.label22.TabIndex = 28;
@@ -993,7 +993,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(597, 854);
+            this.tabControl1.Size = new System.Drawing.Size(579, 808);
             this.tabControl1.TabIndex = 0;
             // 
             // textBox9
@@ -1048,7 +1048,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(621, 829);
+            this.ClientSize = new System.Drawing.Size(601, 832);
             this.Controls.Add(this.tabControl1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
