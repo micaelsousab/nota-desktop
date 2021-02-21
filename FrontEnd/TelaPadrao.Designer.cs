@@ -126,16 +126,16 @@ namespace RegistroClientes
             this.comboFiltro = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.table = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblPesquisar = new System.Windows.Forms.Label();
-            this.txtCampoPesquisa = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblPesquisar = new System.Windows.Forms.Label();
+            this.txtCampoPesquisa = new System.Windows.Forms.TextBox();
             this.abasTela.SuspendLayout();
             this.novoServico.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -145,8 +145,8 @@ namespace RegistroClientes
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.consultarServico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
             // abasTela
@@ -324,9 +324,9 @@ namespace RegistroClientes
             this.panel5.Controls.Add(this.txtServico7);
             this.panel5.Controls.Add(this.txtServico5);
             this.panel5.Controls.Add(this.txtServico6);
-            this.panel5.Location = new System.Drawing.Point(0, 302);
+            this.panel5.Location = new System.Drawing.Point(0, 229);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(568, 493);
+            this.panel5.Size = new System.Drawing.Size(568, 563);
             this.panel5.TabIndex = 2;
             // 
             // txtTotalServico15
@@ -334,7 +334,7 @@ namespace RegistroClientes
             this.txtTotalServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico15.Location = new System.Drawing.Point(475, 459);
+            this.txtTotalServico15.Location = new System.Drawing.Point(475, 431);
             this.txtTotalServico15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico15.Name = "txtTotalServico15";
             this.txtTotalServico15.Size = new System.Drawing.Size(84, 23);
@@ -346,7 +346,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico15.Location = new System.Drawing.Point(7, 459);
+            this.txtQuantidadeServico15.Location = new System.Drawing.Point(7, 431);
             this.txtQuantidadeServico15.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
             this.txtQuantidadeServico15.Size = new System.Drawing.Size(62, 23);
@@ -358,10 +358,10 @@ namespace RegistroClientes
             this.txtServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico15.Location = new System.Drawing.Point(81, 459);
+            this.txtServico15.Location = new System.Drawing.Point(68, 431);
             this.txtServico15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico15.Name = "txtServico15";
-            this.txtServico15.Size = new System.Drawing.Size(382, 23);
+            this.txtServico15.Size = new System.Drawing.Size(409, 23);
             this.txtServico15.TabIndex = 53;
             this.txtServico15.TextChanged += new System.EventHandler(this.txtServico15_TextChanged);
             // 
@@ -370,7 +370,7 @@ namespace RegistroClientes
             this.txtTotalServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico14.Location = new System.Drawing.Point(475, 427);
+            this.txtTotalServico14.Location = new System.Drawing.Point(475, 409);
             this.txtTotalServico14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico14.Name = "txtTotalServico14";
             this.txtTotalServico14.Size = new System.Drawing.Size(84, 23);
@@ -382,7 +382,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico14.Location = new System.Drawing.Point(7, 427);
+            this.txtQuantidadeServico14.Location = new System.Drawing.Point(7, 409);
             this.txtQuantidadeServico14.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
             this.txtQuantidadeServico14.Size = new System.Drawing.Size(62, 23);
@@ -394,10 +394,10 @@ namespace RegistroClientes
             this.txtServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico14.Location = new System.Drawing.Point(81, 427);
+            this.txtServico14.Location = new System.Drawing.Point(68, 409);
             this.txtServico14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico14.Name = "txtServico14";
-            this.txtServico14.Size = new System.Drawing.Size(382, 23);
+            this.txtServico14.Size = new System.Drawing.Size(409, 23);
             this.txtServico14.TabIndex = 50;
             this.txtServico14.TextChanged += new System.EventHandler(this.txtServico14_TextChanged);
             // 
@@ -406,7 +406,7 @@ namespace RegistroClientes
             this.txtTotalServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico13.Location = new System.Drawing.Point(475, 396);
+            this.txtTotalServico13.Location = new System.Drawing.Point(475, 387);
             this.txtTotalServico13.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico13.Name = "txtTotalServico13";
             this.txtTotalServico13.Size = new System.Drawing.Size(84, 23);
@@ -418,7 +418,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico13.Location = new System.Drawing.Point(7, 396);
+            this.txtQuantidadeServico13.Location = new System.Drawing.Point(7, 387);
             this.txtQuantidadeServico13.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
             this.txtQuantidadeServico13.Size = new System.Drawing.Size(62, 23);
@@ -430,10 +430,10 @@ namespace RegistroClientes
             this.txtServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico13.Location = new System.Drawing.Point(81, 396);
+            this.txtServico13.Location = new System.Drawing.Point(68, 387);
             this.txtServico13.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico13.Name = "txtServico13";
-            this.txtServico13.Size = new System.Drawing.Size(382, 23);
+            this.txtServico13.Size = new System.Drawing.Size(409, 23);
             this.txtServico13.TabIndex = 47;
             this.txtServico13.TextChanged += new System.EventHandler(this.txtServico13_TextChanged);
             // 
@@ -466,10 +466,10 @@ namespace RegistroClientes
             this.txtServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico12.Location = new System.Drawing.Point(81, 365);
+            this.txtServico12.Location = new System.Drawing.Point(68, 365);
             this.txtServico12.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico12.Name = "txtServico12";
-            this.txtServico12.Size = new System.Drawing.Size(382, 23);
+            this.txtServico12.Size = new System.Drawing.Size(409, 23);
             this.txtServico12.TabIndex = 44;
             this.txtServico12.TextChanged += new System.EventHandler(this.txtServico12_TextChanged);
             // 
@@ -478,7 +478,7 @@ namespace RegistroClientes
             this.txtTotalServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico11.Location = new System.Drawing.Point(475, 332);
+            this.txtTotalServico11.Location = new System.Drawing.Point(475, 316);
             this.txtTotalServico11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico11.Name = "txtTotalServico11";
             this.txtTotalServico11.Size = new System.Drawing.Size(84, 23);
@@ -490,7 +490,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico11.Location = new System.Drawing.Point(7, 332);
+            this.txtQuantidadeServico11.Location = new System.Drawing.Point(7, 316);
             this.txtQuantidadeServico11.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
             this.txtQuantidadeServico11.Size = new System.Drawing.Size(62, 23);
@@ -502,10 +502,10 @@ namespace RegistroClientes
             this.txtServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico11.Location = new System.Drawing.Point(81, 332);
+            this.txtServico11.Location = new System.Drawing.Point(68, 316);
             this.txtServico11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico11.Name = "txtServico11";
-            this.txtServico11.Size = new System.Drawing.Size(382, 23);
+            this.txtServico11.Size = new System.Drawing.Size(409, 23);
             this.txtServico11.TabIndex = 41;
             this.txtServico11.TextChanged += new System.EventHandler(this.txtServico11_TextChanged);
             // 
@@ -550,7 +550,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico2.Location = new System.Drawing.Point(7, 61);
+            this.txtQuantidadeServico2.Location = new System.Drawing.Point(7, 53);
             this.txtQuantidadeServico2.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico2.Name = "txtQuantidadeServico2";
             this.txtQuantidadeServico2.Size = new System.Drawing.Size(62, 23);
@@ -562,7 +562,7 @@ namespace RegistroClientes
             this.txtTotalServico10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico10.Location = new System.Drawing.Point(475, 302);
+            this.txtTotalServico10.Location = new System.Drawing.Point(475, 294);
             this.txtTotalServico10.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico10.Name = "txtTotalServico10";
             this.txtTotalServico10.Size = new System.Drawing.Size(84, 23);
@@ -574,7 +574,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico3.Location = new System.Drawing.Point(7, 91);
+            this.txtQuantidadeServico3.Location = new System.Drawing.Point(7, 75);
             this.txtQuantidadeServico3.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico3.Name = "txtQuantidadeServico3";
             this.txtQuantidadeServico3.Size = new System.Drawing.Size(62, 23);
@@ -598,7 +598,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico4.Location = new System.Drawing.Point(7, 120);
+            this.txtQuantidadeServico4.Location = new System.Drawing.Point(7, 97);
             this.txtQuantidadeServico4.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico4.Name = "txtQuantidadeServico4";
             this.txtQuantidadeServico4.Size = new System.Drawing.Size(62, 23);
@@ -610,7 +610,7 @@ namespace RegistroClientes
             this.txtTotalServico8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico8.Location = new System.Drawing.Point(475, 241);
+            this.txtTotalServico8.Location = new System.Drawing.Point(475, 224);
             this.txtTotalServico8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico8.Name = "txtTotalServico8";
             this.txtTotalServico8.Size = new System.Drawing.Size(84, 23);
@@ -634,7 +634,7 @@ namespace RegistroClientes
             this.txtTotalServico7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico7.Location = new System.Drawing.Point(475, 210);
+            this.txtTotalServico7.Location = new System.Drawing.Point(475, 202);
             this.txtTotalServico7.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico7.Name = "txtTotalServico7";
             this.txtTotalServico7.Size = new System.Drawing.Size(84, 23);
@@ -646,7 +646,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico5.Location = new System.Drawing.Point(7, 150);
+            this.txtQuantidadeServico5.Location = new System.Drawing.Point(7, 119);
             this.txtQuantidadeServico5.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico5.Name = "txtQuantidadeServico5";
             this.txtQuantidadeServico5.Size = new System.Drawing.Size(62, 23);
@@ -682,7 +682,7 @@ namespace RegistroClientes
             this.txtTotalServico5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico5.Location = new System.Drawing.Point(475, 150);
+            this.txtTotalServico5.Location = new System.Drawing.Point(475, 119);
             this.txtTotalServico5.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico5.Name = "txtTotalServico5";
             this.txtTotalServico5.Size = new System.Drawing.Size(84, 23);
@@ -694,7 +694,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico7.Location = new System.Drawing.Point(7, 210);
+            this.txtQuantidadeServico7.Location = new System.Drawing.Point(7, 202);
             this.txtQuantidadeServico7.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
             this.txtQuantidadeServico7.Size = new System.Drawing.Size(62, 23);
@@ -706,7 +706,7 @@ namespace RegistroClientes
             this.txtTotalServico4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico4.Location = new System.Drawing.Point(475, 120);
+            this.txtTotalServico4.Location = new System.Drawing.Point(475, 97);
             this.txtTotalServico4.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico4.Name = "txtTotalServico4";
             this.txtTotalServico4.Size = new System.Drawing.Size(84, 23);
@@ -718,7 +718,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico8.Location = new System.Drawing.Point(7, 241);
+            this.txtQuantidadeServico8.Location = new System.Drawing.Point(7, 224);
             this.txtQuantidadeServico8.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
             this.txtQuantidadeServico8.Size = new System.Drawing.Size(62, 23);
@@ -730,7 +730,7 @@ namespace RegistroClientes
             this.txtTotalServico3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico3.Location = new System.Drawing.Point(475, 91);
+            this.txtTotalServico3.Location = new System.Drawing.Point(475, 75);
             this.txtTotalServico3.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico3.Name = "txtTotalServico3";
             this.txtTotalServico3.Size = new System.Drawing.Size(84, 23);
@@ -754,7 +754,7 @@ namespace RegistroClientes
             this.txtTotalServico2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico2.Location = new System.Drawing.Point(475, 61);
+            this.txtTotalServico2.Location = new System.Drawing.Point(475, 53);
             this.txtTotalServico2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico2.Name = "txtTotalServico2";
             this.txtTotalServico2.Size = new System.Drawing.Size(84, 23);
@@ -766,7 +766,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico10.Location = new System.Drawing.Point(7, 302);
+            this.txtQuantidadeServico10.Location = new System.Drawing.Point(7, 294);
             this.txtQuantidadeServico10.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
             this.txtQuantidadeServico10.Size = new System.Drawing.Size(62, 23);
@@ -790,10 +790,10 @@ namespace RegistroClientes
             this.txtServico1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico1.Location = new System.Drawing.Point(81, 31);
+            this.txtServico1.Location = new System.Drawing.Point(68, 31);
             this.txtServico1.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico1.Name = "txtServico1";
-            this.txtServico1.Size = new System.Drawing.Size(382, 23);
+            this.txtServico1.Size = new System.Drawing.Size(409, 23);
             this.txtServico1.TabIndex = 11;
             this.txtServico1.TextChanged += new System.EventHandler(this.txtServico1_TextChanged);
             // 
@@ -802,10 +802,10 @@ namespace RegistroClientes
             this.txtServico10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico10.Location = new System.Drawing.Point(81, 302);
+            this.txtServico10.Location = new System.Drawing.Point(68, 294);
             this.txtServico10.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico10.Name = "txtServico10";
-            this.txtServico10.Size = new System.Drawing.Size(382, 23);
+            this.txtServico10.Size = new System.Drawing.Size(409, 23);
             this.txtServico10.TabIndex = 38;
             this.txtServico10.TextChanged += new System.EventHandler(this.txtServico10_TextChanged);
             // 
@@ -814,10 +814,10 @@ namespace RegistroClientes
             this.txtServico2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico2.Location = new System.Drawing.Point(81, 61);
+            this.txtServico2.Location = new System.Drawing.Point(68, 53);
             this.txtServico2.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico2.Name = "txtServico2";
-            this.txtServico2.Size = new System.Drawing.Size(382, 23);
+            this.txtServico2.Size = new System.Drawing.Size(409, 23);
             this.txtServico2.TabIndex = 14;
             this.txtServico2.TextChanged += new System.EventHandler(this.txtServico2_TextChanged);
             // 
@@ -826,10 +826,10 @@ namespace RegistroClientes
             this.txtServico9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico9.Location = new System.Drawing.Point(81, 272);
+            this.txtServico9.Location = new System.Drawing.Point(68, 272);
             this.txtServico9.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico9.Name = "txtServico9";
-            this.txtServico9.Size = new System.Drawing.Size(382, 23);
+            this.txtServico9.Size = new System.Drawing.Size(409, 23);
             this.txtServico9.TabIndex = 35;
             this.txtServico9.TextChanged += new System.EventHandler(this.txtServico9_TextChanged);
             // 
@@ -838,10 +838,10 @@ namespace RegistroClientes
             this.txtServico3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico3.Location = new System.Drawing.Point(81, 91);
+            this.txtServico3.Location = new System.Drawing.Point(68, 75);
             this.txtServico3.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico3.Name = "txtServico3";
-            this.txtServico3.Size = new System.Drawing.Size(382, 23);
+            this.txtServico3.Size = new System.Drawing.Size(409, 23);
             this.txtServico3.TabIndex = 17;
             this.txtServico3.TextChanged += new System.EventHandler(this.txtServico3_TextChanged);
             // 
@@ -850,10 +850,10 @@ namespace RegistroClientes
             this.txtServico8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico8.Location = new System.Drawing.Point(81, 241);
+            this.txtServico8.Location = new System.Drawing.Point(68, 224);
             this.txtServico8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico8.Name = "txtServico8";
-            this.txtServico8.Size = new System.Drawing.Size(382, 23);
+            this.txtServico8.Size = new System.Drawing.Size(409, 23);
             this.txtServico8.TabIndex = 32;
             this.txtServico8.TextChanged += new System.EventHandler(this.txtServico8_TextChanged);
             // 
@@ -862,10 +862,10 @@ namespace RegistroClientes
             this.txtServico4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico4.Location = new System.Drawing.Point(81, 120);
+            this.txtServico4.Location = new System.Drawing.Point(68, 97);
             this.txtServico4.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico4.Name = "txtServico4";
-            this.txtServico4.Size = new System.Drawing.Size(382, 23);
+            this.txtServico4.Size = new System.Drawing.Size(409, 23);
             this.txtServico4.TabIndex = 20;
             this.txtServico4.TextChanged += new System.EventHandler(this.txtServico4_TextChanged);
             // 
@@ -874,10 +874,10 @@ namespace RegistroClientes
             this.txtServico7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico7.Location = new System.Drawing.Point(81, 210);
+            this.txtServico7.Location = new System.Drawing.Point(68, 202);
             this.txtServico7.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico7.Name = "txtServico7";
-            this.txtServico7.Size = new System.Drawing.Size(382, 23);
+            this.txtServico7.Size = new System.Drawing.Size(409, 23);
             this.txtServico7.TabIndex = 29;
             this.txtServico7.TextChanged += new System.EventHandler(this.txtServico7_TextChanged);
             // 
@@ -886,10 +886,10 @@ namespace RegistroClientes
             this.txtServico5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico5.Location = new System.Drawing.Point(81, 150);
+            this.txtServico5.Location = new System.Drawing.Point(68, 119);
             this.txtServico5.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico5.Name = "txtServico5";
-            this.txtServico5.Size = new System.Drawing.Size(382, 23);
+            this.txtServico5.Size = new System.Drawing.Size(409, 23);
             this.txtServico5.TabIndex = 23;
             this.txtServico5.TextChanged += new System.EventHandler(this.txtServico5_TextChanged);
             // 
@@ -898,10 +898,10 @@ namespace RegistroClientes
             this.txtServico6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico6.Location = new System.Drawing.Point(81, 180);
+            this.txtServico6.Location = new System.Drawing.Point(68, 180);
             this.txtServico6.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico6.Name = "txtServico6";
-            this.txtServico6.Size = new System.Drawing.Size(382, 23);
+            this.txtServico6.Size = new System.Drawing.Size(409, 23);
             this.txtServico6.TabIndex = 26;
             this.txtServico6.TextChanged += new System.EventHandler(this.txtServico6_TextChanged);
             // 
@@ -1103,9 +1103,9 @@ namespace RegistroClientes
             this.panel6.Controls.Add(this.labelTelefoneCelularCliente);
             this.panel6.Controls.Add(this.labelUFCLiente);
             this.panel6.Controls.Add(this.txtUFEnderecoCliente);
-            this.panel6.Location = new System.Drawing.Point(0, 94);
+            this.panel6.Location = new System.Drawing.Point(0, 84);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(568, 202);
+            this.panel6.Size = new System.Drawing.Size(568, 147);
             this.panel6.TabIndex = 18;
             // 
             // labelNomeCliente
@@ -1124,7 +1124,7 @@ namespace RegistroClientes
             // labelLinhaEnderecoCliente
             // 
             this.labelLinhaEnderecoCliente.AutoSize = true;
-            this.labelLinhaEnderecoCliente.Location = new System.Drawing.Point(8, 149);
+            this.labelLinhaEnderecoCliente.Location = new System.Drawing.Point(8, 102);
             this.labelLinhaEnderecoCliente.Name = "labelLinhaEnderecoCliente";
             this.labelLinhaEnderecoCliente.Size = new System.Drawing.Size(66, 15);
             this.labelLinhaEnderecoCliente.TabIndex = 18;
@@ -1137,7 +1137,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeCliente.Location = new System.Drawing.Point(8, 27);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(305, 23);
+            this.txtNomeCliente.Size = new System.Drawing.Size(278, 23);
             this.txtNomeCliente.TabIndex = 1;
             this.txtNomeCliente.TextChanged += new System.EventHandler(this.txtNomeCliente_TextChanged);
             // 
@@ -1146,9 +1146,9 @@ namespace RegistroClientes
             this.txtLinhaEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLinhaEnderecoCliente.Location = new System.Drawing.Point(7, 167);
+            this.txtLinhaEnderecoCliente.Location = new System.Drawing.Point(8, 119);
             this.txtLinhaEnderecoCliente.Name = "txtLinhaEnderecoCliente";
-            this.txtLinhaEnderecoCliente.Size = new System.Drawing.Size(552, 23);
+            this.txtLinhaEnderecoCliente.Size = new System.Drawing.Size(415, 23);
             this.txtLinhaEnderecoCliente.TabIndex = 9;
             this.txtLinhaEnderecoCliente.TextChanged += new System.EventHandler(this.txtLinhaEnderecoCliente_TextChanged);
             // 
@@ -1168,7 +1168,7 @@ namespace RegistroClientes
             // 
             this.txtEmailCliente.Location = new System.Drawing.Point(8, 72);
             this.txtEmailCliente.Name = "txtEmailCliente";
-            this.txtEmailCliente.Size = new System.Drawing.Size(304, 23);
+            this.txtEmailCliente.Size = new System.Drawing.Size(278, 23);
             this.txtEmailCliente.TabIndex = 3;
             this.txtEmailCliente.TextChanged += new System.EventHandler(this.txtEmailCliente_TextChanged);
             // 
@@ -1200,10 +1200,10 @@ namespace RegistroClientes
             this.txtBairroEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBairroEnderecoCliente.Location = new System.Drawing.Point(338, 119);
+            this.txtBairroEnderecoCliente.Location = new System.Drawing.Point(428, 72);
             this.txtBairroEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtBairroEnderecoCliente.Name = "txtBairroEnderecoCliente";
-            this.txtBairroEnderecoCliente.Size = new System.Drawing.Size(148, 23);
+            this.txtBairroEnderecoCliente.Size = new System.Drawing.Size(132, 23);
             this.txtBairroEnderecoCliente.TabIndex = 7;
             this.txtBairroEnderecoCliente.TextChanged += new System.EventHandler(this.txtBairroEnderecoCliente_TextChanged);
             // 
@@ -1212,10 +1212,10 @@ namespace RegistroClientes
             this.txtTelefoneFixoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefoneFixoCliente.Location = new System.Drawing.Point(338, 27);
+            this.txtTelefoneFixoCliente.Location = new System.Drawing.Point(291, 27);
             this.txtTelefoneFixoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneFixoCliente.Name = "txtTelefoneFixoCliente";
-            this.txtTelefoneFixoCliente.Size = new System.Drawing.Size(222, 23);
+            this.txtTelefoneFixoCliente.Size = new System.Drawing.Size(132, 23);
             this.txtTelefoneFixoCliente.TabIndex = 2;
             this.txtTelefoneFixoCliente.TextChanged += new System.EventHandler(this.txtTelefoneFixoCliente_TextChanged);
             // 
@@ -1225,7 +1225,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelBairroEnderecoCliente.AutoSize = true;
-            this.labelBairroEnderecoCliente.Location = new System.Drawing.Point(338, 102);
+            this.labelBairroEnderecoCliente.Location = new System.Drawing.Point(428, 55);
             this.labelBairroEnderecoCliente.Name = "labelBairroEnderecoCliente";
             this.labelBairroEnderecoCliente.Size = new System.Drawing.Size(48, 15);
             this.labelBairroEnderecoCliente.TabIndex = 13;
@@ -1236,10 +1236,10 @@ namespace RegistroClientes
             this.txtTelefoneCelularCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefoneCelularCliente.Location = new System.Drawing.Point(338, 72);
+            this.txtTelefoneCelularCliente.Location = new System.Drawing.Point(428, 27);
             this.txtTelefoneCelularCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneCelularCliente.Name = "txtTelefoneCelularCliente";
-            this.txtTelefoneCelularCliente.Size = new System.Drawing.Size(222, 23);
+            this.txtTelefoneCelularCliente.Size = new System.Drawing.Size(132, 23);
             this.txtTelefoneCelularCliente.TabIndex = 4;
             this.txtTelefoneCelularCliente.TextChanged += new System.EventHandler(this.txtTelefoneCelularCliente_TextChanged);
             // 
@@ -1249,7 +1249,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCidadeEnderecoCliente.AutoSize = true;
-            this.labelCidadeEnderecoCliente.Location = new System.Drawing.Point(82, 102);
+            this.labelCidadeEnderecoCliente.Location = new System.Drawing.Point(291, 55);
             this.labelCidadeEnderecoCliente.Name = "labelCidadeEnderecoCliente";
             this.labelCidadeEnderecoCliente.Size = new System.Drawing.Size(48, 15);
             this.labelCidadeEnderecoCliente.TabIndex = 12;
@@ -1261,7 +1261,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTelefoneFixoCliente.AutoSize = true;
-            this.labelTelefoneFixoCliente.Location = new System.Drawing.Point(338, 9);
+            this.labelTelefoneFixoCliente.Location = new System.Drawing.Point(286, 9);
             this.labelTelefoneFixoCliente.Name = "labelTelefoneFixoCliente";
             this.labelTelefoneFixoCliente.Size = new System.Drawing.Size(89, 15);
             this.labelTelefoneFixoCliente.TabIndex = 7;
@@ -1272,10 +1272,10 @@ namespace RegistroClientes
             this.txtCidadeEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCidadeEnderecoCliente.Location = new System.Drawing.Point(82, 119);
+            this.txtCidadeEnderecoCliente.Location = new System.Drawing.Point(291, 72);
             this.txtCidadeEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtCidadeEnderecoCliente.Name = "txtCidadeEnderecoCliente";
-            this.txtCidadeEnderecoCliente.Size = new System.Drawing.Size(231, 23);
+            this.txtCidadeEnderecoCliente.Size = new System.Drawing.Size(132, 23);
             this.txtCidadeEnderecoCliente.TabIndex = 6;
             this.txtCidadeEnderecoCliente.TextChanged += new System.EventHandler(this.txtCidadeEnderecoCliente_TextChanged);
             // 
@@ -1285,7 +1285,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTelefoneCelularCliente.AutoSize = true;
-            this.labelTelefoneCelularCliente.Location = new System.Drawing.Point(338, 55);
+            this.labelTelefoneCelularCliente.Location = new System.Drawing.Point(428, 9);
             this.labelTelefoneCelularCliente.Name = "labelTelefoneCelularCliente";
             this.labelTelefoneCelularCliente.Size = new System.Drawing.Size(113, 15);
             this.labelTelefoneCelularCliente.TabIndex = 8;
@@ -1297,7 +1297,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelUFCLiente.AutoSize = true;
-            this.labelUFCLiente.Location = new System.Drawing.Point(8, 103);
+            this.labelUFCLiente.Location = new System.Drawing.Point(428, 102);
             this.labelUFCLiente.Name = "labelUFCLiente";
             this.labelUFCLiente.Size = new System.Drawing.Size(21, 15);
             this.labelUFCLiente.TabIndex = 10;
@@ -1308,9 +1308,9 @@ namespace RegistroClientes
             this.txtUFEnderecoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUFEnderecoCliente.Location = new System.Drawing.Point(8, 119);
+            this.txtUFEnderecoCliente.Location = new System.Drawing.Point(428, 119);
             this.txtUFEnderecoCliente.Name = "txtUFEnderecoCliente";
-            this.txtUFEnderecoCliente.Size = new System.Drawing.Size(62, 23);
+            this.txtUFEnderecoCliente.Size = new System.Drawing.Size(64, 23);
             this.txtUFEnderecoCliente.TabIndex = 5;
             this.txtUFEnderecoCliente.Text = "PE";
             this.txtUFEnderecoCliente.TextChanged += new System.EventHandler(this.txtUFEnderecoCliente_TextChanged);
@@ -1364,6 +1364,11 @@ namespace RegistroClientes
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.table);
+            this.panel7.Location = new System.Drawing.Point(3, 113);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(583, 693);
+            this.panel7.TabIndex = 3;
             // 
             // table
             // 
@@ -1385,51 +1390,6 @@ namespace RegistroClientes
             this.table.TabIndex = 0;
             this.table.Text = "dataGridView1";
             this.table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.table_CellContentClick);
-            this.panel7.Controls.Add(this.table);
-            this.panel7.Location = new System.Drawing.Point(3, 113);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(583, 693);
-            this.panel7.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(251, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "FILTRO";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(10, 10);
-            this.label3.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Pesquisar Serviço";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblPesquisar
-            // 
-            this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Location = new System.Drawing.Point(10, 45);
-            this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(67, 15);
-            this.lblPesquisar.TabIndex = 1;
-            this.lblPesquisar.Text = "PESQUISAR";
-            // 
-            // txtCampoPesquisa
-            // 
-            this.txtCampoPesquisa.Location = new System.Drawing.Point(10, 61);
-            this.txtCampoPesquisa.Name = "txtCampoPesquisa";
-            this.txtCampoPesquisa.ReadOnly = true;
-            this.txtCampoPesquisa.Size = new System.Drawing.Size(224, 23);
-            this.txtCampoPesquisa.TabIndex = 0;
-            this.txtCampoPesquisa.TextChanged += new System.EventHandler(this.txtCampoPesquisa_TextChanged);
             // 
             // Column1
             // 
@@ -1478,6 +1438,46 @@ namespace RegistroClientes
             this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column6.Text = "VISUALIZAR";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(251, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "FILTRO";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(10, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(136, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Pesquisar Serviço";
+            this.label3.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lblPesquisar
+            // 
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Location = new System.Drawing.Point(10, 45);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(67, 15);
+            this.lblPesquisar.TabIndex = 1;
+            this.lblPesquisar.Text = "PESQUISAR";
+            // 
+            // txtCampoPesquisa
+            // 
+            this.txtCampoPesquisa.Location = new System.Drawing.Point(10, 61);
+            this.txtCampoPesquisa.Name = "txtCampoPesquisa";
+            this.txtCampoPesquisa.ReadOnly = true;
+            this.txtCampoPesquisa.Size = new System.Drawing.Size(224, 23);
+            this.txtCampoPesquisa.TabIndex = 0;
+            this.txtCampoPesquisa.TextChanged += new System.EventHandler(this.txtCampoPesquisa_TextChanged);
+            // 
             // TelaPadrao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1502,8 +1502,8 @@ namespace RegistroClientes
             this.panel6.PerformLayout();
             this.consultarServico.ResumeLayout(false);
             this.consultarServico.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.ResumeLayout(false);
 
 		}
