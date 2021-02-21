@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaExibirNota));
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
@@ -114,6 +115,7 @@
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.labelId = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -123,6 +125,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -141,7 +145,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(589, 809);
+            this.tabPage1.Size = new System.Drawing.Size(589, 826);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Visualizar Nota";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -163,16 +167,16 @@
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.txtTotal);
             this.panel4.Controls.Add(this.label16);
-            this.panel4.Location = new System.Drawing.Point(4, 781);
+            this.panel4.Location = new System.Drawing.Point(4, 587);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(564, 223);
+            this.panel4.Size = new System.Drawing.Size(564, 184);
             this.panel4.TabIndex = 1;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(19, 162);
+            this.label23.Location = new System.Drawing.Point(19, 137);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(523, 30);
             this.label23.TabIndex = 27;
@@ -181,7 +185,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(8, 198);
+            this.label22.Location = new System.Drawing.Point(8, 165);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(545, 15);
             this.label22.TabIndex = 28;
@@ -191,7 +195,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(462, 79);
+            this.btnSalvar.Location = new System.Drawing.Point(462, 66);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(91, 70);
             this.btnSalvar.TabIndex = 3;
@@ -201,7 +205,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(9, 61);
+            this.label21.Location = new System.Drawing.Point(9, 48);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 15);
             this.label21.TabIndex = 0;
@@ -209,7 +213,7 @@
             // 
             // txtObservacao
             // 
-            this.txtObservacao.Location = new System.Drawing.Point(9, 79);
+            this.txtObservacao.Location = new System.Drawing.Point(9, 66);
             this.txtObservacao.Multiline = true;
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.ReadOnly = true;
@@ -351,14 +355,14 @@
             this.panel3.Controls.Add(this.txtTotalServico1);
             this.panel3.Controls.Add(this.txtQuantidadeServico1);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Location = new System.Drawing.Point(3, 305);
+            this.panel3.Location = new System.Drawing.Point(3, 221);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(565, 469);
+            this.panel3.Size = new System.Drawing.Size(565, 365);
             this.panel3.TabIndex = 0;
             // 
             // txtQuantidadeServico15
             // 
-            this.txtQuantidadeServico15.Location = new System.Drawing.Point(10, 437);
+            this.txtQuantidadeServico15.Location = new System.Drawing.Point(10, 339);
             this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
             this.txtQuantidadeServico15.ReadOnly = true;
             this.txtQuantidadeServico15.Size = new System.Drawing.Size(59, 23);
@@ -366,15 +370,15 @@
             // 
             // txtServico15
             // 
-            this.txtServico15.Location = new System.Drawing.Point(81, 437);
+            this.txtServico15.Location = new System.Drawing.Point(68, 339);
             this.txtServico15.Name = "txtServico15";
             this.txtServico15.ReadOnly = true;
-            this.txtServico15.Size = new System.Drawing.Size(383, 23);
+            this.txtServico15.Size = new System.Drawing.Size(409, 23);
             this.txtServico15.TabIndex = 1;
             // 
             // txtTotalServico15
             // 
-            this.txtTotalServico15.Location = new System.Drawing.Point(476, 437);
+            this.txtTotalServico15.Location = new System.Drawing.Point(476, 339);
             this.txtTotalServico15.Name = "txtTotalServico15";
             this.txtTotalServico15.ReadOnly = true;
             this.txtTotalServico15.Size = new System.Drawing.Size(80, 23);
@@ -382,7 +386,7 @@
             // 
             // txtQuantidadeServico14
             // 
-            this.txtQuantidadeServico14.Location = new System.Drawing.Point(10, 408);
+            this.txtQuantidadeServico14.Location = new System.Drawing.Point(10, 317);
             this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
             this.txtQuantidadeServico14.ReadOnly = true;
             this.txtQuantidadeServico14.Size = new System.Drawing.Size(59, 23);
@@ -390,15 +394,15 @@
             // 
             // txtServico14
             // 
-            this.txtServico14.Location = new System.Drawing.Point(81, 408);
+            this.txtServico14.Location = new System.Drawing.Point(68, 317);
             this.txtServico14.Name = "txtServico14";
             this.txtServico14.ReadOnly = true;
-            this.txtServico14.Size = new System.Drawing.Size(383, 23);
+            this.txtServico14.Size = new System.Drawing.Size(409, 23);
             this.txtServico14.TabIndex = 1;
             // 
             // txtTotalServico14
             // 
-            this.txtTotalServico14.Location = new System.Drawing.Point(476, 408);
+            this.txtTotalServico14.Location = new System.Drawing.Point(476, 317);
             this.txtTotalServico14.Name = "txtTotalServico14";
             this.txtTotalServico14.ReadOnly = true;
             this.txtTotalServico14.Size = new System.Drawing.Size(80, 23);
@@ -406,7 +410,7 @@
             // 
             // txtQuantidadeServico13
             // 
-            this.txtQuantidadeServico13.Location = new System.Drawing.Point(10, 379);
+            this.txtQuantidadeServico13.Location = new System.Drawing.Point(10, 295);
             this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
             this.txtQuantidadeServico13.ReadOnly = true;
             this.txtQuantidadeServico13.Size = new System.Drawing.Size(59, 23);
@@ -414,15 +418,15 @@
             // 
             // txtServico13
             // 
-            this.txtServico13.Location = new System.Drawing.Point(81, 379);
+            this.txtServico13.Location = new System.Drawing.Point(68, 295);
             this.txtServico13.Name = "txtServico13";
             this.txtServico13.ReadOnly = true;
-            this.txtServico13.Size = new System.Drawing.Size(383, 23);
+            this.txtServico13.Size = new System.Drawing.Size(409, 23);
             this.txtServico13.TabIndex = 1;
             // 
             // txtTotalServico13
             // 
-            this.txtTotalServico13.Location = new System.Drawing.Point(476, 379);
+            this.txtTotalServico13.Location = new System.Drawing.Point(476, 295);
             this.txtTotalServico13.Name = "txtTotalServico13";
             this.txtTotalServico13.ReadOnly = true;
             this.txtTotalServico13.Size = new System.Drawing.Size(80, 23);
@@ -430,7 +434,7 @@
             // 
             // txtQuantidadeServico12
             // 
-            this.txtQuantidadeServico12.Location = new System.Drawing.Point(10, 350);
+            this.txtQuantidadeServico12.Location = new System.Drawing.Point(10, 273);
             this.txtQuantidadeServico12.Name = "txtQuantidadeServico12";
             this.txtQuantidadeServico12.ReadOnly = true;
             this.txtQuantidadeServico12.Size = new System.Drawing.Size(59, 23);
@@ -438,15 +442,15 @@
             // 
             // txtServico12
             // 
-            this.txtServico12.Location = new System.Drawing.Point(81, 350);
+            this.txtServico12.Location = new System.Drawing.Point(68, 273);
             this.txtServico12.Name = "txtServico12";
             this.txtServico12.ReadOnly = true;
-            this.txtServico12.Size = new System.Drawing.Size(383, 23);
+            this.txtServico12.Size = new System.Drawing.Size(409, 23);
             this.txtServico12.TabIndex = 1;
             // 
             // txtTotalServico12
             // 
-            this.txtTotalServico12.Location = new System.Drawing.Point(476, 350);
+            this.txtTotalServico12.Location = new System.Drawing.Point(476, 273);
             this.txtTotalServico12.Name = "txtTotalServico12";
             this.txtTotalServico12.ReadOnly = true;
             this.txtTotalServico12.Size = new System.Drawing.Size(80, 23);
@@ -454,7 +458,7 @@
             // 
             // txtQuantidadeServico11
             // 
-            this.txtQuantidadeServico11.Location = new System.Drawing.Point(10, 321);
+            this.txtQuantidadeServico11.Location = new System.Drawing.Point(10, 251);
             this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
             this.txtQuantidadeServico11.ReadOnly = true;
             this.txtQuantidadeServico11.Size = new System.Drawing.Size(59, 23);
@@ -462,15 +466,15 @@
             // 
             // txtServico11
             // 
-            this.txtServico11.Location = new System.Drawing.Point(81, 321);
+            this.txtServico11.Location = new System.Drawing.Point(68, 251);
             this.txtServico11.Name = "txtServico11";
             this.txtServico11.ReadOnly = true;
-            this.txtServico11.Size = new System.Drawing.Size(383, 23);
+            this.txtServico11.Size = new System.Drawing.Size(409, 23);
             this.txtServico11.TabIndex = 1;
             // 
             // txtTotalServico11
             // 
-            this.txtTotalServico11.Location = new System.Drawing.Point(476, 321);
+            this.txtTotalServico11.Location = new System.Drawing.Point(476, 251);
             this.txtTotalServico11.Name = "txtTotalServico11";
             this.txtTotalServico11.ReadOnly = true;
             this.txtTotalServico11.Size = new System.Drawing.Size(80, 23);
@@ -478,7 +482,7 @@
             // 
             // txtQuantidadeServico10
             // 
-            this.txtQuantidadeServico10.Location = new System.Drawing.Point(10, 292);
+            this.txtQuantidadeServico10.Location = new System.Drawing.Point(10, 229);
             this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
             this.txtQuantidadeServico10.ReadOnly = true;
             this.txtQuantidadeServico10.Size = new System.Drawing.Size(59, 23);
@@ -486,15 +490,15 @@
             // 
             // txtServico10
             // 
-            this.txtServico10.Location = new System.Drawing.Point(81, 292);
+            this.txtServico10.Location = new System.Drawing.Point(68, 229);
             this.txtServico10.Name = "txtServico10";
             this.txtServico10.ReadOnly = true;
-            this.txtServico10.Size = new System.Drawing.Size(383, 23);
+            this.txtServico10.Size = new System.Drawing.Size(409, 23);
             this.txtServico10.TabIndex = 1;
             // 
             // txtTotalServico10
             // 
-            this.txtTotalServico10.Location = new System.Drawing.Point(476, 292);
+            this.txtTotalServico10.Location = new System.Drawing.Point(476, 229);
             this.txtTotalServico10.Name = "txtTotalServico10";
             this.txtTotalServico10.ReadOnly = true;
             this.txtTotalServico10.Size = new System.Drawing.Size(80, 23);
@@ -502,7 +506,7 @@
             // 
             // txtQuantidadeServico9
             // 
-            this.txtQuantidadeServico9.Location = new System.Drawing.Point(10, 263);
+            this.txtQuantidadeServico9.Location = new System.Drawing.Point(10, 207);
             this.txtQuantidadeServico9.Name = "txtQuantidadeServico9";
             this.txtQuantidadeServico9.ReadOnly = true;
             this.txtQuantidadeServico9.Size = new System.Drawing.Size(59, 23);
@@ -510,15 +514,15 @@
             // 
             // txtServico9
             // 
-            this.txtServico9.Location = new System.Drawing.Point(81, 263);
+            this.txtServico9.Location = new System.Drawing.Point(68, 207);
             this.txtServico9.Name = "txtServico9";
             this.txtServico9.ReadOnly = true;
-            this.txtServico9.Size = new System.Drawing.Size(383, 23);
+            this.txtServico9.Size = new System.Drawing.Size(409, 23);
             this.txtServico9.TabIndex = 1;
             // 
             // txtTotalServico9
             // 
-            this.txtTotalServico9.Location = new System.Drawing.Point(476, 263);
+            this.txtTotalServico9.Location = new System.Drawing.Point(476, 207);
             this.txtTotalServico9.Name = "txtTotalServico9";
             this.txtTotalServico9.ReadOnly = true;
             this.txtTotalServico9.Size = new System.Drawing.Size(80, 23);
@@ -526,7 +530,7 @@
             // 
             // txtQuantidadeServico8
             // 
-            this.txtQuantidadeServico8.Location = new System.Drawing.Point(10, 234);
+            this.txtQuantidadeServico8.Location = new System.Drawing.Point(10, 185);
             this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
             this.txtQuantidadeServico8.ReadOnly = true;
             this.txtQuantidadeServico8.Size = new System.Drawing.Size(59, 23);
@@ -534,15 +538,15 @@
             // 
             // txtServico8
             // 
-            this.txtServico8.Location = new System.Drawing.Point(81, 234);
+            this.txtServico8.Location = new System.Drawing.Point(68, 185);
             this.txtServico8.Name = "txtServico8";
             this.txtServico8.ReadOnly = true;
-            this.txtServico8.Size = new System.Drawing.Size(383, 23);
+            this.txtServico8.Size = new System.Drawing.Size(409, 23);
             this.txtServico8.TabIndex = 1;
             // 
             // txtTotalServico8
             // 
-            this.txtTotalServico8.Location = new System.Drawing.Point(476, 234);
+            this.txtTotalServico8.Location = new System.Drawing.Point(476, 185);
             this.txtTotalServico8.Name = "txtTotalServico8";
             this.txtTotalServico8.ReadOnly = true;
             this.txtTotalServico8.Size = new System.Drawing.Size(80, 23);
@@ -550,7 +554,7 @@
             // 
             // txtQuantidadeServico7
             // 
-            this.txtQuantidadeServico7.Location = new System.Drawing.Point(10, 205);
+            this.txtQuantidadeServico7.Location = new System.Drawing.Point(10, 163);
             this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
             this.txtQuantidadeServico7.ReadOnly = true;
             this.txtQuantidadeServico7.Size = new System.Drawing.Size(59, 23);
@@ -558,15 +562,15 @@
             // 
             // txtServico7
             // 
-            this.txtServico7.Location = new System.Drawing.Point(81, 205);
+            this.txtServico7.Location = new System.Drawing.Point(68, 163);
             this.txtServico7.Name = "txtServico7";
             this.txtServico7.ReadOnly = true;
-            this.txtServico7.Size = new System.Drawing.Size(383, 23);
+            this.txtServico7.Size = new System.Drawing.Size(409, 23);
             this.txtServico7.TabIndex = 1;
             // 
             // txtTotalServico7
             // 
-            this.txtTotalServico7.Location = new System.Drawing.Point(476, 205);
+            this.txtTotalServico7.Location = new System.Drawing.Point(476, 163);
             this.txtTotalServico7.Name = "txtTotalServico7";
             this.txtTotalServico7.ReadOnly = true;
             this.txtTotalServico7.Size = new System.Drawing.Size(80, 23);
@@ -574,7 +578,7 @@
             // 
             // txtQuantidadeServico6
             // 
-            this.txtQuantidadeServico6.Location = new System.Drawing.Point(10, 176);
+            this.txtQuantidadeServico6.Location = new System.Drawing.Point(10, 141);
             this.txtQuantidadeServico6.Name = "txtQuantidadeServico6";
             this.txtQuantidadeServico6.ReadOnly = true;
             this.txtQuantidadeServico6.Size = new System.Drawing.Size(59, 23);
@@ -582,15 +586,15 @@
             // 
             // txtServico6
             // 
-            this.txtServico6.Location = new System.Drawing.Point(81, 176);
+            this.txtServico6.Location = new System.Drawing.Point(68, 141);
             this.txtServico6.Name = "txtServico6";
             this.txtServico6.ReadOnly = true;
-            this.txtServico6.Size = new System.Drawing.Size(383, 23);
+            this.txtServico6.Size = new System.Drawing.Size(409, 23);
             this.txtServico6.TabIndex = 1;
             // 
             // txtTotalServico6
             // 
-            this.txtTotalServico6.Location = new System.Drawing.Point(476, 176);
+            this.txtTotalServico6.Location = new System.Drawing.Point(476, 141);
             this.txtTotalServico6.Name = "txtTotalServico6";
             this.txtTotalServico6.ReadOnly = true;
             this.txtTotalServico6.Size = new System.Drawing.Size(80, 23);
@@ -598,7 +602,7 @@
             // 
             // txtTotalServico5
             // 
-            this.txtTotalServico5.Location = new System.Drawing.Point(476, 147);
+            this.txtTotalServico5.Location = new System.Drawing.Point(476, 119);
             this.txtTotalServico5.Name = "txtTotalServico5";
             this.txtTotalServico5.ReadOnly = true;
             this.txtTotalServico5.Size = new System.Drawing.Size(80, 23);
@@ -606,15 +610,15 @@
             // 
             // txtServico5
             // 
-            this.txtServico5.Location = new System.Drawing.Point(81, 147);
+            this.txtServico5.Location = new System.Drawing.Point(68, 119);
             this.txtServico5.Name = "txtServico5";
             this.txtServico5.ReadOnly = true;
-            this.txtServico5.Size = new System.Drawing.Size(383, 23);
+            this.txtServico5.Size = new System.Drawing.Size(409, 23);
             this.txtServico5.TabIndex = 1;
             // 
             // txtQuantidadeServico5
             // 
-            this.txtQuantidadeServico5.Location = new System.Drawing.Point(10, 147);
+            this.txtQuantidadeServico5.Location = new System.Drawing.Point(10, 119);
             this.txtQuantidadeServico5.Name = "txtQuantidadeServico5";
             this.txtQuantidadeServico5.ReadOnly = true;
             this.txtQuantidadeServico5.Size = new System.Drawing.Size(59, 23);
@@ -622,7 +626,7 @@
             // 
             // txtTotalServico4
             // 
-            this.txtTotalServico4.Location = new System.Drawing.Point(476, 118);
+            this.txtTotalServico4.Location = new System.Drawing.Point(476, 97);
             this.txtTotalServico4.Name = "txtTotalServico4";
             this.txtTotalServico4.ReadOnly = true;
             this.txtTotalServico4.Size = new System.Drawing.Size(80, 23);
@@ -630,15 +634,15 @@
             // 
             // txtServico4
             // 
-            this.txtServico4.Location = new System.Drawing.Point(81, 118);
+            this.txtServico4.Location = new System.Drawing.Point(68, 97);
             this.txtServico4.Name = "txtServico4";
             this.txtServico4.ReadOnly = true;
-            this.txtServico4.Size = new System.Drawing.Size(383, 23);
+            this.txtServico4.Size = new System.Drawing.Size(409, 23);
             this.txtServico4.TabIndex = 1;
             // 
             // txtQuantidadeServico4
             // 
-            this.txtQuantidadeServico4.Location = new System.Drawing.Point(10, 118);
+            this.txtQuantidadeServico4.Location = new System.Drawing.Point(10, 97);
             this.txtQuantidadeServico4.Name = "txtQuantidadeServico4";
             this.txtQuantidadeServico4.ReadOnly = true;
             this.txtQuantidadeServico4.Size = new System.Drawing.Size(59, 23);
@@ -646,7 +650,7 @@
             // 
             // txtTotalServico3
             // 
-            this.txtTotalServico3.Location = new System.Drawing.Point(476, 89);
+            this.txtTotalServico3.Location = new System.Drawing.Point(476, 75);
             this.txtTotalServico3.Name = "txtTotalServico3";
             this.txtTotalServico3.ReadOnly = true;
             this.txtTotalServico3.Size = new System.Drawing.Size(80, 23);
@@ -654,15 +658,15 @@
             // 
             // txtServico3
             // 
-            this.txtServico3.Location = new System.Drawing.Point(81, 89);
+            this.txtServico3.Location = new System.Drawing.Point(68, 75);
             this.txtServico3.Name = "txtServico3";
             this.txtServico3.ReadOnly = true;
-            this.txtServico3.Size = new System.Drawing.Size(383, 23);
+            this.txtServico3.Size = new System.Drawing.Size(409, 23);
             this.txtServico3.TabIndex = 1;
             // 
             // txtQuantidadeServico3
             // 
-            this.txtQuantidadeServico3.Location = new System.Drawing.Point(10, 89);
+            this.txtQuantidadeServico3.Location = new System.Drawing.Point(10, 75);
             this.txtQuantidadeServico3.Name = "txtQuantidadeServico3";
             this.txtQuantidadeServico3.ReadOnly = true;
             this.txtQuantidadeServico3.Size = new System.Drawing.Size(59, 23);
@@ -670,7 +674,7 @@
             // 
             // txtQuantidadeServico2
             // 
-            this.txtQuantidadeServico2.Location = new System.Drawing.Point(10, 60);
+            this.txtQuantidadeServico2.Location = new System.Drawing.Point(10, 53);
             this.txtQuantidadeServico2.Name = "txtQuantidadeServico2";
             this.txtQuantidadeServico2.ReadOnly = true;
             this.txtQuantidadeServico2.Size = new System.Drawing.Size(59, 23);
@@ -678,15 +682,15 @@
             // 
             // txtServico2
             // 
-            this.txtServico2.Location = new System.Drawing.Point(81, 60);
+            this.txtServico2.Location = new System.Drawing.Point(68, 53);
             this.txtServico2.Name = "txtServico2";
             this.txtServico2.ReadOnly = true;
-            this.txtServico2.Size = new System.Drawing.Size(383, 23);
+            this.txtServico2.Size = new System.Drawing.Size(409, 23);
             this.txtServico2.TabIndex = 1;
             // 
             // txtTotalServico2
             // 
-            this.txtTotalServico2.Location = new System.Drawing.Point(476, 60);
+            this.txtTotalServico2.Location = new System.Drawing.Point(476, 53);
             this.txtTotalServico2.Name = "txtTotalServico2";
             this.txtTotalServico2.ReadOnly = true;
             this.txtTotalServico2.Size = new System.Drawing.Size(80, 23);
@@ -703,10 +707,10 @@
             // 
             // txtServico1
             // 
-            this.txtServico1.Location = new System.Drawing.Point(81, 31);
+            this.txtServico1.Location = new System.Drawing.Point(68, 31);
             this.txtServico1.Name = "txtServico1";
             this.txtServico1.ReadOnly = true;
-            this.txtServico1.Size = new System.Drawing.Size(383, 23);
+            this.txtServico1.Size = new System.Drawing.Size(409, 23);
             this.txtServico1.TabIndex = 1;
             // 
             // label14
@@ -763,9 +767,9 @@
             this.panel2.Controls.Add(this.txtTelefoneFixo);
             this.panel2.Controls.Add(this.txtNomeCompleto);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(3, 97);
+            this.panel2.Location = new System.Drawing.Point(3, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(565, 202);
+            this.panel2.Size = new System.Drawing.Size(565, 151);
             this.panel2.TabIndex = 0;
             // 
             // label12
@@ -780,7 +784,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(338, 104);
+            this.label11.Location = new System.Drawing.Point(424, 57);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 15);
             this.label11.TabIndex = 0;
@@ -789,7 +793,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(83, 104);
+            this.label10.Location = new System.Drawing.Point(286, 57);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 15);
             this.label10.TabIndex = 0;
@@ -797,40 +801,40 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(338, 122);
+            this.txtBairro.Location = new System.Drawing.Point(423, 75);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.ReadOnly = true;
-            this.txtBairro.Size = new System.Drawing.Size(142, 23);
+            this.txtBairro.Size = new System.Drawing.Size(133, 23);
             this.txtBairro.TabIndex = 1;
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(497, 122);
+            this.txtNumero.Location = new System.Drawing.Point(489, 122);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.ReadOnly = true;
-            this.txtNumero.Size = new System.Drawing.Size(59, 23);
+            this.txtNumero.Size = new System.Drawing.Size(67, 23);
             this.txtNumero.TabIndex = 1;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(83, 122);
+            this.txtCidade.Location = new System.Drawing.Point(286, 75);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.ReadOnly = true;
-            this.txtCidade.Size = new System.Drawing.Size(231, 23);
+            this.txtCidade.Size = new System.Drawing.Size(132, 23);
             this.txtCidade.TabIndex = 1;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(10, 170);
+            this.txtEndereco.Location = new System.Drawing.Point(10, 122);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.ReadOnly = true;
-            this.txtEndereco.Size = new System.Drawing.Size(546, 23);
+            this.txtEndereco.Size = new System.Drawing.Size(408, 23);
             this.txtEndereco.TabIndex = 1;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 152);
+            this.label9.Location = new System.Drawing.Point(10, 104);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 15);
             this.label9.TabIndex = 0;
@@ -838,7 +842,7 @@
             // 
             // txtUF
             // 
-            this.txtUF.Location = new System.Drawing.Point(10, 122);
+            this.txtUF.Location = new System.Drawing.Point(424, 122);
             this.txtUF.Name = "txtUF";
             this.txtUF.ReadOnly = true;
             this.txtUF.Size = new System.Drawing.Size(59, 23);
@@ -847,7 +851,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 104);
+            this.label8.Location = new System.Drawing.Point(424, 104);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(21, 15);
             this.label8.TabIndex = 0;
@@ -865,7 +869,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(338, 57);
+            this.label6.Location = new System.Drawing.Point(424, 10);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 15);
             this.label6.TabIndex = 0;
@@ -874,7 +878,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(338, 10);
+            this.label5.Location = new System.Drawing.Point(286, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 15);
             this.label5.TabIndex = 0;
@@ -882,10 +886,10 @@
             // 
             // txtTelefoneCelular
             // 
-            this.txtTelefoneCelular.Location = new System.Drawing.Point(338, 75);
+            this.txtTelefoneCelular.Location = new System.Drawing.Point(424, 28);
             this.txtTelefoneCelular.Name = "txtTelefoneCelular";
             this.txtTelefoneCelular.ReadOnly = true;
-            this.txtTelefoneCelular.Size = new System.Drawing.Size(218, 23);
+            this.txtTelefoneCelular.Size = new System.Drawing.Size(132, 23);
             this.txtTelefoneCelular.TabIndex = 1;
             // 
             // txtEmail
@@ -893,15 +897,15 @@
             this.txtEmail.Location = new System.Drawing.Point(10, 75);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(304, 23);
+            this.txtEmail.Size = new System.Drawing.Size(270, 23);
             this.txtEmail.TabIndex = 1;
             // 
             // txtTelefoneFixo
             // 
-            this.txtTelefoneFixo.Location = new System.Drawing.Point(338, 28);
+            this.txtTelefoneFixo.Location = new System.Drawing.Point(286, 28);
             this.txtTelefoneFixo.Name = "txtTelefoneFixo";
             this.txtTelefoneFixo.ReadOnly = true;
-            this.txtTelefoneFixo.Size = new System.Drawing.Size(218, 23);
+            this.txtTelefoneFixo.Size = new System.Drawing.Size(132, 23);
             this.txtTelefoneFixo.TabIndex = 1;
             // 
             // txtNomeCompleto
@@ -909,7 +913,7 @@
             this.txtNomeCompleto.Location = new System.Drawing.Point(10, 28);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
             this.txtNomeCompleto.ReadOnly = true;
-            this.txtNomeCompleto.Size = new System.Drawing.Size(304, 23);
+            this.txtNomeCompleto.Size = new System.Drawing.Size(270, 23);
             this.txtNomeCompleto.TabIndex = 1;
             // 
             // label4
@@ -923,14 +927,25 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnPrint);
             this.panel1.Controls.Add(this.labelId);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 88);
+            this.panel1.Size = new System.Drawing.Size(565, 70);
             this.panel1.TabIndex = 0;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(9, 5);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 27;
+            this.btnPrint.Text = "Imprimir";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // labelId
             // 
@@ -947,7 +962,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(102, 65);
+            this.label3.Location = new System.Drawing.Point(102, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(364, 15);
             this.label3.TabIndex = 2;
@@ -956,7 +971,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 47);
+            this.label2.Location = new System.Drawing.Point(189, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(191, 15);
             this.label2.TabIndex = 1;
@@ -966,7 +981,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(195, 5);
+            this.label1.Location = new System.Drawing.Point(195, -2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(176, 37);
             this.label1.TabIndex = 0;
@@ -978,7 +993,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(597, 837);
+            this.tabControl1.Size = new System.Drawing.Size(597, 854);
             this.tabControl1.TabIndex = 0;
             // 
             // textBox9
@@ -1013,16 +1028,33 @@
             this.textBox6.Size = new System.Drawing.Size(59, 23);
             this.textBox6.TabIndex = 1;
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // TelaExibirNota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(621, 861);
+            this.ClientSize = new System.Drawing.Size(621, 829);
             this.Controls.Add(this.tabControl1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
             this.Name = "TelaExibirNota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ELETRO MAQ - VISUALIZAR NOTA";
             this.tabPage1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -1136,5 +1168,8 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.Label d;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
