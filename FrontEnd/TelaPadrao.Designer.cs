@@ -198,7 +198,7 @@ namespace RegistroClientes
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 1070);
+            this.panel1.Size = new System.Drawing.Size(568, 794);
             this.panel1.TabIndex = 32;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -211,16 +211,16 @@ namespace RegistroClientes
             this.panel3.Controls.Add(this.labelObservacao);
             this.panel3.Controls.Add(this.labelAgradecimento);
             this.panel3.Controls.Add(this.btnSalvar);
-            this.panel3.Location = new System.Drawing.Point(0, 885);
+            this.panel3.Location = new System.Drawing.Point(0, 648);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(568, 182);
+            this.panel3.Size = new System.Drawing.Size(568, 155);
             this.panel3.TabIndex = 1;
             // 
             // textObservacao
             // 
             this.textObservacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textObservacao.Location = new System.Drawing.Point(7, 32);
+            this.textObservacao.Location = new System.Drawing.Point(7, 23);
             this.textObservacao.Margin = new System.Windows.Forms.Padding(10);
             this.textObservacao.Multiline = true;
             this.textObservacao.Name = "textObservacao";
@@ -231,7 +231,7 @@ namespace RegistroClientes
             // labelDescricao
             // 
             this.labelDescricao.AutoSize = true;
-            this.labelDescricao.Location = new System.Drawing.Point(12, 150);
+            this.labelDescricao.Location = new System.Drawing.Point(12, 134);
             this.labelDescricao.Name = "labelDescricao";
             this.labelDescricao.Size = new System.Drawing.Size(545, 15);
             this.labelDescricao.TabIndex = 28;
@@ -244,7 +244,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelObservacao.AutoSize = true;
-            this.labelObservacao.Location = new System.Drawing.Point(7, 14);
+            this.labelObservacao.Location = new System.Drawing.Point(7, 5);
             this.labelObservacao.Name = "labelObservacao";
             this.labelObservacao.Size = new System.Drawing.Size(81, 15);
             this.labelObservacao.TabIndex = 23;
@@ -254,7 +254,7 @@ namespace RegistroClientes
             // 
             this.labelAgradecimento.AutoSize = true;
             this.labelAgradecimento.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelAgradecimento.Location = new System.Drawing.Point(23, 114);
+            this.labelAgradecimento.Location = new System.Drawing.Point(23, 102);
             this.labelAgradecimento.Name = "labelAgradecimento";
             this.labelAgradecimento.Size = new System.Drawing.Size(523, 30);
             this.labelAgradecimento.TabIndex = 27;
@@ -263,7 +263,7 @@ namespace RegistroClientes
             // btnSalvar
             // 
             this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(475, 32);
+            this.btnSalvar.Location = new System.Drawing.Point(475, 23);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(83, 72);
             this.btnSalvar.TabIndex = 58;
@@ -324,9 +324,9 @@ namespace RegistroClientes
             this.panel5.Controls.Add(this.txtServico7);
             this.panel5.Controls.Add(this.txtServico5);
             this.panel5.Controls.Add(this.txtServico6);
-            this.panel5.Location = new System.Drawing.Point(0, 229);
+            this.panel5.Location = new System.Drawing.Point(0, 221);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(568, 563);
+            this.panel5.Size = new System.Drawing.Size(568, 371);
             this.panel5.TabIndex = 2;
             // 
             // txtTotalServico15
@@ -334,7 +334,7 @@ namespace RegistroClientes
             this.txtTotalServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico15.Location = new System.Drawing.Point(475, 431);
+            this.txtTotalServico15.Location = new System.Drawing.Point(475, 339);
             this.txtTotalServico15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico15.Name = "txtTotalServico15";
             this.txtTotalServico15.Size = new System.Drawing.Size(84, 23);
@@ -346,7 +346,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico15.Location = new System.Drawing.Point(7, 431);
+            this.txtQuantidadeServico15.Location = new System.Drawing.Point(7, 339);
             this.txtQuantidadeServico15.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico15.Name = "txtQuantidadeServico15";
             this.txtQuantidadeServico15.Size = new System.Drawing.Size(62, 23);
@@ -358,7 +358,7 @@ namespace RegistroClientes
             this.txtServico15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico15.Location = new System.Drawing.Point(68, 431);
+            this.txtServico15.Location = new System.Drawing.Point(68, 339);
             this.txtServico15.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico15.Name = "txtServico15";
             this.txtServico15.Size = new System.Drawing.Size(409, 23);
@@ -370,7 +370,7 @@ namespace RegistroClientes
             this.txtTotalServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico14.Location = new System.Drawing.Point(475, 409);
+            this.txtTotalServico14.Location = new System.Drawing.Point(475, 317);
             this.txtTotalServico14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico14.Name = "txtTotalServico14";
             this.txtTotalServico14.Size = new System.Drawing.Size(84, 23);
@@ -382,7 +382,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico14.Location = new System.Drawing.Point(7, 409);
+            this.txtQuantidadeServico14.Location = new System.Drawing.Point(7, 317);
             this.txtQuantidadeServico14.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico14.Name = "txtQuantidadeServico14";
             this.txtQuantidadeServico14.Size = new System.Drawing.Size(62, 23);
@@ -394,7 +394,7 @@ namespace RegistroClientes
             this.txtServico14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico14.Location = new System.Drawing.Point(68, 409);
+            this.txtServico14.Location = new System.Drawing.Point(68, 317);
             this.txtServico14.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico14.Name = "txtServico14";
             this.txtServico14.Size = new System.Drawing.Size(409, 23);
@@ -406,7 +406,7 @@ namespace RegistroClientes
             this.txtTotalServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico13.Location = new System.Drawing.Point(475, 387);
+            this.txtTotalServico13.Location = new System.Drawing.Point(475, 295);
             this.txtTotalServico13.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico13.Name = "txtTotalServico13";
             this.txtTotalServico13.Size = new System.Drawing.Size(84, 23);
@@ -418,7 +418,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico13.Location = new System.Drawing.Point(7, 387);
+            this.txtQuantidadeServico13.Location = new System.Drawing.Point(7, 295);
             this.txtQuantidadeServico13.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico13.Name = "txtQuantidadeServico13";
             this.txtQuantidadeServico13.Size = new System.Drawing.Size(62, 23);
@@ -430,7 +430,7 @@ namespace RegistroClientes
             this.txtServico13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico13.Location = new System.Drawing.Point(68, 387);
+            this.txtServico13.Location = new System.Drawing.Point(68, 295);
             this.txtServico13.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico13.Name = "txtServico13";
             this.txtServico13.Size = new System.Drawing.Size(409, 23);
@@ -442,7 +442,7 @@ namespace RegistroClientes
             this.txtTotalServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico12.Location = new System.Drawing.Point(475, 365);
+            this.txtTotalServico12.Location = new System.Drawing.Point(475, 273);
             this.txtTotalServico12.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico12.Name = "txtTotalServico12";
             this.txtTotalServico12.Size = new System.Drawing.Size(84, 23);
@@ -454,7 +454,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico12.Location = new System.Drawing.Point(7, 365);
+            this.txtQuantidadeServico12.Location = new System.Drawing.Point(7, 273);
             this.txtQuantidadeServico12.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico12.Name = "txtQuantidadeServico12";
             this.txtQuantidadeServico12.Size = new System.Drawing.Size(62, 23);
@@ -466,7 +466,7 @@ namespace RegistroClientes
             this.txtServico12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico12.Location = new System.Drawing.Point(68, 365);
+            this.txtServico12.Location = new System.Drawing.Point(68, 273);
             this.txtServico12.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico12.Name = "txtServico12";
             this.txtServico12.Size = new System.Drawing.Size(409, 23);
@@ -478,7 +478,7 @@ namespace RegistroClientes
             this.txtTotalServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico11.Location = new System.Drawing.Point(475, 316);
+            this.txtTotalServico11.Location = new System.Drawing.Point(475, 251);
             this.txtTotalServico11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico11.Name = "txtTotalServico11";
             this.txtTotalServico11.Size = new System.Drawing.Size(84, 23);
@@ -490,7 +490,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico11.Location = new System.Drawing.Point(7, 316);
+            this.txtQuantidadeServico11.Location = new System.Drawing.Point(7, 251);
             this.txtQuantidadeServico11.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico11.Name = "txtQuantidadeServico11";
             this.txtQuantidadeServico11.Size = new System.Drawing.Size(62, 23);
@@ -502,7 +502,7 @@ namespace RegistroClientes
             this.txtServico11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico11.Location = new System.Drawing.Point(68, 316);
+            this.txtServico11.Location = new System.Drawing.Point(68, 251);
             this.txtServico11.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico11.Name = "txtServico11";
             this.txtServico11.Size = new System.Drawing.Size(409, 23);
@@ -562,7 +562,7 @@ namespace RegistroClientes
             this.txtTotalServico10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico10.Location = new System.Drawing.Point(475, 294);
+            this.txtTotalServico10.Location = new System.Drawing.Point(475, 229);
             this.txtTotalServico10.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico10.Name = "txtTotalServico10";
             this.txtTotalServico10.Size = new System.Drawing.Size(84, 23);
@@ -586,7 +586,7 @@ namespace RegistroClientes
             this.txtTotalServico9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico9.Location = new System.Drawing.Point(475, 272);
+            this.txtTotalServico9.Location = new System.Drawing.Point(475, 207);
             this.txtTotalServico9.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico9.Name = "txtTotalServico9";
             this.txtTotalServico9.Size = new System.Drawing.Size(84, 23);
@@ -610,7 +610,7 @@ namespace RegistroClientes
             this.txtTotalServico8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico8.Location = new System.Drawing.Point(475, 224);
+            this.txtTotalServico8.Location = new System.Drawing.Point(475, 185);
             this.txtTotalServico8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico8.Name = "txtTotalServico8";
             this.txtTotalServico8.Size = new System.Drawing.Size(84, 23);
@@ -634,7 +634,7 @@ namespace RegistroClientes
             this.txtTotalServico7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico7.Location = new System.Drawing.Point(475, 202);
+            this.txtTotalServico7.Location = new System.Drawing.Point(475, 163);
             this.txtTotalServico7.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico7.Name = "txtTotalServico7";
             this.txtTotalServico7.Size = new System.Drawing.Size(84, 23);
@@ -658,7 +658,7 @@ namespace RegistroClientes
             this.txtTotalServico6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalServico6.Location = new System.Drawing.Point(475, 180);
+            this.txtTotalServico6.Location = new System.Drawing.Point(475, 141);
             this.txtTotalServico6.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtTotalServico6.Name = "txtTotalServico6";
             this.txtTotalServico6.Size = new System.Drawing.Size(84, 23);
@@ -670,7 +670,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico6.Location = new System.Drawing.Point(7, 180);
+            this.txtQuantidadeServico6.Location = new System.Drawing.Point(7, 141);
             this.txtQuantidadeServico6.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico6.Name = "txtQuantidadeServico6";
             this.txtQuantidadeServico6.Size = new System.Drawing.Size(62, 23);
@@ -694,7 +694,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico7.Location = new System.Drawing.Point(7, 202);
+            this.txtQuantidadeServico7.Location = new System.Drawing.Point(7, 163);
             this.txtQuantidadeServico7.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico7.Name = "txtQuantidadeServico7";
             this.txtQuantidadeServico7.Size = new System.Drawing.Size(62, 23);
@@ -718,7 +718,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico8.Location = new System.Drawing.Point(7, 224);
+            this.txtQuantidadeServico8.Location = new System.Drawing.Point(7, 185);
             this.txtQuantidadeServico8.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico8.Name = "txtQuantidadeServico8";
             this.txtQuantidadeServico8.Size = new System.Drawing.Size(62, 23);
@@ -742,7 +742,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico9.Location = new System.Drawing.Point(7, 272);
+            this.txtQuantidadeServico9.Location = new System.Drawing.Point(7, 207);
             this.txtQuantidadeServico9.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico9.Name = "txtQuantidadeServico9";
             this.txtQuantidadeServico9.Size = new System.Drawing.Size(62, 23);
@@ -766,7 +766,7 @@ namespace RegistroClientes
             this.txtQuantidadeServico10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuantidadeServico10.Location = new System.Drawing.Point(7, 294);
+            this.txtQuantidadeServico10.Location = new System.Drawing.Point(7, 229);
             this.txtQuantidadeServico10.Margin = new System.Windows.Forms.Padding(10);
             this.txtQuantidadeServico10.Name = "txtQuantidadeServico10";
             this.txtQuantidadeServico10.Size = new System.Drawing.Size(62, 23);
@@ -802,7 +802,7 @@ namespace RegistroClientes
             this.txtServico10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico10.Location = new System.Drawing.Point(68, 294);
+            this.txtServico10.Location = new System.Drawing.Point(68, 229);
             this.txtServico10.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico10.Name = "txtServico10";
             this.txtServico10.Size = new System.Drawing.Size(409, 23);
@@ -826,7 +826,7 @@ namespace RegistroClientes
             this.txtServico9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico9.Location = new System.Drawing.Point(68, 272);
+            this.txtServico9.Location = new System.Drawing.Point(68, 207);
             this.txtServico9.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico9.Name = "txtServico9";
             this.txtServico9.Size = new System.Drawing.Size(409, 23);
@@ -850,7 +850,7 @@ namespace RegistroClientes
             this.txtServico8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico8.Location = new System.Drawing.Point(68, 224);
+            this.txtServico8.Location = new System.Drawing.Point(68, 185);
             this.txtServico8.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico8.Name = "txtServico8";
             this.txtServico8.Size = new System.Drawing.Size(409, 23);
@@ -874,7 +874,7 @@ namespace RegistroClientes
             this.txtServico7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico7.Location = new System.Drawing.Point(68, 202);
+            this.txtServico7.Location = new System.Drawing.Point(68, 163);
             this.txtServico7.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico7.Name = "txtServico7";
             this.txtServico7.Size = new System.Drawing.Size(409, 23);
@@ -898,7 +898,7 @@ namespace RegistroClientes
             this.txtServico6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServico6.Location = new System.Drawing.Point(68, 180);
+            this.txtServico6.Location = new System.Drawing.Point(68, 141);
             this.txtServico6.Margin = new System.Windows.Forms.Padding(10, 3, 10, 10);
             this.txtServico6.Name = "txtServico6";
             this.txtServico6.Size = new System.Drawing.Size(409, 23);
@@ -917,9 +917,9 @@ namespace RegistroClientes
             this.panel4.Controls.Add(this.txtResta);
             this.panel4.Controls.Add(this.labelResta);
             this.panel4.Controls.Add(this.txtTotal);
-            this.panel4.Location = new System.Drawing.Point(0, 801);
+            this.panel4.Location = new System.Drawing.Point(0, 598);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(568, 78);
+            this.panel4.Size = new System.Drawing.Size(568, 51);
             this.panel4.TabIndex = 1;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -929,7 +929,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDataEntrega.AutoSize = true;
-            this.labelDataEntrega.Location = new System.Drawing.Point(7, 15);
+            this.labelDataEntrega.Location = new System.Drawing.Point(7, 4);
             this.labelDataEntrega.Name = "labelDataEntrega";
             this.labelDataEntrega.Size = new System.Drawing.Size(148, 15);
             this.labelDataEntrega.TabIndex = 23;
@@ -941,7 +941,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAdiantamento.AutoSize = true;
-            this.labelAdiantamento.Location = new System.Drawing.Point(270, 15);
+            this.labelAdiantamento.Location = new System.Drawing.Point(270, 4);
             this.labelAdiantamento.Name = "labelAdiantamento";
             this.labelAdiantamento.Size = new System.Drawing.Size(96, 15);
             this.labelAdiantamento.TabIndex = 23;
@@ -949,7 +949,7 @@ namespace RegistroClientes
             // 
             // dtPrevistaEntrega
             // 
-            this.dtPrevistaEntrega.Location = new System.Drawing.Point(7, 33);
+            this.dtPrevistaEntrega.Location = new System.Drawing.Point(7, 22);
             this.dtPrevistaEntrega.Name = "dtPrevistaEntrega";
             this.dtPrevistaEntrega.Size = new System.Drawing.Size(250, 23);
             this.dtPrevistaEntrega.TabIndex = 55;
@@ -959,7 +959,7 @@ namespace RegistroClientes
             this.txtAdiantamento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAdiantamento.Location = new System.Drawing.Point(270, 33);
+            this.txtAdiantamento.Location = new System.Drawing.Point(270, 22);
             this.txtAdiantamento.Margin = new System.Windows.Forms.Padding(10);
             this.txtAdiantamento.Name = "txtAdiantamento";
             this.txtAdiantamento.Size = new System.Drawing.Size(97, 23);
@@ -972,7 +972,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTotal.AutoSize = true;
-            this.labelTotal.Location = new System.Drawing.Point(475, 15);
+            this.labelTotal.Location = new System.Drawing.Point(475, 4);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(39, 15);
             this.labelTotal.TabIndex = 23;
@@ -984,7 +984,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtResta.Enabled = false;
-            this.txtResta.Location = new System.Drawing.Point(379, 33);
+            this.txtResta.Location = new System.Drawing.Point(379, 22);
             this.txtResta.Margin = new System.Windows.Forms.Padding(10);
             this.txtResta.Name = "txtResta";
             this.txtResta.ReadOnly = true;
@@ -998,7 +998,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelResta.AutoSize = true;
-            this.labelResta.Location = new System.Drawing.Point(379, 15);
+            this.labelResta.Location = new System.Drawing.Point(379, 4);
             this.labelResta.Name = "labelResta";
             this.labelResta.Size = new System.Drawing.Size(39, 15);
             this.labelResta.TabIndex = 23;
@@ -1010,7 +1010,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.Enabled = false;
-            this.txtTotal.Location = new System.Drawing.Point(475, 33);
+            this.txtTotal.Location = new System.Drawing.Point(475, 22);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(10);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
@@ -1028,7 +1028,7 @@ namespace RegistroClientes
             this.panel2.Controls.Add(this.labelFones);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(568, 88);
+            this.panel2.Size = new System.Drawing.Size(568, 78);
             this.panel2.TabIndex = 0;
             // 
             // label2
@@ -1037,7 +1037,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 65);
+            this.label2.Location = new System.Drawing.Point(102, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(364, 15);
             this.label2.TabIndex = 31;
@@ -1051,7 +1051,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEletroMaq.AutoSize = true;
             this.labelEletroMaq.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelEletroMaq.Location = new System.Drawing.Point(196, 5);
+            this.labelEletroMaq.Location = new System.Drawing.Point(196, -1);
             this.labelEletroMaq.Name = "labelEletroMaq";
             this.labelEletroMaq.Size = new System.Drawing.Size(176, 37);
             this.labelEletroMaq.TabIndex = 29;
@@ -1076,7 +1076,7 @@ namespace RegistroClientes
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFones.AutoSize = true;
-            this.labelFones.Location = new System.Drawing.Point(189, 45);
+            this.labelFones.Location = new System.Drawing.Point(189, 37);
             this.labelFones.Name = "labelFones";
             this.labelFones.Size = new System.Drawing.Size(191, 15);
             this.labelFones.TabIndex = 30;
@@ -1103,7 +1103,7 @@ namespace RegistroClientes
             this.panel6.Controls.Add(this.labelTelefoneCelularCliente);
             this.panel6.Controls.Add(this.labelUFCLiente);
             this.panel6.Controls.Add(this.txtUFEnderecoCliente);
-            this.panel6.Location = new System.Drawing.Point(0, 84);
+            this.panel6.Location = new System.Drawing.Point(0, 75);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(568, 147);
             this.panel6.TabIndex = 18;
