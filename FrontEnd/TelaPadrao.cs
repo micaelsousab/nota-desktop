@@ -996,7 +996,7 @@ namespace RegistroClientes
                     item.Id,
                     item.Cliente.Nome,
                     item.DataRegistro.ToString("dd/MM/yyyy"),
-                    item.ValorDevido > 0 ? "NÃO" : "SIM",
+                    item.ValorAdiantamento < item.ValorTotal ? "NÃO" : "SIM",
                     item.ValorTotal.ToString("C"),
                     "VISUALIZAR"
                 });

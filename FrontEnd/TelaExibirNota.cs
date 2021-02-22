@@ -20,8 +20,6 @@ namespace RegistroClientes
         {
             InitializeComponent();
 
-
-
             Servico servico = _repositorioServico.BuscarServicoPorId(id);
 
             idNota = servico.Id;
@@ -233,7 +231,7 @@ namespace RegistroClientes
 
                     txtAdiantamento.Text = servico.ValorAdiantamento.ToString("C");
                 }
-                    
+
             }
             else
             {
@@ -278,6 +276,15 @@ namespace RegistroClientes
 
             printPreviewDialog1.ShowDialog();
 
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            double novoValorAdiantado = Convert.ToDouble(txtAdiantamento.Text.Substring(2), System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
+
+            _repositorioServico.AtualizarValorRestante(idNota, novoValorAdiantado);
+
+            MessageBox.Show("Nota Atualizada com Sucesso!");
         }
     }
 }

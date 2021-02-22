@@ -112,5 +112,15 @@ namespace BackEnd.Repositorios
 				return "1";
             }
         }
+
+		public void AtualizarValorRestante(int id, double novoValorAdiantado)
+		{
+			Servico servico = _db.Servicos.Find(id);
+
+			servico.ValorAdiantamento = novoValorAdiantado;
+
+			_db.Entry(servico).State = EntityState.Modified;
+			_db.SaveChanges();
+		}
 	}
 }
