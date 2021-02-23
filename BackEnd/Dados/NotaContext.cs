@@ -14,6 +14,6 @@ namespace BackEnd.Dados
 		public DbSet<Servico> Servicos { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder options)
-			=> options.UseSqlite("Data Source=nota.db");
+			=> options.UseSqlite("Data Source=nota-prod.db");
 	}
 }

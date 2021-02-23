@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FrontEnd": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Micael BRB\\Registro de Notas ELETROMAQ\\RegistroClientes.exe"
+    }
+  }
+}
