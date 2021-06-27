@@ -203,6 +203,8 @@ namespace RegistroClientes
             txtObservacao.Text = servico.Observacoes;
 
             labelId.Text = servico.Id.ToString();
+
+            btnSalvar.Enabled = true;
         }
 
         private void txtResta_TextChanged(object sender, EventArgs e)
@@ -281,8 +283,10 @@ namespace RegistroClientes
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             double novoValorAdiantado = Convert.ToDouble(txtAdiantamento.Text.Substring(2), System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
+            string observacao = txtObservacao.Text;
 
             _repositorioServico.AtualizarValorRestante(idNota, novoValorAdiantado);
+            _repositorioServico.AtualizarObservacao(idNota, observacao);
 
             MessageBox.Show("Nota Atualizada com Sucesso!");
         }

@@ -113,14 +113,24 @@ namespace BackEnd.Repositorios
             }
         }
 
-		public void AtualizarValorRestante(int id, double novoValorAdiantado)
+		public void AtualizarValorRestante(int idNota, double novoValorAdiantado)
 		{
-			Servico servico = _db.Servicos.Find(id);
+			Servico servico = _db.Servicos.Find(idNota);
 
 			servico.ValorAdiantamento = novoValorAdiantado;
 
 			_db.Entry(servico).State = EntityState.Modified;
 			_db.SaveChanges();
 		}
+
+		public void AtualizarObservacao(int idNota, string observacao)
+        {
+			Servico servico = _db.Servicos.Find(idNota);
+
+			servico.Observacoes = observacao;
+
+			_db.Entry(servico).State = EntityState.Modified;
+			_db.SaveChanges();
+        }
 	}
 }
