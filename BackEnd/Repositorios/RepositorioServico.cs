@@ -132,5 +132,15 @@ namespace BackEnd.Repositorios
 			_db.Entry(servico).State = EntityState.Modified;
 			_db.SaveChanges();
         }
+
+		public void AtualizarServico(int idNota, Servico servicoAtualizado)
+		{
+			Servico servico = _db.Servicos.Find(idNota);
+
+			servico = servicoAtualizado;
+
+			_db.Entry(servico).State = EntityState.Modified;
+			_db.SaveChanges();
+		}
 	}
 }
