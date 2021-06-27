@@ -1078,9 +1078,9 @@ namespace RegistroClientes
             this.labelFones.AutoSize = true;
             this.labelFones.Location = new System.Drawing.Point(189, 37);
             this.labelFones.Name = "labelFones";
-            this.labelFones.Size = new System.Drawing.Size(191, 15);
+            this.labelFones.Size = new System.Drawing.Size(185, 15);
             this.labelFones.TabIndex = 30;
-            this.labelFones.Text = "Fone (81) 3377-0540 / 9 98507-4579";
+            this.labelFones.Text = "Fone (81) 3377-0540 / 9 8507-4579";
             this.labelFones.Click += new System.EventHandler(this.label2_Click_2);
             // 
             // panel6

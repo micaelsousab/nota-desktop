@@ -974,9 +974,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(189, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 15);
+            this.label2.Size = new System.Drawing.Size(185, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Fone (81) 3377-0540 / 9 98507-4579";
+            this.label2.Text = "Fone (81) 3377-0540 / 9 8507-4579";
             // 
             // label1
             // 

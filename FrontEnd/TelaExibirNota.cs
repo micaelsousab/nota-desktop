@@ -37,7 +37,7 @@ namespace RegistroClientes
                 txtTelefoneCelular.Text = servico.Cliente.TelefoneCelular;
 
             if (!string.IsNullOrEmpty(servico.Cliente.TelefoneFixo))
-                txtTelefoneCelular.Text = servico.Cliente.TelefoneFixo;
+                txtTelefoneFixo.Text = servico.Cliente.TelefoneFixo;
 
             ItemServico itemServico1 = servico.ItensServico[0];
             ItemServico itemServico2 = new ItemServico();
