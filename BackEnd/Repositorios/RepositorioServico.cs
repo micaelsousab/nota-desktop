@@ -32,7 +32,7 @@ namespace BackEnd.Repositorios
 
 		public List<Servico> BuscarServicosPorNomeCliente(string pesquisa)
 		{
-			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.Nome.Contains(pesquisa)).ToList();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.Nome.ToLower().Contains(pesquisa.ToLower())).ToList();
 		}
 
 		public List<Servico> BuscarServicosPorTelefoneCelularCliente(string pesquisa)
@@ -43,7 +43,7 @@ namespace BackEnd.Repositorios
 
 		public List<Servico> BuscarServicosPorEmailCliente(string pesquisa)
 		{
-			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.Email.Contains(pesquisa)).ToList();
+			return _db.Servicos.Include(x => x.Cliente.Endereco).Include(x => x.ItensServico).Where(s => s.Cliente.Email.ToLower().Contains(pesquisa.ToLower())).ToList();
 		}
 
 		public List<Servico> BuscarServicoPorNota(int id)
