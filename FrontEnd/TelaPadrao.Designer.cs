@@ -225,7 +225,7 @@ namespace RegistroClientes
             this.textObservacao.Multiline = true;
             this.textObservacao.Name = "textObservacao";
             this.textObservacao.Size = new System.Drawing.Size(456, 72);
-            this.textObservacao.TabIndex = 57;
+            this.textObservacao.TabIndex = 59;
             this.textObservacao.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // labelDescricao
@@ -266,7 +266,7 @@ namespace RegistroClientes
             this.btnSalvar.Location = new System.Drawing.Point(475, 23);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(83, 72);
-            this.btnSalvar.TabIndex = 58;
+            this.btnSalvar.TabIndex = 60;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -989,7 +989,7 @@ namespace RegistroClientes
             this.txtResta.Name = "txtResta";
             this.txtResta.ReadOnly = true;
             this.txtResta.Size = new System.Drawing.Size(87, 23);
-            this.txtResta.TabIndex = 22;
+            this.txtResta.TabIndex = 57;
             this.txtResta.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // labelResta
@@ -1015,7 +1015,7 @@ namespace RegistroClientes
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(84, 23);
-            this.txtTotal.TabIndex = 22;
+            this.txtTotal.TabIndex = 58;
             this.txtTotal.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel2
@@ -1149,7 +1149,7 @@ namespace RegistroClientes
             this.txtLinhaEnderecoCliente.Location = new System.Drawing.Point(8, 119);
             this.txtLinhaEnderecoCliente.Name = "txtLinhaEnderecoCliente";
             this.txtLinhaEnderecoCliente.Size = new System.Drawing.Size(415, 23);
-            this.txtLinhaEnderecoCliente.TabIndex = 9;
+            this.txtLinhaEnderecoCliente.TabIndex = 7;
             this.txtLinhaEnderecoCliente.TextChanged += new System.EventHandler(this.txtLinhaEnderecoCliente_TextChanged);
             // 
             // labelNumeroEnderecoCliente
@@ -1169,7 +1169,7 @@ namespace RegistroClientes
             this.txtEmailCliente.Location = new System.Drawing.Point(8, 72);
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Size = new System.Drawing.Size(278, 23);
-            this.txtEmailCliente.TabIndex = 3;
+            this.txtEmailCliente.TabIndex = 4;
             this.txtEmailCliente.TextChanged += new System.EventHandler(this.txtEmailCliente_TextChanged);
             // 
             // txtNumeroEnderecoCliente
@@ -1180,7 +1180,7 @@ namespace RegistroClientes
             this.txtNumeroEnderecoCliente.Location = new System.Drawing.Point(498, 119);
             this.txtNumeroEnderecoCliente.Name = "txtNumeroEnderecoCliente";
             this.txtNumeroEnderecoCliente.Size = new System.Drawing.Size(62, 23);
-            this.txtNumeroEnderecoCliente.TabIndex = 8;
+            this.txtNumeroEnderecoCliente.TabIndex = 9;
             this.txtNumeroEnderecoCliente.TextChanged += new System.EventHandler(this.txtNumeroEnderecoCliente_TextChanged);
             // 
             // labelEmailCliente
@@ -1204,7 +1204,7 @@ namespace RegistroClientes
             this.txtBairroEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtBairroEnderecoCliente.Name = "txtBairroEnderecoCliente";
             this.txtBairroEnderecoCliente.Size = new System.Drawing.Size(132, 23);
-            this.txtBairroEnderecoCliente.TabIndex = 7;
+            this.txtBairroEnderecoCliente.TabIndex = 6;
             this.txtBairroEnderecoCliente.TextChanged += new System.EventHandler(this.txtBairroEnderecoCliente_TextChanged);
             // 
             // txtTelefoneFixoCliente
@@ -1240,7 +1240,7 @@ namespace RegistroClientes
             this.txtTelefoneCelularCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtTelefoneCelularCliente.Name = "txtTelefoneCelularCliente";
             this.txtTelefoneCelularCliente.Size = new System.Drawing.Size(132, 23);
-            this.txtTelefoneCelularCliente.TabIndex = 4;
+            this.txtTelefoneCelularCliente.TabIndex = 3;
             this.txtTelefoneCelularCliente.TextChanged += new System.EventHandler(this.txtTelefoneCelularCliente_TextChanged);
             // 
             // labelCidadeEnderecoCliente
@@ -1276,7 +1276,7 @@ namespace RegistroClientes
             this.txtCidadeEnderecoCliente.Margin = new System.Windows.Forms.Padding(10);
             this.txtCidadeEnderecoCliente.Name = "txtCidadeEnderecoCliente";
             this.txtCidadeEnderecoCliente.Size = new System.Drawing.Size(132, 23);
-            this.txtCidadeEnderecoCliente.TabIndex = 6;
+            this.txtCidadeEnderecoCliente.TabIndex = 5;
             this.txtCidadeEnderecoCliente.TextChanged += new System.EventHandler(this.txtCidadeEnderecoCliente_TextChanged);
             // 
             // labelTelefoneCelularCliente
@@ -1311,7 +1311,7 @@ namespace RegistroClientes
             this.txtUFEnderecoCliente.Location = new System.Drawing.Point(428, 119);
             this.txtUFEnderecoCliente.Name = "txtUFEnderecoCliente";
             this.txtUFEnderecoCliente.Size = new System.Drawing.Size(64, 23);
-            this.txtUFEnderecoCliente.TabIndex = 5;
+            this.txtUFEnderecoCliente.TabIndex = 8;
             this.txtUFEnderecoCliente.Text = "PE";
             this.txtUFEnderecoCliente.TextChanged += new System.EventHandler(this.txtUFEnderecoCliente_TextChanged);
             // 
