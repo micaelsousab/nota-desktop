@@ -1115,12 +1115,18 @@ namespace RegistroClientes
             servico.ValorTotal = total;
             servico.ValorAdiantamento = Convert.ToDouble(txtAdiantamento.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
 
-            //_repositorioServico.AtualizarValorRestante(idNota, novoValorAdiantado);
-            //_repositorioServico.AtualizarObservacao(idNota, observacao);
+            try
+            {
+                servico.PrevisaoEntrega = Convert.ToDateTime(txtDataEntrega.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
 
-            _repositorioServico.AtualizarServico(idNota, servico);
+                _repositorioServico.AtualizarServico(idNota, servico);
 
-            MessageBox.Show("Nota Atualizada com Sucesso!");
+                MessageBox.Show("Nota Atualizada com Sucesso!");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERRO NA PREVISÃO DE ENTREGA!");
+            }
         }
     }
 }
