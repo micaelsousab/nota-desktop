@@ -274,6 +274,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico1.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico2_TextChanged(object sender, EventArgs e)
@@ -286,6 +288,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico2.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtServico2_TextChanged(object sender, EventArgs e)
@@ -368,6 +372,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico3.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico4_TextChanged(object sender, EventArgs e)
@@ -380,6 +386,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico4.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico5_TextChanged(object sender, EventArgs e)
@@ -392,6 +400,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico5.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico6_TextChanged(object sender, EventArgs e)
@@ -404,6 +414,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico6.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico7_TextChanged(object sender, EventArgs e)
@@ -416,6 +428,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico7.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico8_TextChanged(object sender, EventArgs e)
@@ -428,6 +442,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico8.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico9_TextChanged(object sender, EventArgs e)
@@ -440,6 +456,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico9.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico10_TextChanged(object sender, EventArgs e)
@@ -452,6 +470,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico10.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico11_TextChanged(object sender, EventArgs e)
@@ -464,6 +484,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico11.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico12_TextChanged(object sender, EventArgs e)
@@ -476,6 +498,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico12.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico13_TextChanged(object sender, EventArgs e)
@@ -488,6 +512,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico13.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico14_TextChanged(object sender, EventArgs e)
@@ -500,6 +526,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico14.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtQuantidadeServico15_TextChanged(object sender, EventArgs e)
@@ -512,6 +540,8 @@ namespace RegistroClientes
                 AtualizarTxtValorTotal();
             else
                 txtQuantidadeServico15.Text = string.Empty;
+
+            AtualizarTxtValorTotal();
         }
 
         private void txtNomeCliente_TextChanged(object sender, EventArgs e)
@@ -622,15 +652,22 @@ namespace RegistroClientes
             {
                 var valorTotalDaNota = _repositorioServico.ObterValorTotalDaNota(listaItemServicos);
 
-                if (!string.IsNullOrEmpty(txtAdiantamento.Text))
+                if (txtAdiantamento.Text.Contains("-"))
                 {
-                    var adiantamento = Convert.ToDouble(txtAdiantamento.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
-
-                    txtResta.Text = $"{(valorTotalDaNota - adiantamento).ToString("C")}";
+                    txtAdiantamento.Text = "0";
                 }
                 else
                 {
-                    txtResta.Text = $"{(valorTotalDaNota).ToString("C")}";
+                    if (!string.IsNullOrEmpty(txtAdiantamento.Text))
+                    {
+                        var adiantamento = Convert.ToDouble(txtAdiantamento.Text, System.Globalization.CultureInfo.GetCultureInfo("pt-BR"));
+
+                        txtResta.Text = $"{(valorTotalDaNota - adiantamento).ToString("C")}";
+                    }
+                    else
+                    {
+                        txtResta.Text = $"{(valorTotalDaNota).ToString("C")}";
+                    }
                 }
             }
         }
@@ -643,6 +680,7 @@ namespace RegistroClientes
 
             txtTotal.Text = $"{valorTotal.ToString("C")}";
 
+            ObterValorRestante();
             VerificarCamposPreenchidosParaAtivarBotaoSalvar();
         }
 
